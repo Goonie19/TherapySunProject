@@ -1,4 +1,5 @@
 class_name dialogue_option
+extends Resource
 
 var option_string: String
 var next_dialogue: dialogue_data

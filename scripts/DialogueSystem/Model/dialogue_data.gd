@@ -1,8 +1,9 @@
-
 class_name dialogue_data
+extends Resource
 
-var dialogue_id: String
-var sentences: Array[sentence_data]
+
+@export var dialogue_id: String
+@export var sentences: Array[sentence_data]
 
 func _init(id: String, sentence_array: Array[sentence_data]):
 	dialogue_id = id

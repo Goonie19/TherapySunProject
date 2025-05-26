@@ -1,9 +1,11 @@
+extends Resource
+
 class_name character_data
 
-var character_name: String
-var character_base_pose: Sprite2D
-var character_happy_pose: Sprite2D
-var character_angry_pose: Sprite2D
+@export var character_name: String
+@export var character_base_pose: Texture2D
+@export var character_happy_pose: Texture2D
+@export var character_angry_pose: Texture2D
 
 func _init(name, base_pose, happy_pose, angry_pose):
 	character_name = name
