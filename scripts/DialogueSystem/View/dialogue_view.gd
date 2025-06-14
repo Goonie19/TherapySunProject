@@ -44,3 +44,6 @@ func show_dialogue_options(dialogue_answers: Array[String]):
 
 func hide_dialogue_options():
 	dialogue_panel_animation_player.play("HideOptions")
+
+func press_next_button():
+	on_button_pass_pressed.emit()
