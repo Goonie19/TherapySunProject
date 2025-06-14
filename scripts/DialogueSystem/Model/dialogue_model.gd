@@ -1,4 +1,4 @@
-class_name dialogue_model
+class_name DialogueModel
 
 var dialogue : dialogue_data
 

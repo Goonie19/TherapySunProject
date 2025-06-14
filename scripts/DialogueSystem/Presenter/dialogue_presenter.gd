@@ -1,10 +1,17 @@
 class_name dialogue_presenter
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+var view: DialogueView
+var model: DialogueModel
 
+var nextSentence: bool
+var sentenceCompleted: bool
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _init(copy_view: DialogueView, model_copy: DialogueModel):
+	view = copy_view
+	model = model_copy
+	
+	connect_view()
+	
+func connect_view():
+	#placeholder
+	nextSentence = false
