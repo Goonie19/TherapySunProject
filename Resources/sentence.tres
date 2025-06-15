@@ -1,11 +1,26 @@
-[gd_resource type="Resource" script_class="sentence_data" load_steps=3 format=3 uid="uid://cfex1y03q1pjc"]
+[gd_resource type="Resource" script_class="sentence_data" load_steps=8 format=3 uid="uid://cfex1y03q1pjc"]
 
 [ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="1_47w4h"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="1_heqhc"]
 [ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/character.tres" id="1_hf8db"]
+[ext_resource type="Resource" uid="uid://dmrsmq8r2kmkt" path="res://Resources/dialogue option si.tres" id="2_3swke"]
+[ext_resource type="Resource" uid="uid://dnigawiobn03a" path="res://Resources/dialogue option no.tres" id="3_mivco"]
+
+[sub_resource type="Resource" id="Resource_0hfn3"]
+script = ExtResource("1_heqhc")
+option_string = "La ultima vez que te dio el levante se te cayo el ojo"
+next_dialogue = ExtResource("2_3swke")
+metadata/_custom_type_script = "uid://w2ys2wl2pcs7"
+
+[sub_resource type="Resource" id="Resource_pf2at"]
+script = ExtResource("1_heqhc")
+option_string = "No se de que me estas hablando"
+next_dialogue = ExtResource("3_mivco")
+metadata/_custom_type_script = "uid://w2ys2wl2pcs7"
 
 [resource]
 script = ExtResource("1_47w4h")
 character_speaking = ExtResource("1_hf8db")
 dialogue_string = "No sabes ni por donde sopla el viento picha"
-answers = Array[String]([])
+answers = Array[ExtResource("1_heqhc")]([SubResource("Resource_0hfn3"), SubResource("Resource_pf2at")])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"

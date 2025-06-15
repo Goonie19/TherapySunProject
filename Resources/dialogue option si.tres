@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="dialogue_data" load_steps=7 format=3 uid="uid://dmrsmq8r2kmkt"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_7iv12"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_4n8oj"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_v42rp"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/character.tres" id="4_1kbfs"]
+
+[sub_resource type="Resource" id="Resource_wh3ai"]
+script = ExtResource("2_4n8oj")
+character_speaking = ExtResource("4_1kbfs")
+dialogue_string = "Te puedes creer al notas este?"
+answers = Array[ExtResource("3_v42rp")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_v42rp"]
+script = ExtResource("2_4n8oj")
+character_speaking = ExtResource("4_1kbfs")
+dialogue_string = "Pues ahora te piras tonto"
+answers = Array[ExtResource("3_v42rp")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_7iv12")
+dialogue_id = "Dialogo 3"
+sentences = Array[ExtResource("2_4n8oj")]([SubResource("Resource_wh3ai"), SubResource("Resource_v42rp")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"
