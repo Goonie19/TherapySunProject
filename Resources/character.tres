@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="character_data" load_steps=2 format=3 uid="uid://c4kl8kakl7bv2"]
+
+[ext_resource type="Script" uid="uid://bvwqyxvrtm3ug" path="res://scripts/DialogueSystem/Model/character_data.gd" id="1_ieg2s"]
+
+[resource]
+script = ExtResource("1_ieg2s")
+character_name = "Paco"
+metadata/_custom_type_script = "uid://bvwqyxvrtm3ug"

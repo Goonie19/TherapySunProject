@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="sentence_data" load_steps=3 format=3 uid="uid://cfex1y03q1pjc"]
+
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="1_47w4h"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/character.tres" id="1_hf8db"]
+
+[resource]
+script = ExtResource("1_47w4h")
+character_speaking = ExtResource("1_hf8db")
+dialogue_string = "No sabes ni por donde sopla el viento picha"
+answers = Array[String]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"

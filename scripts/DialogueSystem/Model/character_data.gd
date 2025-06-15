@@ -7,7 +7,7 @@ class_name character_data
 @export var character_happy_pose: Texture2D
 @export var character_angry_pose: Texture2D
 
-func _init(name, base_pose, happy_pose, angry_pose):
+func _init(name = "", base_pose = null, happy_pose = null, angry_pose = null):
 	character_name = name
 	character_base_pose = base_pose
 	character_happy_pose = happy_pose

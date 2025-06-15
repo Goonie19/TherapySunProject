@@ -1,9 +1,82 @@
-[gd_scene load_steps=3 format=3 uid="uid://cj4asau0sfw6f"]
+[gd_scene load_steps=8 format=3 uid="uid://cj4asau0sfw6f"]
 
 [ext_resource type="Script" uid="uid://n075vu8enijl" path="res://scripts/DialogueSystem/View/dialogue_view.gd" id="1_gdf5x"]
-[ext_resource type="Resource" uid="uid://cbdavorndg61p" path="res://Resources/Dialogue1.tres" id="2_ejk6b"]
+[ext_resource type="Resource" uid="uid://ceebov6stvs3d" path="res://Resources/dialogue.tres" id="2_ejk6b"]
 
-[node name="DialoguePanel" type="Control" node_paths=PackedStringArray("dialogue_text", "dialogue_name_text")]
+[sub_resource type="Animation" id="Animation_ejk6b"]
+resource_name = "Appear"
+length = 0.500002
+step = 0.0166667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dialogue Image:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(300, 800), Vector2(300, 450)]
+}
+
+[sub_resource type="Animation" id="Animation_t6upd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dialogue Image:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(100, 453)]
+}
+
+[sub_resource type="Animation" id="Animation_5pj5s"]
+resource_name = "Disappear"
+length = 0.500002
+step = 0.0166667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dialogue Image:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(300, 450), Vector2(300, 800)]
+}
+
+[sub_resource type="Animation" id="Animation_d7f5w"]
+resource_name = "AppearOptions"
+step = 0.0166667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dialogue Image:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5pj5s"]
+_data = {
+&"Appear": SubResource("Animation_ejk6b"),
+&"AppearOptions": SubResource("Animation_d7f5w"),
+&"Disappear": SubResource("Animation_5pj5s"),
+&"RESET": SubResource("Animation_t6upd")
+}
+
+[node name="DialoguePanel" type="Control" node_paths=PackedStringArray("dialogue_text", "dialogue_name_text", "timer", "dialogue_panel_animation_player")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,7 +86,9 @@ grow_vertical = 2
 script = ExtResource("1_gdf5x")
 dialogue_text = NodePath("Dialogue Image/Dialogue Text Label")
 dialogue_name_text = NodePath("Dialogue Image/Name Panel/Name Text Label")
+timer = NodePath("Timer")
 dialogue = ExtResource("2_ejk6b")
+dialogue_panel_animation_player = NodePath("AnimationPlayer")
 
 [node name="Dialogue Image" type="Panel" parent="."]
 layout_mode = 1
@@ -23,11 +98,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 100.0
 offset_top = -147.0
-offset_right = -100.0
+offset_right = -285.0
 offset_bottom = -23.0
 grow_horizontal = 2
 grow_vertical = 0
-pivot_offset = Vector2(311, 58)
+pivot_offset = Vector2(207.5, 58)
 
 [node name="Name Panel" type="Panel" parent="Dialogue Image"]
 layout_mode = 1
@@ -51,16 +126,50 @@ text = "Paco"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Dialogue Text Label" type="Label" parent="Dialogue Image"]
+[node name="Dialogue Text Label" type="RichTextLabel" parent="Dialogue Image"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 23.0
-offset_top = 23.0
-offset_right = -28.0
-offset_bottom = -14.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Resulta que iba andando por la avenida y me tropece con un caballo de oro que olia a cacharra"
-autowrap_mode = 3
+
+[node name="Answers" type="Control" parent="Dialogue Image"]
+visible = false
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+grow_vertical = 2
+
+[node name="Answer 1" type="Button" parent="Dialogue Image/Answers"]
+layout_mode = 0
+offset_left = -254.0
+offset_top = -59.0
+offset_right = -33.0
+offset_bottom = -20.0
+text = "Esto es una respuesta"
+
+[node name="Answer 2" type="Button" parent="Dialogue Image/Answers"]
+offset_left = -254.0
+offset_top = 22.0
+offset_right = -33.0
+offset_bottom = 61.0
+text = "Esto es una respuesta"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_5pj5s")
+}
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="TextureButton" to="." method="press_next_button"]

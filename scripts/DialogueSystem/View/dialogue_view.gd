@@ -2,9 +2,10 @@ extends Node
 
 class_name DialogueView
 
-@export var dialogue_text: Label
+@export var dialogue_text: RichTextLabel
 @export var dialogue_name_text: Label
 @export var answer_buttons: Array[Button]
+@export var timer: Timer
 
 @export var dialogue : dialogue_data
 
@@ -17,16 +18,23 @@ signal on_dialogue_hidden
 signal on_options_showed
 signal on_options_hidden
 
+var presenter: dialogue_presenter
+
 var current_sentence: String = ""
+
+func _ready():
+	start_dialogue(dialogue)
+
+func start_dialogue(dialogue: dialogue_data):
+	presenter = dialogue_presenter.new(self, dialogue)
+	presenter.start_dialogue()
 
 func set_sentence(sentence: sentence_data):
 	current_sentence = sentence.dialogue_string
 	
 func update_text(index: int):
-	var text = ""
-	text = current_sentence.substr(0, index)
-	text = text + "[color=#00000000]" + current_sentence.substr(index) + "[/color]"
-	dialogue_text.text = text
+	dialogue_text.text = current_sentence
+	dialogue_text.visible_characters = index + 1
 
 func show_dialogue_panel():
 	dialogue_panel_animation_player.play("Appear")

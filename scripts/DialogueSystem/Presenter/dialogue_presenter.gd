@@ -1,4 +1,3 @@
-extends Node
 class_name dialogue_presenter
 
 var view: DialogueView
@@ -7,9 +6,10 @@ var model: DialogueModel
 var nextSentence: bool
 var sentenceCompleted: bool
 
-func _init(copy_view: DialogueView, model_copy: DialogueModel):
+func _init(copy_view: DialogueView, data: dialogue_data):
 	view = copy_view
-	model = model_copy
+	model = DialogueModel.new()
+	model.setup(data)
 	
 	connect_view()
 	
@@ -25,6 +25,11 @@ func go_to_next_sentence():
 	else:
 		nextSentence = true
 
+func start_dialogue():
+	view.show_dialogue_panel()
+	
+	update_text_async()
+
 func finish_dialogue():
 	nextSentence = false
 	sentenceCompleted = false
@@ -35,7 +40,6 @@ func choose_answer(i: int):
 func update_text_async() -> void:
 	var i: int = 0
 	var j: int = 0
-	
 	while i < model.dialogue.sentences.size():
 		sentenceCompleted = false
 		nextSentence = false
@@ -45,9 +49,9 @@ func update_text_async() -> void:
 		j = 0
 		while j < model.dialogue.sentences[i].dialogue_string.length() and not sentenceCompleted:
 			update(j)
-			await get_tree().create_timer(0.05).timeout
-			
-			++j
+			view.timer.start(0.01)
+			await view.timer.timeout
+			j += 1
 		
 		update(model.dialogue.sentences[i].dialogue_string.length())
 		
@@ -57,9 +61,10 @@ func update_text_async() -> void:
 		sentenceCompleted = true
 		
 		while not nextSentence:
-			await get_tree().create_timer(0.001).timeout
+			view.timer.start(0.001)
+			await view.timer.timeout
 		
-		++i
+		i += 1
 	
 	view.hide_dialogue_panel()
 

@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="El sol va a terapia"
+run/main_scene="uid://cj4asau0sfw6f"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -20,8 +21,3 @@ window/size/viewport_width=800
 window/size/viewport_height=600
 window/size/resizable=false
 window/size/borderless=true
-
-[rendering]
-
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"

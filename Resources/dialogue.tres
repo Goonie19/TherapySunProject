@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="dialogue_data" load_steps=4 format=3 uid="uid://ceebov6stvs3d"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_yy1g3"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_uvngu"]
+[ext_resource type="Resource" uid="uid://cfex1y03q1pjc" path="res://Resources/sentence.tres" id="3_uvngu"]
+
+[resource]
+script = ExtResource("1_yy1g3")
+dialogue_id = "dialogo claramente no nulo"
+sentences = Array[ExtResource("2_uvngu")]([ExtResource("3_uvngu")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"
