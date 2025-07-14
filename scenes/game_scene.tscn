@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bodj13bauus4b"]
+
+[ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="1_w5aja"]
+
+[node name="GameScene" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="BgScene" parent="." instance=ExtResource("1_w5aja")]

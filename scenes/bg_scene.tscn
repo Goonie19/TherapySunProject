@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://8hdfssgd8ppm"]
+
+[ext_resource type="Texture2D" uid="uid://bpwy5tjjg0d7s" path="res://assets/Sun therapy bg.png" id="1_kj5pb"]
+
+[node name="BgScene" type="Node2D"]
+
+[node name="SunTherapyBg" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_kj5pb")
