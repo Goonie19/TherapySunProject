@@ -1,9 +1,103 @@
-[gd_scene load_steps=2 format=3 uid="uid://8hdfssgd8ppm"]
+[gd_scene load_steps=10 format=3 uid="uid://8hdfssgd8ppm"]
 
 [ext_resource type="Texture2D" uid="uid://bpwy5tjjg0d7s" path="res://assets/Sun therapy bg.png" id="1_kj5pb"]
+[ext_resource type="Texture2D" uid="uid://c7iffw77o3pih" path="res://assets/Stars_moving.png" id="2_f10hc"]
+[ext_resource type="Texture2D" uid="uid://ds51nudkh14i" path="res://assets/Planets moving.png" id="3_ymcob"]
+
+[sub_resource type="Animation" id="Animation_ymcob"]
+resource_name = "Idle"
+length = 480.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Moving Stars:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 20.3, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360, 380, 400, 420, 440, 460, 480),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(0.55, 0.55), Vector2(0.5, 0.5), Vector2(0.55, 0.55), Vector2(0.5, 0.5), Vector2(0.55, 0.55), Vector2(0.5, 0.5), Vector2(0.55, 0.55), Vector2(0.5, 0.5), Vector2(0.55, 0.55), Vector2(0.5, 0.5), Vector2(0.55, 0.55), Vector2(0.5, 0.5), Vector2(0.55, 0.55), Vector2(0.5, 0.5), Vector2(0.55, 0.55), Vector2(0.5, 0.5), Vector2(0.55, 0.55), Vector2(0.5, 0.5), Vector2(0.55, 0.55), Vector2(0.5, 0.5), Vector2(0.55, 0.55), Vector2(0.5, 0.5), Vector2(0.55, 0.55), Vector2(0.5, 0.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Planets:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 480),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.28319]
+}
+
+[sub_resource type="Animation" id="Animation_1qx0h"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Moving Stars:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Planets:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1qx0h"]
+_data = {
+&"Idle": SubResource("Animation_ymcob"),
+&"RESET": SubResource("Animation_1qx0h")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ymcob"]
+animation = &"Idle"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_1qx0h"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_n2wej"]
+states/Idle/node = SubResource("AnimationNodeAnimation_ymcob")
+states/Idle/position = Vector2(308, 127)
+transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_1qx0h")]
 
 [node name="BgScene" type="Node2D"]
 
 [node name="SunTherapyBg" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_kj5pb")
+
+[node name="Moving Stars" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.685)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_f10hc")
+
+[node name="Planets" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.79)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_ymcob")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_1qx0h")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_n2wej")
+anim_player = NodePath("../AnimationPlayer")
