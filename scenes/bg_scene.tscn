@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://8hdfssgd8ppm"]
+[gd_scene load_steps=11 format=3 uid="uid://8hdfssgd8ppm"]
 
 [ext_resource type="Texture2D" uid="uid://bpwy5tjjg0d7s" path="res://assets/Sun therapy bg.png" id="1_kj5pb"]
 [ext_resource type="Texture2D" uid="uid://c7iffw77o3pih" path="res://assets/Stars_moving.png" id="2_f10hc"]
 [ext_resource type="Texture2D" uid="uid://ds51nudkh14i" path="res://assets/Planets moving.png" id="3_ymcob"]
+[ext_resource type="Texture2D" uid="uid://c3sm7vmp2sspu" path="res://assets/Bg/Sun therapy bg consulta.png" id="4_1qx0h"]
 
 [sub_resource type="Animation" id="Animation_ymcob"]
 resource_name = "Idle"
@@ -101,3 +102,8 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_n2wej")
 anim_player = NodePath("../AnimationPlayer")
+
+[node name="Therapy BG" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_1qx0h")
