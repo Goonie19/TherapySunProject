@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctwd6aklt5ujt"]
+
+[ext_resource type="Texture2D" uid="uid://c3sm7vmp2sspu" path="res://assets/Bg/Sun therapy bg consulta.png" id="1_fa470"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jarmb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_byaxx"]
+size = Vector2(1608.58, 1217.56)
+
+[node name="MinigameScene" type="Node2D"]
+
+[node name="SunSpace" type="Node" parent="."]
+
+[node name="SunCollision" type="CollisionShape2D" parent="SunSpace"]
+shape = SubResource("CircleShape2D_jarmb")
+
+[node name="Blocker Rotator" type="Node2D" parent="."]
+
+[node name="Sprite blocker" type="Sprite2D" parent="Blocker Rotator"]
+position = Vector2(4.76837e-07, -17)
+scale = Vector2(0.0107812, 0.00416667)
+texture = ExtResource("1_fa470")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Blocker Rotator/Sprite blocker"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Blocker Rotator/Sprite blocker/RigidBody2D"]
+shape = SubResource("RectangleShape2D_byaxx")
