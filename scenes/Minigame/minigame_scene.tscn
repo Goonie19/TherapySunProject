@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ctwd6aklt5ujt"]
+[gd_scene load_steps=7 format=3 uid="uid://ctwd6aklt5ujt"]
 
 [ext_resource type="Texture2D" uid="uid://c3sm7vmp2sspu" path="res://assets/Bg/Sun therapy bg consulta.png" id="1_fa470"]
 [ext_resource type="Script" uid="uid://c1u7xqijkxsii" path="res://scripts/Minigame/Rotator/blocker_rotator.gd" id="1_jarmb"]
+[ext_resource type="Script" uid="uid://cltho041rkr51" path="res://scripts/Minigame/meteor_spawner.gd" id="3_byaxx"]
+[ext_resource type="PackedScene" uid="uid://bbii42lnlwotf" path="res://scenes/Minigame/Meteors/meteor.tscn" id="4_ox4ev"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jarmb"]
 
@@ -31,4 +33,18 @@ texture = ExtResource("1_fa470")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SunSpace/Blocker Rotator/Sprite blocker/RigidBody2D"]
 shape = SubResource("RectangleShape2D_byaxx")
 
-[node name="Meteor Spawner" type="Node2D" parent="."]
+[node name="Meteor Spawner" type="Node2D" parent="." node_paths=PackedStringArray("meteor_spawn_points")]
+script = ExtResource("3_byaxx")
+meteor_default = ExtResource("4_ox4ev")
+meteor_spawn_points = [NodePath("../SpawnPoints/SpawnPoint 1"), NodePath("../SpawnPoints/SpawnPoint 2"), NodePath("../SpawnPoints/SpawnPoint 3")]
+
+[node name="SpawnPoints" type="Node2D" parent="."]
+
+[node name="SpawnPoint 1" type="Node2D" parent="SpawnPoints"]
+position = Vector2(77.64, -46.955)
+
+[node name="SpawnPoint 2" type="Node2D" parent="SpawnPoints"]
+position = Vector2(77.64, 0)
+
+[node name="SpawnPoint 3" type="Node2D" parent="SpawnPoints"]
+position = Vector2(77.64, 46.955)
