@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctwd6aklt5ujt"]
+[gd_scene load_steps=5 format=3 uid="uid://ctwd6aklt5ujt"]
 
 [ext_resource type="Texture2D" uid="uid://c3sm7vmp2sspu" path="res://assets/Bg/Sun therapy bg consulta.png" id="1_fa470"]
+[ext_resource type="Script" uid="uid://c1u7xqijkxsii" path="res://scripts/Minigame/Rotator/blocker_rotator.gd" id="1_jarmb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jarmb"]
 
@@ -11,17 +12,23 @@ size = Vector2(1608.58, 1217.56)
 
 [node name="SunSpace" type="Node" parent="."]
 
-[node name="SunCollision" type="CollisionShape2D" parent="SunSpace"]
+[node name="Sun Rigidbody 2D" type="RigidBody2D" parent="SunSpace"]
+
+[node name="SunCollision" type="CollisionShape2D" parent="SunSpace/Sun Rigidbody 2D"]
 shape = SubResource("CircleShape2D_jarmb")
 
-[node name="Blocker Rotator" type="Node2D" parent="."]
+[node name="Blocker Rotator" type="Node2D" parent="SunSpace"]
+script = ExtResource("1_jarmb")
+rotation_speed = 12.0
 
-[node name="Sprite blocker" type="Sprite2D" parent="Blocker Rotator"]
+[node name="Sprite blocker" type="Sprite2D" parent="SunSpace/Blocker Rotator"]
 position = Vector2(4.76837e-07, -17)
 scale = Vector2(0.0107812, 0.00416667)
 texture = ExtResource("1_fa470")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="Blocker Rotator/Sprite blocker"]
+[node name="RigidBody2D" type="RigidBody2D" parent="SunSpace/Blocker Rotator/Sprite blocker"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Blocker Rotator/Sprite blocker/RigidBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SunSpace/Blocker Rotator/Sprite blocker/RigidBody2D"]
 shape = SubResource("RectangleShape2D_byaxx")
+
+[node name="Meteor Spawner" type="Node2D" parent="."]
