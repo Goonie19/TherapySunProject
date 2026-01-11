@@ -1,50 +1,59 @@
 [gd_scene load_steps=7 format=3 uid="uid://ctwd6aklt5ujt"]
 
+[ext_resource type="Script" uid="uid://coqq1jfjru4af" path="res://scripts/Minigame/MinigameController.gd" id="1_7rs4c"]
 [ext_resource type="Texture2D" uid="uid://c3sm7vmp2sspu" path="res://assets/Bg/Sun therapy bg consulta.png" id="1_fa470"]
 [ext_resource type="Script" uid="uid://c1u7xqijkxsii" path="res://scripts/Minigame/Rotator/blocker_rotator.gd" id="1_jarmb"]
-[ext_resource type="Script" uid="uid://cltho041rkr51" path="res://scripts/Minigame/meteor_spawner.gd" id="3_byaxx"]
-[ext_resource type="PackedScene" uid="uid://bbii42lnlwotf" path="res://scenes/Minigame/Meteors/meteor.tscn" id="4_ox4ev"]
+[ext_resource type="PackedScene" uid="uid://c7nyikn0c75k3" path="res://scenes/Minigame/Meteors/meteor_spawner.tscn" id="4_ox4ev"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jarmb"]
+radius = 50.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_byaxx"]
 size = Vector2(1608.58, 1217.56)
 
-[node name="MinigameScene" type="Node2D"]
+[node name="MinigameScene" type="Node2D" node_paths=PackedStringArray("minigame_timer", "spawn_timer", "meteor_spawner", "sun_space_rotator_node")]
+position = Vector2(385, 268)
+script = ExtResource("1_7rs4c")
+minigame_time = 5.0
+minigame_timer = NodePath("Minigame Timer")
+spawn_timer = NodePath("Spawn Timer")
+meteor_spawner = NodePath("Meteor Spawner")
+sun_space_rotator_node = NodePath("SunSpace")
+spawn_lapse = 2
 
-[node name="SunSpace" type="Node" parent="."]
+[node name="Minigame Timer" type="Timer" parent="."]
+one_shot = true
 
-[node name="Sun Rigidbody 2D" type="RigidBody2D" parent="SunSpace"]
+[node name="Spawn Timer" type="Timer" parent="."]
 
-[node name="SunCollision" type="CollisionShape2D" parent="SunSpace/Sun Rigidbody 2D"]
+[node name="SunSpace" type="Node2D" parent="."]
+
+[node name="Sun Area 2D" type="Area2D" parent="SunSpace"]
+collision_mask = 4
+
+[node name="SunCollision" type="CollisionShape2D" parent="SunSpace/Sun Area 2D"]
 shape = SubResource("CircleShape2D_jarmb")
 
 [node name="Blocker Rotator" type="Node2D" parent="SunSpace"]
 script = ExtResource("1_jarmb")
-rotation_speed = 12.0
+rotation_speed = 5.0
 
 [node name="Sprite blocker" type="Sprite2D" parent="SunSpace/Blocker Rotator"]
-position = Vector2(4.76837e-07, -17)
-scale = Vector2(0.0107812, 0.00416667)
+position = Vector2(0, 100)
+scale = Vector2(0.053, 0.019)
 texture = ExtResource("1_fa470")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="SunSpace/Blocker Rotator/Sprite blocker"]
+[node name="Blocker Area 2D" type="Area2D" parent="SunSpace/Blocker Rotator/Sprite blocker"]
+scale = Vector2(1, 1)
+collision_layer = 2
+collision_mask = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SunSpace/Blocker Rotator/Sprite blocker/RigidBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SunSpace/Blocker Rotator/Sprite blocker/Blocker Area 2D"]
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_byaxx")
 
-[node name="Meteor Spawner" type="Node2D" parent="." node_paths=PackedStringArray("meteor_spawn_points")]
-script = ExtResource("3_byaxx")
-meteor_default = ExtResource("4_ox4ev")
-meteor_spawn_points = [NodePath("../SpawnPoints/SpawnPoint 1"), NodePath("../SpawnPoints/SpawnPoint 2"), NodePath("../SpawnPoints/SpawnPoint 3")]
+[node name="Meteor Spawner" parent="." instance=ExtResource("4_ox4ev")]
 
-[node name="SpawnPoints" type="Node2D" parent="."]
-
-[node name="SpawnPoint 1" type="Node2D" parent="SpawnPoints"]
-position = Vector2(77.64, -46.955)
-
-[node name="SpawnPoint 2" type="Node2D" parent="SpawnPoints"]
-position = Vector2(77.64, 0)
-
-[node name="SpawnPoint 3" type="Node2D" parent="SpawnPoints"]
-position = Vector2(77.64, 46.955)
+[connection signal="timeout" from="Minigame Timer" to="." method="finish_minigame"]
+[connection signal="timeout" from="Spawn Timer" to="." method="spawn_random_meteor"]
+[connection signal="area_entered" from="SunSpace/Blocker Rotator/Sprite blocker/Blocker Area 2D" to="SunSpace/Blocker Rotator" method="_on_blocker_area_2d_area_entered"]

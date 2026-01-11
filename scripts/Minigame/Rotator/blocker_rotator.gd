@@ -20,3 +20,7 @@ func read_input():
 		dir -= 1
 	
 	setRotation(dir)
+
+
+func _on_blocker_area_2d_area_entered(area: Area2D) -> void:
+	print("Yo si que lo detecto")

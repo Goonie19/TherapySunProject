@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bbii42lnlwotf"]
+[gd_scene load_steps=10 format=3 uid="uid://b51c8aeipf64j"]
 
-[ext_resource type="Texture2D" uid="uid://byhcols5drhnn" path="res://assets/animations/Minigame/Meteors/Meteoritos_SpriteSheet.png" id="1_embft"]
-[ext_resource type="Script" uid="uid://ccdfne1heydaw" path="res://scripts/Minigame/Meteor/meteor_movement.gd" id="2_tt2mb"]
+[ext_resource type="Script" uid="uid://ccdfne1heydaw" path="res://scripts/Minigame/Meteor/meteor_movement.gd" id="1_wkdxw"]
+[ext_resource type="Texture2D" uid="uid://byhcols5drhnn" path="res://assets/animations/Minigame/Meteors/Meteoritos_SpriteSheet.png" id="2_60j6k"]
 
 [sub_resource type="Animation" id="Animation_jarmb"]
 resource_name = "Meteor_Anim"
@@ -42,28 +42,28 @@ _data = {
 &"RESET": SubResource("Animation_byaxx")
 }
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ox4ev"]
-radius = 46.11
-
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_embft"]
 animation = &"Meteor_Anim"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_tt2mb"]
 advance_mode = 2
 
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_k1p1l"]
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_pvie2"]
 states/Meteor_Anim/node = SubResource("AnimationNodeAnimation_embft")
 states/Meteor_Anim/position = Vector2(336, 92)
 states/Start/position = Vector2(171, 81)
 transitions = ["Start", "Meteor_Anim", SubResource("AnimationNodeStateMachineTransition_tt2mb")]
 
-[node name="Meteor" type="CharacterBody2D"]
-script = ExtResource("2_tt2mb")
+[sub_resource type="CircleShape2D" id="CircleShape2D_ybkii"]
+radius = 30.0
+
+[node name="Meteor" type="Node2D"]
+script = ExtResource("1_wkdxw")
 
 [node name="Meteor Sprite" type="Sprite2D" parent="."]
 rotation = -2.50978
-scale = Vector2(0.0547852, 0.0547852)
-texture = ExtResource("1_embft")
+scale = Vector2(0.045, 0.045)
+texture = ExtResource("2_60j6k")
 hframes = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -71,9 +71,15 @@ libraries = {
 &"": SubResource("AnimationLibrary_ox4ev")
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_ox4ev")
-
 [node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource("AnimationNodeStateMachine_k1p1l")
+tree_root = SubResource("AnimationNodeStateMachine_pvie2")
 anim_player = NodePath("../AnimationPlayer")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_ybkii")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,6 +1,6 @@
 extends Node
 
-class_name character_controller
+class_name CharacterController
 
 @export var anim : AnimationPlayer
 @export var anim_tree : AnimationTree
