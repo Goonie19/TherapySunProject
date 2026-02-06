@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://yl6yx8a2s8r8"]
+[gd_scene load_steps=31 format=3 uid="uid://yl6yx8a2s8r8"]
 
 [ext_resource type="Script" uid="uid://dsxfhjokb65jo" path="res://scripts/Character/character_controller.gd" id="1_iup7j"]
 [ext_resource type="PackedScene" uid="uid://c3webugvnq46w" path="res://scenes/Sun/Sun Fire.tscn" id="1_oqqtn"]
@@ -91,10 +91,86 @@ _data = {
 &"Shocked": SubResource("Animation_hqrqv")
 }
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_hqrqv"]
+animation = &"Not Bother"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mkfyf"]
+animation = &"Sad"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_n2gfu"]
+animation = &"Shocked"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_pwcjt"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_s61ig"]
+advance_mode = 2
+advance_condition = &"Shock"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_hqrqv"]
+advance_mode = 2
+advance_condition = &"Sad"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_mkfyf"]
+advance_mode = 2
+advance_condition = &"Nbother"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_n2gfu"]
+advance_mode = 2
+advance_condition = &"Nbother"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_tgr0p"]
+advance_mode = 2
+advance_condition = &"Sad"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gkjxb"]
+advance_mode = 2
+advance_condition = &"Shock"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_tgr0p"]
+"states/Not Bother/node" = SubResource("AnimationNodeAnimation_hqrqv")
+"states/Not Bother/position" = Vector2(578, 54)
+states/Sad/node = SubResource("AnimationNodeAnimation_mkfyf")
+states/Sad/position = Vector2(331, 54)
+states/Shocked/node = SubResource("AnimationNodeAnimation_n2gfu")
+states/Shocked/position = Vector2(331, 199)
+transitions = ["Start", "Sad", SubResource("AnimationNodeStateMachineTransition_pwcjt"), "Sad", "Shocked", SubResource("AnimationNodeStateMachineTransition_s61ig"), "Shocked", "Sad", SubResource("AnimationNodeStateMachineTransition_hqrqv"), "Sad", "Not Bother", SubResource("AnimationNodeStateMachineTransition_mkfyf"), "Shocked", "Not Bother", SubResource("AnimationNodeStateMachineTransition_n2gfu"), "Not Bother", "Sad", SubResource("AnimationNodeStateMachineTransition_tgr0p"), "Not Bother", "Shocked", SubResource("AnimationNodeStateMachineTransition_gkjxb")]
+graph_offset = Vector2(-65.7431, 0)
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_pwcjt"]
+animation = &"Meditate"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_s61ig"]
+animation = &"Shocked"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2mici"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7i1pi"]
+advance_mode = 2
+advance_condition = &"Meditate"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ubbqn"]
+advance_mode = 2
+advance_condition = &"Hit"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_87cv3"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_gkjxb"]
+states/Conversations/node = SubResource("AnimationNodeStateMachine_tgr0p")
+states/Conversations/position = Vector2(362, 86)
+states/Meditate/node = SubResource("AnimationNodeAnimation_pwcjt")
+states/Meditate/position = Vector2(570, 78)
+states/Shocked/node = SubResource("AnimationNodeAnimation_s61ig")
+states/Shocked/position = Vector2(555, 174)
+transitions = ["Start", "Conversations", SubResource("AnimationNodeStateMachineTransition_2mici"), "Conversations", "Meditate", SubResource("AnimationNodeStateMachineTransition_7i1pi"), "Meditate", "Shocked", SubResource("AnimationNodeStateMachineTransition_ubbqn"), "Shocked", "Meditate", SubResource("AnimationNodeStateMachineTransition_87cv3")]
+
 [node name="SunCharacter" type="Node2D" node_paths=PackedStringArray("anim", "anim_tree")]
 script = ExtResource("1_iup7j")
 anim = NodePath("AnimationPlayer")
-anim_tree = NodePath("")
+anim_tree = NodePath("AnimationTree")
 
 [node name="SunFire" parent="." instance=ExtResource("1_oqqtn")]
 position = Vector2(0, -6.675)
@@ -107,3 +183,12 @@ texture = ExtResource("2_oqqtn")
 libraries = {
 &"": SubResource("AnimationLibrary_ehf26")
 }
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_gkjxb")
+anim_player = NodePath("../AnimationPlayer")
+parameters/conditions/Hit = false
+parameters/conditions/Meditate = false
+parameters/Conversations/conditions/Nbother = false
+parameters/Conversations/conditions/Sad = false
+parameters/Conversations/conditions/Shock = false

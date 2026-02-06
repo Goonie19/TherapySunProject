@@ -1,25 +1,26 @@
-[gd_scene load_steps=7 format=3 uid="uid://ctwd6aklt5ujt"]
+[gd_scene load_steps=8 format=3 uid="uid://ctwd6aklt5ujt"]
 
 [ext_resource type="Script" uid="uid://coqq1jfjru4af" path="res://scripts/Minigame/MinigameController.gd" id="1_7rs4c"]
 [ext_resource type="Texture2D" uid="uid://c3sm7vmp2sspu" path="res://assets/Bg/Sun therapy bg consulta.png" id="1_fa470"]
 [ext_resource type="Script" uid="uid://c1u7xqijkxsii" path="res://scripts/Minigame/Rotator/blocker_rotator.gd" id="1_jarmb"]
+[ext_resource type="Script" uid="uid://dd0winw0gcvnj" path="res://scripts/Minigame/CharacterImpactDetection/character_impact_detection.gd" id="2_7rs4c"]
 [ext_resource type="PackedScene" uid="uid://c7nyikn0c75k3" path="res://scenes/Minigame/Meteors/meteor_spawner.tscn" id="4_ox4ev"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jarmb"]
-radius = 50.0
+radius = 44.34
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_byaxx"]
-size = Vector2(1608.58, 1217.56)
+size = Vector2(1608.58, 292.991)
 
 [node name="MinigameScene" type="Node2D" node_paths=PackedStringArray("minigame_timer", "spawn_timer", "meteor_spawner", "sun_space_rotator_node")]
 position = Vector2(385, 268)
 script = ExtResource("1_7rs4c")
-minigame_time = 5.0
+minigame_time = 30.0
 minigame_timer = NodePath("Minigame Timer")
 spawn_timer = NodePath("Spawn Timer")
 meteor_spawner = NodePath("Meteor Spawner")
 sun_space_rotator_node = NodePath("SunSpace")
-spawn_lapse = 2
+spawn_lapse = 1
 
 [node name="Minigame Timer" type="Timer" parent="."]
 one_shot = true
@@ -27,6 +28,7 @@ one_shot = true
 [node name="Spawn Timer" type="Timer" parent="."]
 
 [node name="SunSpace" type="Node2D" parent="."]
+script = ExtResource("2_7rs4c")
 
 [node name="Sun Area 2D" type="Area2D" parent="SunSpace"]
 collision_mask = 4
@@ -44,11 +46,11 @@ scale = Vector2(0.053, 0.019)
 texture = ExtResource("1_fa470")
 
 [node name="Blocker Area 2D" type="Area2D" parent="SunSpace/Blocker Rotator/Sprite blocker"]
-scale = Vector2(1, 1)
 collision_layer = 2
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SunSpace/Blocker Rotator/Sprite blocker/Blocker Area 2D"]
+position = Vector2(0, 462.285)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_byaxx")
 
@@ -56,4 +58,5 @@ shape = SubResource("RectangleShape2D_byaxx")
 
 [connection signal="timeout" from="Minigame Timer" to="." method="finish_minigame"]
 [connection signal="timeout" from="Spawn Timer" to="." method="spawn_random_meteor"]
+[connection signal="area_entered" from="SunSpace/Sun Area 2D" to="SunSpace" method="receive_impact"]
 [connection signal="area_entered" from="SunSpace/Blocker Rotator/Sprite blocker/Blocker Area 2D" to="SunSpace/Blocker Rotator" method="_on_blocker_area_2d_area_entered"]

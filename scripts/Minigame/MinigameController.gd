@@ -10,8 +10,13 @@ extends Node
 
 #@export var character_rotator
 
+var character: CharacterController
+
 func _ready() -> void:
 	start_minigame()
+
+func set_dependencies(character_controller: CharacterController):
+	character = character_controller
 
 func start_minigame():
 	minigame_timer.start(minigame_time)

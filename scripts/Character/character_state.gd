@@ -1,6 +1,7 @@
-class_name character_state
-enum {
+class_name CharacterState
+enum character_state {
 	Sad,
 	Shocked,
-	Meditating
+	Meditating,
+	Hit
 }
