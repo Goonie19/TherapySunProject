@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="SpawnSequence" load_steps=8 format=3 uid="uid://8is7eq21x5ms"]
+
+[ext_resource type="Script" uid="uid://df0kw4oorbscn" path="res://scripts/Minigame/Meteor/Data/meteor_spawn_sequence.gd" id="1_oande"]
+[ext_resource type="Script" uid="uid://c5tpqd3aj2lu6" path="res://scripts/Minigame/Meteor/Data/meteor_spawn_sequence_data.gd" id="2_alywp"]
+
+[sub_resource type="Resource" id="Resource_oande"]
+script = ExtResource("2_alywp")
+spawn_pos = 0
+time_stamp = 1.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_alywp"]
+script = ExtResource("2_alywp")
+spawn_pos = 2
+time_stamp = 1.5
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_dxfyt"]
+script = ExtResource("2_alywp")
+spawn_pos = 6
+time_stamp = 2.15
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_v0qrl"]
+script = ExtResource("2_alywp")
+spawn_pos = 0
+time_stamp = 2.5
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_hqeo5"]
+script = ExtResource("2_alywp")
+spawn_pos = 0
+time_stamp = 2.65
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[resource]
+script = ExtResource("1_oande")
+sequence_time = 10.0
+spawn_sequence = Array[ExtResource("2_alywp")]([SubResource("Resource_oande"), SubResource("Resource_alywp"), SubResource("Resource_dxfyt"), SubResource("Resource_v0qrl"), SubResource("Resource_hqeo5")])
+metadata/_custom_type_script = "uid://df0kw4oorbscn"

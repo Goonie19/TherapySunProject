@@ -1,16 +1,42 @@
-[gd_scene load_steps=8 format=3 uid="uid://ctwd6aklt5ujt"]
+[gd_scene load_steps=14 format=3 uid="uid://ctwd6aklt5ujt"]
 
 [ext_resource type="Script" uid="uid://coqq1jfjru4af" path="res://scripts/Minigame/MinigameController.gd" id="1_7rs4c"]
 [ext_resource type="Texture2D" uid="uid://c3sm7vmp2sspu" path="res://assets/Bg/Sun therapy bg consulta.png" id="1_fa470"]
 [ext_resource type="Script" uid="uid://c1u7xqijkxsii" path="res://scripts/Minigame/Rotator/blocker_rotator.gd" id="1_jarmb"]
 [ext_resource type="Script" uid="uid://dd0winw0gcvnj" path="res://scripts/Minigame/CharacterImpactDetection/character_impact_detection.gd" id="2_7rs4c"]
 [ext_resource type="PackedScene" uid="uid://c7nyikn0c75k3" path="res://scenes/Minigame/Meteors/meteor_spawner.tscn" id="4_ox4ev"]
+[ext_resource type="Resource" uid="uid://8is7eq21x5ms" path="res://Resources/SpawnSequences/FirstSpawnSequence.tres" id="6_kasab"]
+[ext_resource type="Script" uid="uid://cydi1s84w1ypf" path="res://scripts/Minigame/Meteor/Data/meteor_spawn_position.gd" id="7_ifbja"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jarmb"]
 radius = 44.34
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_byaxx"]
 size = Vector2(1608.58, 292.991)
+
+[sub_resource type="Resource" id="Resource_ifbja"]
+script = ExtResource("7_ifbja")
+spawn_pos_label = 0
+spawn_pos = Vector2(0, -450)
+metadata/_custom_type_script = "uid://cydi1s84w1ypf"
+
+[sub_resource type="Resource" id="Resource_yin35"]
+script = ExtResource("7_ifbja")
+spawn_pos_label = 4
+spawn_pos = Vector2(0, 450)
+metadata/_custom_type_script = "uid://cydi1s84w1ypf"
+
+[sub_resource type="Resource" id="Resource_trg6o"]
+script = ExtResource("7_ifbja")
+spawn_pos_label = 2
+spawn_pos = Vector2(450, 0)
+metadata/_custom_type_script = "uid://cydi1s84w1ypf"
+
+[sub_resource type="Resource" id="Resource_2kaf3"]
+script = ExtResource("7_ifbja")
+spawn_pos_label = 6
+spawn_pos = Vector2(-450, 0)
+metadata/_custom_type_script = "uid://cydi1s84w1ypf"
 
 [node name="MinigameScene" type="Node2D" node_paths=PackedStringArray("minigame_timer", "spawn_timer", "meteor_spawner", "sun_space_rotator_node")]
 position = Vector2(385, 268)
@@ -21,6 +47,7 @@ spawn_timer = NodePath("Spawn Timer")
 meteor_spawner = NodePath("Meteor Spawner")
 sun_space_rotator_node = NodePath("SunSpace")
 spawn_lapse = 1
+meteor_sequence = ExtResource("6_kasab")
 
 [node name="Minigame Timer" type="Timer" parent="."]
 one_shot = true
@@ -51,10 +78,10 @@ collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SunSpace/Blocker Rotator/Sprite blocker/Blocker Area 2D"]
 position = Vector2(0, 462.285)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_byaxx")
 
 [node name="Meteor Spawner" parent="." instance=ExtResource("4_ox4ev")]
+meteor_spawn_points = Array[ExtResource("7_ifbja")]([SubResource("Resource_ifbja"), SubResource("Resource_yin35"), SubResource("Resource_trg6o"), SubResource("Resource_2kaf3")])
 
 [connection signal="timeout" from="Minigame Timer" to="." method="finish_minigame"]
 [connection signal="timeout" from="Spawn Timer" to="." method="spawn_random_meteor"]

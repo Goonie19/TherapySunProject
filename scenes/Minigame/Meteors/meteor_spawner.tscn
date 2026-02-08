@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://c7nyikn0c75k3"]
+[gd_scene load_steps=4 format=3 uid="uid://c7nyikn0c75k3"]
 
-[ext_resource type="Script" uid="uid://cltho041rkr51" path="res://scripts/Minigame/meteor_spawner.gd" id="1_y5igl"]
+[ext_resource type="Script" uid="uid://cltho041rkr51" path="res://scripts/Minigame/Meteor/meteor_spawner.gd" id="1_y5igl"]
 [ext_resource type="PackedScene" uid="uid://b51c8aeipf64j" path="res://scenes/Minigame/Meteors/Meteor.tscn" id="2_06x8k"]
+[ext_resource type="Script" uid="uid://cydi1s84w1ypf" path="res://scripts/Minigame/Meteor/Data/meteor_spawn_position.gd" id="3_06x8k"]
 
-[node name="Meteor Spawner" type="Node2D" node_paths=PackedStringArray("meteor_spawn_points")]
+[node name="Meteor Spawner" type="Node2D" node_paths=PackedStringArray("spawn_points_center")]
 script = ExtResource("1_y5igl")
 meteor_default = ExtResource("2_06x8k")
-meteor_spawn_points = [NodePath("SpawnPoints/SpawnPoint 1"), NodePath("SpawnPoints/SpawnPoint 2"), NodePath("SpawnPoints/SpawnPoint 3"), NodePath("SpawnPoints/SpawnPoint 4")]
+spawn_points_center = NodePath("SpawnPoints")
+meteor_spawn_points = Array[ExtResource("3_06x8k")]([null, null, null, null])
 
 [node name="SpawnPoints" type="Node2D" parent="."]
 
