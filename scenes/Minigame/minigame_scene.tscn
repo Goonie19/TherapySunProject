@@ -65,10 +65,11 @@ shape = SubResource("CircleShape2D_jarmb")
 
 [node name="Blocker Rotator" type="Node2D" parent="SunSpace"]
 script = ExtResource("1_jarmb")
-rotation_speed = 5.0
+rotation_speed = 12.0
 
 [node name="Sprite blocker" type="Sprite2D" parent="SunSpace/Blocker Rotator"]
-position = Vector2(0, 100)
+position = Vector2(100, 0)
+rotation = 1.5708
 scale = Vector2(0.053, 0.019)
 texture = ExtResource("1_fa470")
 

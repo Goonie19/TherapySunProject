@@ -1,25 +1,30 @@
 extends Node2D
 
-@export var rotation_speed : float = 3
+@export var rotation_speed : float = 12000
 
-var direction : float
+var target_dir : Vector2
 
 func _process(delta: float) -> void:
 	read_input()
 	
-	rotation += rotation_speed * delta * direction
+	setRotation(target_dir, delta)
 
-func setRotation(rotationDir:float):
-	direction = rotationDir
+func setRotation(dir: Vector2, delta: float):
+	var target: Vector2 = global_position + target_dir
+	print(target_dir)
+	
+	var current_rotation = rotation
+	var target_rotation = dir.angle()
+	
+	#almost there mi man
+	rotation = lerp_angle(current_rotation, target_rotation, rotation_speed * delta)
 
 func read_input():
-	var dir = 0
-	if Input.is_key_pressed(KEY_RIGHT):
-		dir += 1
-	if Input.is_key_pressed(KEY_LEFT):
-		dir -= 1
+	var dir = Input.get_vector("RotateBlockerLeft", "RotateBlockerRight", "RotateBlockerUp", "RotateBlockerDown")	
 	
-	setRotation(dir)
+	if dir != Vector2.ZERO:
+		target_dir = dir
+	
 
 
 func _on_blocker_area_2d_area_entered(area: Area2D) -> void:
