@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjwhml6qbv5xc"]
+
+[ext_resource type="Script" uid="uid://b7c3roun6p57o" path="res://scripts/AudioSystem/audio_controller.gd" id="1_dk1j8"]
+[ext_resource type="AudioStream" uid="uid://pkgvwxkm84mw" path="res://assets/Sound/Music/670039__seth_makes_sounds__chill-background-music.wav" id="2_bl30o"]
+
+[node name="AudioSystem" type="Node" node_paths=PackedStringArray("music_player", "sfx_player")]
+script = ExtResource("1_dk1j8")
+music_player = NodePath("MusicPlayer")
+sfx_player = NodePath("SFXPlayer")
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_bl30o")
+autoplay = true
+bus = &"Music"
+
+[node name="SFXPlayer" type="AudioStreamPlayer2D" parent="."]
+bus = &"SFX"
