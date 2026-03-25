@@ -18,6 +18,7 @@ var mini_sequence: MinigameSequence
 var current_sequence: int
 
 signal on_meteor_sequence_finished
+signal on_minigame_finished
 
 func _ready() -> void:
 	start_minigame(mini_action)
@@ -31,7 +32,10 @@ func start_minigame(minigameAction: MinigameAction):
 	
 	sun_space_rotator_node.process_mode = Node.PROCESS_MODE_INHERIT
 	
-	await run_sequences_async()
+	for n in range(0, mini_sequence.sequence.size()):
+		await run_sequences_async()
+	
+	on_minigame_finished.emit()
 	
 
 func spawn_random_meteor():
@@ -50,6 +54,10 @@ func run_sequences_async() -> void:
 	play_metor_sequence()
 	await on_meteor_sequence_finished
 	
+	if(mini_sequence.dialogue_at_end != null):
+		dialogue_manager.start_dialogue(mini_sequence.dialogue_at_end)
+		await dialogue_manager.on_dialogue_finished	
+
 
 func play_metor_sequence() -> void:
 	sequence_timer.start(mini_sequence.sequence_time)

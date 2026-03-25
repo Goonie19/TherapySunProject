@@ -13,7 +13,7 @@ config_version=5
 config/name="El sol va a terapia"
 run/main_scene="uid://cj4asau0sfw6f"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://i5x2y1vondy0"
 
 [display]
 
