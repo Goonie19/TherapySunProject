@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MinigameAction" load_steps=4 format=3 uid="uid://cww2l8dnvvycr"]
+
+[ext_resource type="Script" uid="uid://ch3pmcg2j4tr3" path="res://scripts/Minigame/ActionImplementations/minigame_sequence_action.gd" id="1_bosua"]
+[ext_resource type="Resource" uid="uid://cvnd3l2fojt0l" path="res://Resources/Actions/MinigameSequenceAction/FirstMinigameAction.tres" id="2_bau8n"]
+[ext_resource type="Script" uid="uid://b3yd0nah18vsa" path="res://scripts/Minigame/ActionImplementations/minigame_action.gd" id="2_eqj5y"]
+
+[resource]
+script = ExtResource("2_eqj5y")
+minigame_time = 4.0
+sequences = Array[ExtResource("1_bosua")]([ExtResource("2_bau8n")])
+metadata/_custom_type_script = "uid://b3yd0nah18vsa"

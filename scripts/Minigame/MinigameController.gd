@@ -1,42 +1,60 @@
 extends Node
 
-@export var minigame_time : float
+class_name MinigameController
 
-@export var minigame_timer: Timer
+var minigame_time : float
+
+@export var dialogue_manager: DialogueView
+
+@export var sequence_timer: Timer
 @export var spawn_timer: Timer
 @export var meteor_spawner: MeteorSpawner
 @export var sun_space_rotator_node: Node2D
-@export var spawn_lapse: int
-@export var meteor_sequence: SpawnSequence
-
-
-#@export var character_rotator
+@export var mini_action: MinigameAction
 
 var character: CharacterController
 var current_meteor_pos: int
+var mini_sequence: MinigameSequence
+var current_sequence: int
 
+signal on_meteor_sequence_finished
 
 func _ready() -> void:
-	start_minigame()
+	start_minigame(mini_action)
 
 func set_dependencies(character_controller: CharacterController):
 	character = character_controller
 
-func start_minigame():
+func start_minigame(minigameAction: MinigameAction):
+	mini_sequence = minigameAction.sequences[current_sequence]
 	current_meteor_pos = 0
-	minigame_timer.start(meteor_sequence.sequence_time)
-	spawn_timer.start(meteor_sequence.spawn_sequence[current_meteor_pos].time_stamp)
+	
 	sun_space_rotator_node.process_mode = Node.PROCESS_MODE_INHERIT
+	
+	await run_sequences_async()
 	
 
 func spawn_random_meteor():
-	meteor_spawner.spawn_meteor(sun_space_rotator_node, meteor_sequence.spawn_sequence[current_meteor_pos].spawn_pos)
+	meteor_spawner.spawn_meteor(sun_space_rotator_node, mini_sequence.sequence[current_meteor_pos].spawn_pos)
 	current_meteor_pos += 1
 	
-	if current_meteor_pos < meteor_sequence.spawn_sequence.size():
-		spawn_timer.start(meteor_sequence.spawn_sequence[current_meteor_pos].time_stamp)
+	if current_meteor_pos < mini_sequence.sequence.size():
+		spawn_timer.start(mini_sequence.sequence[current_meteor_pos].time_stamp)
 
+
+func run_sequences_async() -> void:
+	if(mini_sequence.dialogue_at_begining != null):
+		dialogue_manager.start_dialogue(mini_sequence.dialogue_at_begining)
+		await dialogue_manager.on_dialogue_finished
+	
+	play_metor_sequence()
+	await on_meteor_sequence_finished
+	
+
+func play_metor_sequence() -> void:
+	sequence_timer.start(mini_sequence.sequence_time)
+	spawn_timer.start(mini_sequence.sequence[current_meteor_pos].time_stamp)
 
 func finish_minigame():
 	spawn_timer.stop()
-	print("Sacabo")
+	on_meteor_sequence_finished.emit()

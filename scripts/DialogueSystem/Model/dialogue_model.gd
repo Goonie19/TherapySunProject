@@ -1,8 +1,8 @@
 class_name DialogueModel
 
-var dialogue : dialogue_data
+var dialogue : DialogueData
 
-func setup(d_data : dialogue_data):
+func setup(d_data : DialogueData):
 	dialogue = d_data
 
 func add(dialogue_sentence: sentence_data):

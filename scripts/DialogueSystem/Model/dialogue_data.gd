@@ -1,6 +1,6 @@
-class_name dialogue_data
 extends Resource
 
+class_name DialogueData
 
 @export var dialogue_id: String
 @export var sentences: Array[sentence_data]

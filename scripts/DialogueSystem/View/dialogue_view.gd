@@ -7,7 +7,7 @@ class_name DialogueView
 @export var answer_buttons: Array[Button]
 @export var timer: Timer
 
-@export var dialogue : dialogue_data
+@export var dialogue : DialogueData
 
 @export var dialogue_panel_animation_player: AnimationPlayer
 
@@ -18,6 +18,8 @@ signal on_dialogue_hidden
 signal on_options_showed
 signal on_options_hidden
 
+signal on_dialogue_finished
+
 var presenter: dialogue_presenter
 
 var current_sentence: String = ""
@@ -25,7 +27,7 @@ var current_sentence: String = ""
 func _ready():
 	start_dialogue(dialogue)
 
-func start_dialogue(dialogue: dialogue_data):
+func start_dialogue(dialogue: DialogueData):
 	presenter = dialogue_presenter.new(self, dialogue)
 	presenter.start_dialogue()
 
@@ -68,3 +70,6 @@ func dialogue_showed():
 
 func dialogue_hidden():
 	on_dialogue_hidden.emit()
+
+func finish_dialogue():
+	on_dialogue_finished.emit()

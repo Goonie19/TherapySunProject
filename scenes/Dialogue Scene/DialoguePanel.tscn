@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://cj4asau0sfw6f"]
 
 [ext_resource type="Script" uid="uid://n075vu8enijl" path="res://scripts/DialogueSystem/View/dialogue_view.gd" id="1_gdf5x"]
-[ext_resource type="Resource" uid="uid://ceebov6stvs3d" path="res://Resources/dialogue.tres" id="2_ejk6b"]
+[ext_resource type="Resource" uid="uid://bhgd216m3xee3" path="res://Resources/Dialogue.tres" id="2_ejk6b"]
 
 [sub_resource type="Animation" id="Animation_ejk6b"]
 resource_name = "Appear"

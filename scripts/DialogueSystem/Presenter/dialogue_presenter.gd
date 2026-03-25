@@ -7,7 +7,7 @@ var nextSentence: bool
 var sentenceCompleted: bool
 var current_sentence: int = -1
 
-func _init(copy_view: DialogueView, data: dialogue_data):
+func _init(copy_view: DialogueView, data: DialogueData):
 	view = copy_view
 	model = DialogueModel.new()
 	model.setup(data)
@@ -36,7 +36,8 @@ func go_to_next_sentence():
 
 func start_dialogue():
 	view.show_dialogue_panel()
-	
+	print('ola')
+
 	update_text_async()
 
 func finish_dialogue():
@@ -80,6 +81,7 @@ func update_text_async() -> void:
 	
 	current_sentence = -1
 	view.hide_dialogue_panel()
+	view.finish_dialogue()
 
 func update(index):
 	view.update_text(index)

@@ -11,7 +11,6 @@ func _process(delta: float) -> void:
 
 func setRotation(dir: Vector2, delta: float):
 	var target: Vector2 = global_position + target_dir
-	print(target_dir)
 	
 	var current_rotation = rotation
 	var target_rotation = dir.angle()
