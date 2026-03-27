@@ -24,9 +24,6 @@ var presenter: dialogue_presenter
 
 var current_sentence: String = ""
 
-func _ready():
-	start_dialogue(dialogue)
-
 func start_dialogue(dialogue: DialogueData):
 	presenter = dialogue_presenter.new(self, dialogue)
 	presenter.start_dialogue()

@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://bodj13bauus4b"]
+[gd_scene load_steps=9 format=3 uid="uid://bodj13bauus4b"]
 
 [ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="1_w5aja"]
 [ext_resource type="PackedScene" uid="uid://yl6yx8a2s8r8" path="res://scenes/Sun/SunCharacter.tscn" id="2_onqr8"]
 [ext_resource type="PackedScene" uid="uid://ctwd6aklt5ujt" path="res://scenes/Minigame/minigame_scene.tscn" id="3_bw6k5"]
 [ext_resource type="PackedScene" uid="uid://cj4asau0sfw6f" path="res://scenes/Dialogue Scene/DialoguePanel.tscn" id="4_y3j0m"]
+[ext_resource type="Script" uid="uid://20tta8lilgku" path="res://scripts/Lineal Action System/lineal_action_system.gd" id="5_y3j0m"]
+[ext_resource type="Script" uid="uid://bgwp1y62wtlea" path="res://scripts/Lineal Action System/Actions/action.gd" id="6_rurhu"]
+[ext_resource type="Resource" uid="uid://bxuqt34wi8xrm" path="res://Resources/Actions/First Dilaogue.tres" id="7_b5spy"]
+[ext_resource type="Resource" uid="uid://cww2l8dnvvycr" path="res://Resources/Actions/FirstMinigame.tres" id="8_utbpp"]
 
 [node name="GameScene" type="Node"]
 
@@ -22,3 +26,9 @@ position = Vector2(400, 300)
 dialogue_manager = NodePath("../DialoguePanel")
 
 [node name="DialoguePanel" parent="." instance=ExtResource("4_y3j0m")]
+
+[node name="Lineal_action_controller" type="Node2D" parent="." node_paths=PackedStringArray("dialogue_to_inject", "minigame_to_inject")]
+script = ExtResource("5_y3j0m")
+dialogue_to_inject = NodePath("../DialoguePanel")
+minigame_to_inject = NodePath("../MinigameScene")
+actions = Array[ExtResource("6_rurhu")]([ExtResource("7_b5spy"), ExtResource("8_utbpp")])
