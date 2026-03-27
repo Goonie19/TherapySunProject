@@ -10,7 +10,6 @@ var minigame_time : float
 @export var spawn_timer: Timer
 @export var meteor_spawner: MeteorSpawner
 @export var sun_space_rotator_node: Node2D
-@export var mini_action: MinigameAction
 
 var character: CharacterController
 var current_meteor_pos: int
