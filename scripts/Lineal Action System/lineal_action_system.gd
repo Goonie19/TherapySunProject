@@ -2,6 +2,8 @@ extends Node2D
 
 @export var dialogue_to_inject: DialogueView
 @export var minigame_to_inject: MinigameController
+@export var waiting_timer: Timer
+@export var black_screen: BlackScreen
 
 @export var actions: Array[Action]
 
@@ -22,3 +24,7 @@ func inject_to_action(action: Action) -> void:
 		action.set_dependencies(dialogue_to_inject)
 	if action is MinigameAction:
 		action.set_dependencies(minigame_to_inject)
+	if action is WaitingAction:
+		action.set_dependencies(waiting_timer)
+	if action is FadeBlackAction:
+		action.set_dependencies(black_screen)

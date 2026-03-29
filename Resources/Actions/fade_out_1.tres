@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FadeBlackAction" load_steps=2 format=3 uid="uid://0bn44tpjm5ic"]
+
+[ext_resource type="Script" uid="uid://ctcxmrbhsgflv" path="res://scripts/Lineal Action System/Actions/black_fade_action.gd" id="1_5dx83"]
+
+[resource]
+script = ExtResource("1_5dx83")
+fade_value = 0.0
+time_to_fade = 1.0
+metadata/_custom_type_script = "uid://ctcxmrbhsgflv"

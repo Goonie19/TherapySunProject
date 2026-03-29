@@ -1,10 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://ctwd6aklt5ujt"]
+[gd_scene load_steps=13 format=3 uid="uid://ctwd6aklt5ujt"]
 
 [ext_resource type="Script" uid="uid://coqq1jfjru4af" path="res://scripts/Minigame/MinigameController.gd" id="1_7rs4c"]
 [ext_resource type="Texture2D" uid="uid://c3sm7vmp2sspu" path="res://assets/Bg/Sun therapy bg consulta.png" id="1_fa470"]
 [ext_resource type="Script" uid="uid://c1u7xqijkxsii" path="res://scripts/Minigame/Rotator/blocker_rotator.gd" id="1_jarmb"]
 [ext_resource type="Script" uid="uid://dd0winw0gcvnj" path="res://scripts/Minigame/CharacterImpactDetection/character_impact_detection.gd" id="2_7rs4c"]
-[ext_resource type="Resource" uid="uid://cww2l8dnvvycr" path="res://Resources/Actions/FirstMinigame.tres" id="3_trg6o"]
 [ext_resource type="PackedScene" uid="uid://c7nyikn0c75k3" path="res://scenes/Minigame/Meteors/meteor_spawner.tscn" id="4_ox4ev"]
 [ext_resource type="Script" uid="uid://cydi1s84w1ypf" path="res://scripts/Minigame/Meteor/Data/meteor_spawn_position.gd" id="7_ifbja"]
 
@@ -45,7 +44,6 @@ sequence_timer = NodePath("Sequence Timer")
 spawn_timer = NodePath("Spawn Timer")
 meteor_spawner = NodePath("Meteor Spawner")
 sun_space_rotator_node = NodePath("SunSpace")
-mini_action = ExtResource("3_trg6o")
 
 [node name="Sequence Timer" type="Timer" parent="."]
 one_shot = true

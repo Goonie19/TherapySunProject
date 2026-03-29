@@ -28,7 +28,7 @@ func start_minigame(minigameAction: MinigameAction):
 	
 	sun_space_rotator_node.process_mode = Node.PROCESS_MODE_INHERIT
 	
-	for n in range(0, mini_sequence.sequence.size()):
+	for n in range(0, mini_sequence.sequence.size() - 1):
 		await run_sequences_async()
 	
 	on_minigame_finished.emit()
