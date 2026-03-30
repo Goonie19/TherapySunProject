@@ -11,6 +11,8 @@ class_name DialogueView
 @export var dialogue : DialogueData
 
 @export var dialogue_panel_animation_player: AnimationPlayer
+@export var audio_controller: AudioController
+@export var dialogue_character_sound: AudioStream
 
 signal on_button_pass_pressed
 signal on_dialogue_showed
@@ -36,11 +38,18 @@ func update_text(index: int):
 	dialogue_screen_center_text.text = ""
 	dialogue_text.text = current_sentence
 	dialogue_text.visible_characters = index + 1
+	
+	if index % 3 == 0:
+		audio_controller.play_sound(dialogue_character_sound, true)
+	
 
 func update_central_text(index : int) -> void:
 	dialogue_text.text = ""
 	dialogue_screen_center_text.text = current_sentence
 	dialogue_screen_center_text.visible_characters = index + 1
+	
+	if index % 3 == 0:
+		audio_controller.play_sound(dialogue_character_sound, true)
 
 func reset_central_text() -> void:
 	dialogue_screen_center_text.text = ""

@@ -17,8 +17,14 @@ func play_music(music_stream: AudioStream) -> void:
 	music_player.stream = music_stream
 	music_player.play()
 
-func play_sound(sfx_stream: AudioStream) -> void:
+func play_sound(sfx_stream: AudioStream, random_pitch: bool = false) -> void:
 	sfx_player.stream = sfx_stream
+	
+	if random_pitch:
+		sfx_player.pitch_scale = randf_range(0.8, 1.2)
+	else:
+		sfx_player.pitch_scale = 1
+	
 	sfx_player.play()
 
 func set_volume(volume: float) -> void:
