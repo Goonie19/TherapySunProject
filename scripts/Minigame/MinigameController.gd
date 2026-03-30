@@ -6,7 +6,7 @@ var minigame_time : float
 
 @export var dialogue_manager: DialogueView
 
-@export var sequence_timer: Timer
+@export var end_sequence_timer: Timer
 @export var spawn_timer: Timer
 @export var meteor_spawner: MeteorSpawner
 @export var sun_space_rotator_node: Node2D
@@ -24,12 +24,13 @@ func set_dependencies(character_controller: CharacterController):
 
 func start_minigame(minigameAction: MinigameAction):
 	mini_sequence = minigameAction.sequences[current_sequence]
-	current_meteor_pos = 0
 	
 	sun_space_rotator_node.process_mode = Node.PROCESS_MODE_INHERIT
 	
-	for n in range(0, mini_sequence.sequence.size() - 1):
+	for n in range(0, minigameAction.sequences.size()):
+		current_meteor_pos = 0
 		await run_sequences_async()
+		current_sequence = current_sequence + 1
 	
 	on_minigame_finished.emit()
 	
@@ -40,6 +41,8 @@ func spawn_random_meteor():
 	
 	if current_meteor_pos < mini_sequence.sequence.size():
 		spawn_timer.start(mini_sequence.sequence[current_meteor_pos].time_stamp)
+	else:
+		finish_spawn_sequence()
 
 
 func run_sequences_async() -> void:
@@ -50,9 +53,6 @@ func run_sequences_async() -> void:
 	play_metor_sequence()
 	await on_meteor_sequence_finished
 	
-	sequence_timer.start(mini_sequence.ending_waiting)
-	await sequence_timer.timeout
-	
 	if(mini_sequence.dialogue_at_end != null):
 		dialogue_manager.start_dialogue(mini_sequence.dialogue_at_end)
 		await dialogue_manager.on_dialogue_finished	
@@ -61,6 +61,8 @@ func run_sequences_async() -> void:
 func play_metor_sequence() -> void:
 	spawn_timer.start(mini_sequence.sequence[current_meteor_pos].time_stamp)
 
-func finish_minigame():
+func finish_spawn_sequence():
 	spawn_timer.stop()
+	end_sequence_timer.start(mini_sequence.ending_wait_time)
+	await end_sequence_timer.timeout
 	on_meteor_sequence_finished.emit()

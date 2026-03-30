@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bodj13bauus4b"]
+[gd_scene load_steps=13 format=3 uid="uid://bodj13bauus4b"]
 
 [ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="1_w5aja"]
 [ext_resource type="PackedScene" uid="uid://yl6yx8a2s8r8" path="res://scenes/Sun/SunCharacter.tscn" id="2_onqr8"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://bgwp1y62wtlea" path="res://scripts/Lineal Action System/Actions/action.gd" id="6_rurhu"]
 [ext_resource type="Resource" uid="uid://bxuqt34wi8xrm" path="res://Resources/Actions/Dialogue_action_1.tres" id="7_b5spy"]
 [ext_resource type="Resource" uid="uid://0bn44tpjm5ic" path="res://Resources/Actions/fade_out_1.tres" id="7_mw25s"]
+[ext_resource type="Resource" uid="uid://b7131c546swq8" path="res://Resources/Actions/1_0 IntroDialogue.tres" id="7_rvs2r"]
 [ext_resource type="Resource" uid="uid://ceihdhbs57bot" path="res://Resources/Actions/1_0_wait.tres" id="7_tcjrq"]
 [ext_resource type="Resource" uid="uid://cww2l8dnvvycr" path="res://Resources/Actions/FirstMinigame.tres" id="8_utbpp"]
 [ext_resource type="PackedScene" uid="uid://exevk1xrow5p" path="res://scenes/UI/BlackScreen/BlackScreen.tscn" id="9_utbpp"]
@@ -27,7 +28,8 @@ scale = Vector2(0.2, 0.2)
 [node name="MinigameScene" parent="." instance=ExtResource("3_bw6k5")]
 position = Vector2(400, 300)
 
-[node name="DialoguePanel" parent="." instance=ExtResource("4_y3j0m")]
+[node name="BlackScreen" parent="." instance=ExtResource("9_utbpp")]
+z_index = 9
 
 [node name="Lineal_action_controller" type="Node2D" parent="." node_paths=PackedStringArray("dialogue_to_inject", "minigame_to_inject", "waiting_timer", "black_screen")]
 script = ExtResource("5_y3j0m")
@@ -35,8 +37,9 @@ dialogue_to_inject = NodePath("../DialoguePanel")
 minigame_to_inject = NodePath("../MinigameScene")
 waiting_timer = NodePath("../WaitingTimer")
 black_screen = NodePath("../BlackScreen")
-actions = Array[ExtResource("6_rurhu")]([ExtResource("7_tcjrq"), ExtResource("7_mw25s"), ExtResource("7_b5spy"), ExtResource("8_utbpp")])
+actions = Array[ExtResource("6_rurhu")]([ExtResource("7_rvs2r"), ExtResource("7_tcjrq"), ExtResource("7_mw25s"), ExtResource("7_b5spy"), ExtResource("8_utbpp")])
 
 [node name="WaitingTimer" type="Timer" parent="."]
 
-[node name="BlackScreen" parent="." instance=ExtResource("9_utbpp")]
+[node name="DialoguePanel" parent="." instance=ExtResource("4_y3j0m")]
+z_index = 10

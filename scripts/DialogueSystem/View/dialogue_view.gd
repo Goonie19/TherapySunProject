@@ -2,6 +2,7 @@ extends Node
 
 class_name DialogueView
 
+@export var dialogue_screen_center_text: RichTextLabel
 @export var dialogue_text: RichTextLabel
 @export var dialogue_name_text: Label
 @export var answer_buttons: Array[Button]
@@ -32,8 +33,18 @@ func set_sentence(sentence: sentence_data):
 	current_sentence = sentence.dialogue_string
 	
 func update_text(index: int):
+	dialogue_screen_center_text.text = ""
 	dialogue_text.text = current_sentence
 	dialogue_text.visible_characters = index + 1
+
+func update_central_text(index : int) -> void:
+	dialogue_text.text = ""
+	dialogue_screen_center_text.text = current_sentence
+	dialogue_screen_center_text.visible_characters = index + 1
+
+func reset_central_text() -> void:
+	dialogue_screen_center_text.text = ""
+	dialogue_screen_center_text.visible_characters = 0
 
 func show_dialogue_panel():
 	dialogue_panel_animation_player.play("Appear")

@@ -6,6 +6,5 @@
 
 [resource]
 script = ExtResource("1_eqj5y")
-minigame_time = 4.0
 sequences = Array[ExtResource("2_bau8n")]([ExtResource("3_eqj5y")])
 metadata/_custom_type_script = "uid://b3yd0nah18vsa"

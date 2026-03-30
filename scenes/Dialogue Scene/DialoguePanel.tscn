@@ -247,6 +247,22 @@ tracks/4/keys = {
 "values": [false, true]
 }
 
+[sub_resource type="Animation" id="Animation_g1p0c"]
+resource_name = "Iddle"
+step = 0.0166667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dialogue Image:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(300, 800)]
+}
+
 [sub_resource type="Animation" id="Animation_t6upd"]
 length = 0.001
 tracks/0/type = "value"
@@ -310,22 +326,6 @@ tracks/4/keys = {
 "values": [true]
 }
 
-[sub_resource type="Animation" id="Animation_g1p0c"]
-resource_name = "Iddle"
-step = 0.0166667
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Dialogue Image:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(300, 800)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5pj5s"]
 _data = {
 &"Appear": SubResource("Animation_ejk6b"),
@@ -336,7 +336,7 @@ _data = {
 &"RESET": SubResource("Animation_t6upd")
 }
 
-[node name="DialoguePanel" type="Control" node_paths=PackedStringArray("dialogue_text", "dialogue_name_text", "answer_buttons", "timer", "dialogue_panel_animation_player")]
+[node name="DialoguePanel" type="Control" node_paths=PackedStringArray("dialogue_screen_center_text", "dialogue_text", "dialogue_name_text", "answer_buttons", "timer", "dialogue_panel_animation_player")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -344,12 +344,29 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_gdf5x")
+dialogue_screen_center_text = NodePath("CanvasLayer/NarrationText")
 dialogue_text = NodePath("Dialogue Image/Dialogue Text Label")
 dialogue_name_text = NodePath("Dialogue Image/Name Panel/Name Text Label")
 answer_buttons = [NodePath("Dialogue Image/Answers/Answer 1"), NodePath("Dialogue Image/Answers/Answer 2")]
 timer = NodePath("Timer")
 dialogue = ExtResource("2_ejk6b")
 dialogue_panel_animation_player = NodePath("AnimationPlayer")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="NarrationText" type="RichTextLabel" parent="CanvasLayer"]
+z_index = 10
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Dialogue Image" type="Panel" parent="."]
 layout_mode = 1

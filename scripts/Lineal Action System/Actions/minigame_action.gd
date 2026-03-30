@@ -2,7 +2,6 @@ extends Action
 
 class_name MinigameAction
 
-@export var minigame_time: float
 @export var sequences: Array[MinigameSequence] 
 
 var minigame_controller: MinigameController

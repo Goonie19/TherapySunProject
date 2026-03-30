@@ -35,8 +35,8 @@ func go_to_next_sentence():
 		nextSentence = true
 
 func start_dialogue():
-	view.show_dialogue_panel()
-	print('ola')
+	if not model.dialogue.narration_dialogue:
+		view.show_dialogue_panel()
 
 	update_text_async()
 
@@ -74,14 +74,20 @@ func update_text_async() -> void:
 		sentenceCompleted = true
 		
 		while not nextSentence:
-			view.timer.start(0.001)
+			view.timer.start(0.01)
 			await view.timer.timeout
 		
 		current_sentence += 1
 	
 	current_sentence = -1
-	view.hide_dialogue_panel()
+	if not model.dialogue.narration_dialogue:
+		view.hide_dialogue_panel()
+	else:
+		view.reset_central_text()
 	view.finish_dialogue()
 
 func update(index):
-	view.update_text(index)
+	if model.dialogue.narration_dialogue:
+		view.update_central_text(index)
+	else:
+		view.update_text(index)

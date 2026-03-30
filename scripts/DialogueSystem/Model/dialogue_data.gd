@@ -2,6 +2,7 @@ extends Resource
 
 class_name DialogueData
 
+@export var narration_dialogue: bool
 @export var dialogue_id: String
 @export var sentences: Array[sentence_data]
 

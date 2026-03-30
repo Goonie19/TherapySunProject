@@ -35,6 +35,6 @@ metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 
 [resource]
 script = ExtResource("2_yiwm1")
-sequence_time = 8.0
+ending_wait_time = 5.0
 sequence = Array[ExtResource("3_ya4ds")]([SubResource("Resource_oande"), SubResource("Resource_alywp"), SubResource("Resource_dxfyt"), SubResource("Resource_v0qrl"), SubResource("Resource_hqeo5")])
 metadata/_custom_type_script = "uid://ch3pmcg2j4tr3"
