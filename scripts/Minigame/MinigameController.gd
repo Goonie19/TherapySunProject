@@ -19,8 +19,9 @@ var current_sequence: int
 signal on_meteor_sequence_finished
 signal on_minigame_finished
 
-func set_dependencies(character_controller: CharacterController):
+func set_dependencies(character_controller: CharacterController, dialogue_manager: DialogueView):
 	character = character_controller
+	self.dialogue_manager = dialogue_manager
 
 func start_minigame(minigameAction: MinigameAction):
 	mini_sequence = minigameAction.sequences[current_sequence]

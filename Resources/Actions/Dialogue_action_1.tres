@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueAction" load_steps=3 format=3 uid="uid://bxuqt34wi8xrm"]
 
-[ext_resource type="Resource" uid="uid://bhgd216m3xee3" path="res://Resources/Dialogue.tres" id="1_gxtyq"]
+[ext_resource type="Resource" uid="uid://dd4tmc7u8ydsy" path="res://Resources/Dialogues/1_1_Sun_raging_intro.tres" id="1_fmi0x"]
 [ext_resource type="Script" uid="uid://br4crtpfmmcdx" path="res://scripts/Lineal Action System/Actions/dialogue_action.gd" id="1_nq43e"]
 
 [resource]
 script = ExtResource("1_nq43e")
-dialogue = ExtResource("1_gxtyq")
+dialogue = ExtResource("1_fmi0x")
 metadata/_custom_type_script = "uid://br4crtpfmmcdx"

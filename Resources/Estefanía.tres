@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="character_data" load_steps=2 format=3 uid="uid://bbk7vc5rdtia7"]
+
+[ext_resource type="Script" uid="uid://bvwqyxvrtm3ug" path="res://scripts/DialogueSystem/Model/character_data.gd" id="1_a8war"]
+
+[resource]
+script = ExtResource("1_a8war")
+character_name = "Estefanía"
+metadata/_custom_type_script = "uid://bvwqyxvrtm3ug"

@@ -37,7 +37,8 @@ func go_to_next_sentence():
 func start_dialogue():
 	if not model.dialogue.narration_dialogue:
 		view.show_dialogue_panel()
-
+		await view.on_dialogue_showed
+	
 	update_text_async()
 
 func finish_dialogue():

@@ -11,8 +11,13 @@ class_name DialogueView
 @export var dialogue : DialogueData
 
 @export var dialogue_panel_animation_player: AnimationPlayer
-@export var audio_controller: AudioController
 @export var dialogue_character_sound: AudioStream
+
+var presenter: dialogue_presenter
+
+var current_sentence: String = ""
+
+var audio_controller: AudioController
 
 signal on_button_pass_pressed
 signal on_dialogue_showed
@@ -23,17 +28,14 @@ signal on_options_hidden
 
 signal on_dialogue_finished
 
-var presenter: dialogue_presenter
-
-var current_sentence: String = ""
-
 func start_dialogue(dialogue: DialogueData):
 	presenter = dialogue_presenter.new(self, dialogue)
 	presenter.start_dialogue()
 
 func set_sentence(sentence: sentence_data):
 	current_sentence = sentence.dialogue_string
-	
+	dialogue_name_text.text = sentence.character_speaking.character_name
+
 func update_text(index: int):
 	dialogue_screen_center_text.text = ""
 	dialogue_text.text = current_sentence
@@ -74,7 +76,6 @@ func hide_dialogue_options():
 
 func press_next_button():
 	on_button_pass_pressed.emit()
-	
 
 func options_showed():
 	on_options_showed.emit()
@@ -90,3 +91,6 @@ func dialogue_hidden():
 
 func finish_dialogue():
 	on_dialogue_finished.emit()
+
+func set_dependencies(audio_controller: AudioController) -> void:
+	self.audio_controller = audio_controller
