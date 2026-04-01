@@ -1,13 +1,9 @@
-[gd_scene load_steps=19 format=3 uid="uid://8hdfssgd8ppm"]
+[gd_scene load_steps=11 format=3 uid="uid://8hdfssgd8ppm"]
 
 [ext_resource type="Texture2D" uid="uid://bpwy5tjjg0d7s" path="res://assets/Sun therapy bg.png" id="1_kj5pb"]
 [ext_resource type="Texture2D" uid="uid://c7iffw77o3pih" path="res://assets/Stars_moving.png" id="2_f10hc"]
 [ext_resource type="Texture2D" uid="uid://ds51nudkh14i" path="res://assets/Planets moving.png" id="3_ymcob"]
 [ext_resource type="Texture2D" uid="uid://c3sm7vmp2sspu" path="res://assets/Bg/Sun therapy bg consulta.png" id="4_1qx0h"]
-[ext_resource type="Texture2D" uid="uid://djdr6i68rvug3" path="res://assets/Estefania Sprites/Estefania.png" id="5_n2wej"]
-[ext_resource type="Texture2D" uid="uid://chccd0eeugfs0" path="res://assets/Estefania Sprites/Shut__up_sprite_color.png" id="6_8asko"]
-[ext_resource type="Texture2D" uid="uid://cunhc25tipmko" path="res://assets/Estefania Sprites/Estefania_Orbital.png" id="7_o1ftg"]
-[ext_resource type="Texture2D" uid="uid://bou007y3rga1w" path="res://assets/Estefania Sprites/Talking_color-sprite.png" id="8_o1ftg"]
 
 [sub_resource type="Animation" id="Animation_ymcob"]
 resource_name = "Idle"
@@ -82,133 +78,6 @@ states/Idle/node = SubResource("AnimationNodeAnimation_ymcob")
 states/Idle/position = Vector2(308, 127)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_1qx0h")]
 
-[sub_resource type="Animation" id="Animation_nks5j"]
-resource_name = "Head_Idle"
-length = 15.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Head_Sprite:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 7.5, 15),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [0.0, 3.14159, 6.28319]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Orbital:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 7.5, 15),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [0.0, -3.14159, -6.28319]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Head_Sprite/Talking_color:texture")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("6_8asko")]
-}
-
-[sub_resource type="Animation" id="Animation_dpric"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Head_Sprite:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Orbital:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [-2.92981]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Head_Sprite/Talking_color:texture")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("6_8asko")]
-}
-
-[sub_resource type="Animation" id="Animation_r80nv"]
-resource_name = "Head_talking"
-length = 15.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Head_Sprite:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 7.5, 15),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [0.0, 3.14159, 6.28319]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Orbital:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 7.5, 15),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [0.0, -3.14159, -6.28319]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Head_Sprite/Talking_color:texture")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko"), ExtResource("8_o1ftg"), ExtResource("6_8asko")]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_r80nv"]
-_data = {
-&"Head_Idle": SubResource("Animation_nks5j"),
-&"Head_talking": SubResource("Animation_r80nv"),
-&"RESET": SubResource("Animation_dpric")
-}
-
 [node name="BgScene" type="Node2D"]
 
 [node name="SunTherapyBg" type="Sprite2D" parent="."]
@@ -238,23 +107,3 @@ anim_player = NodePath("../AnimationPlayer")
 modulate = Color(1, 1, 1, 0)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_1qx0h")
-
-[node name="Estefania" type="Node2D" parent="."]
-position = Vector2(163, 4)
-scale = Vector2(0.04, 0.04)
-
-[node name="Head_Sprite" type="Sprite2D" parent="Estefania"]
-texture = ExtResource("5_n2wej")
-
-[node name="Talking_color" type="Sprite2D" parent="Estefania/Head_Sprite"]
-show_behind_parent = true
-texture = ExtResource("6_8asko")
-
-[node name="Orbital" type="Sprite2D" parent="Estefania"]
-rotation = -2.92981
-texture = ExtResource("7_o1ftg")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Estefania"]
-libraries = {
-&"": SubResource("AnimationLibrary_r80nv")
-}

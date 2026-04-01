@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bodj13bauus4b"]
+[gd_scene load_steps=17 format=3 uid="uid://bodj13bauus4b"]
 
 [ext_resource type="Script" uid="uid://bw0qouy70nse5" path="res://scripts/Dependency Injection/dependency_injector.gd" id="1_liy57"]
 [ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="1_w5aja"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://exevk1xrow5p" path="res://scenes/UI/BlackScreen/BlackScreen.tscn" id="9_utbpp"]
 [ext_resource type="AudioStream" uid="uid://dqx4ttum6r4ee" path="res://assets/Sound/SFX/Dialogue_sound_character.wav" id="13_5ay1a"]
 [ext_resource type="PackedScene" uid="uid://bjwhml6qbv5xc" path="res://scenes/AudioSystem/AudioSystem.tscn" id="13_tqxxy"]
+[ext_resource type="PackedScene" uid="uid://c0b4lk8m4qa80" path="res://scenes/Characters/Estefania.tscn" id="16_liy57"]
 
 [node name="GameScene" type="Node"]
 
@@ -58,3 +59,6 @@ actions = Array[ExtResource("6_rurhu")]([ExtResource("7_rvs2r"), ExtResource("7_
 [node name="DialoguePanel" parent="." instance=ExtResource("4_y3j0m")]
 z_index = 10
 dialogue_character_sound = ExtResource("13_5ay1a")
+
+[node name="Estefania" parent="." instance=ExtResource("16_liy57")]
+position = Vector2(956, 253)
