@@ -8,8 +8,6 @@ class_name DialogueView
 @export var answer_buttons: Array[Button]
 @export var timer: Timer
 
-@export var dialogue : DialogueData
-
 @export var dialogue_panel_animation_player: AnimationPlayer
 @export var dialogue_character_sound: AudioStream
 

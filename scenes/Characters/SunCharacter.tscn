@@ -1,7 +1,7 @@
 [gd_scene load_steps=31 format=3 uid="uid://yl6yx8a2s8r8"]
 
 [ext_resource type="Script" uid="uid://dsxfhjokb65jo" path="res://scripts/Character/character_controller.gd" id="1_iup7j"]
-[ext_resource type="PackedScene" uid="uid://c3webugvnq46w" path="res://scenes/Sun/Sun Fire.tscn" id="1_oqqtn"]
+[ext_resource type="PackedScene" uid="uid://c3webugvnq46w" path="res://scenes/Characters/Sun Fire.tscn" id="1_oqqtn"]
 [ext_resource type="Texture2D" uid="uid://bok8yjf6a6i3u" path="res://assets/Sun Sprites/Sun Meditating Body.png" id="2_oqqtn"]
 [ext_resource type="Texture2D" uid="uid://c7igcng1003a4" path="res://assets/Sun Sprites/Sun Sad Body.png" id="4_ehf26"]
 [ext_resource type="Texture2D" uid="uid://duav6i0bspx3w" path="res://assets/Sun Sprites/Sun Shocked.png" id="5_6vart"]
