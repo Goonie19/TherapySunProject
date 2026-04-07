@@ -1,42 +1,30 @@
-[gd_resource type="Resource" script_class="DialogueData" load_steps=11 format=3 uid="uid://d3jn2c8b8h8h1"]
+[gd_resource type="Resource" script_class="DialogueData" load_steps=8 format=3 uid="uid://d3jn2c8b8h8h1"]
 
 [ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_yycsp"]
 [ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_h5oxd"]
 [ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_awqfr"]
-[ext_resource type="Script" uid="uid://bvwqyxvrtm3ug" path="res://scripts/DialogueSystem/Model/character_data.gd" id="4_1urwg"]
-
-[sub_resource type="Resource" id="Resource_mrs3v"]
-script = ExtResource("4_1urwg")
-character_name = ""
-metadata/_custom_type_script = "uid://bvwqyxvrtm3ug"
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="4_awqfr"]
 
 [sub_resource type="Resource" id="Resource_xp7ov"]
 script = ExtResource("2_h5oxd")
-character_speaking = SubResource("Resource_mrs3v")
+character_speaking = ExtResource("4_awqfr")
+state = 1
 dialogue_string = "Otra vez nublado..."
 answers = Array[ExtResource("3_awqfr")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
-[sub_resource type="Resource" id="Resource_bionc"]
-script = ExtResource("4_1urwg")
-character_name = ""
-metadata/_custom_type_script = "uid://bvwqyxvrtm3ug"
-
 [sub_resource type="Resource" id="Resource_bmau6"]
 script = ExtResource("2_h5oxd")
-character_speaking = SubResource("Resource_bionc")
+character_speaking = ExtResource("4_awqfr")
+state = 0
 dialogue_string = "¿Qué tengo que hacer? Por mucho que lo intento..."
 answers = Array[ExtResource("3_awqfr")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
-[sub_resource type="Resource" id="Resource_vsw2j"]
-script = ExtResource("4_1urwg")
-character_name = ""
-metadata/_custom_type_script = "uid://bvwqyxvrtm3ug"
-
 [sub_resource type="Resource" id="Resource_0cbig"]
 script = ExtResource("2_h5oxd")
-character_speaking = SubResource("Resource_vsw2j")
+character_speaking = ExtResource("4_awqfr")
+state = 0
 dialogue_string = "¿Qué hacen los humanos cuando esto pasa, les rodean nubes en algún momento a ellos también?"
 answers = Array[ExtResource("3_awqfr")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"

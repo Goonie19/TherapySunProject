@@ -74,6 +74,8 @@ func update_text_async() -> void:
 		
 		sentenceCompleted = true
 		
+		view.set_character_state_iddle(model.dialogue.sentences[current_sentence])
+		
 		while not nextSentence:
 			view.timer.start(0.01)
 			await view.timer.timeout

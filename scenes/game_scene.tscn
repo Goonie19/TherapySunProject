@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bodj13bauus4b"]
+[gd_scene load_steps=19 format=3 uid="uid://bodj13bauus4b"]
 
 [ext_resource type="Script" uid="uid://bw0qouy70nse5" path="res://scripts/Dependency Injection/dependency_injector.gd" id="1_liy57"]
 [ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="1_w5aja"]
@@ -7,17 +7,21 @@
 [ext_resource type="PackedScene" uid="uid://cj4asau0sfw6f" path="res://scenes/Dialogue Scene/DialoguePanel.tscn" id="4_y3j0m"]
 [ext_resource type="Script" uid="uid://20tta8lilgku" path="res://scripts/Lineal Action System/lineal_action_system.gd" id="5_y3j0m"]
 [ext_resource type="Script" uid="uid://bgwp1y62wtlea" path="res://scripts/Lineal Action System/Actions/action.gd" id="6_rurhu"]
-[ext_resource type="Resource" uid="uid://bxuqt34wi8xrm" path="res://Resources/Actions/Dialogue_action_1.tres" id="7_b5spy"]
 [ext_resource type="Resource" uid="uid://0bn44tpjm5ic" path="res://Resources/Actions/fade_out_1.tres" id="7_mw25s"]
-[ext_resource type="Resource" uid="uid://b7131c546swq8" path="res://Resources/Actions/1_0 IntroDialogue.tres" id="7_rvs2r"]
+[ext_resource type="Resource" uid="uid://dvc3ma10raohj" path="res://Resources/Actions/1_0 IntroDialogue.tres" id="7_rvs2r"]
 [ext_resource type="Resource" uid="uid://ceihdhbs57bot" path="res://Resources/Actions/1_0_wait.tres" id="7_tcjrq"]
 [ext_resource type="Resource" uid="uid://dgvqkaw4gwytg" path="res://Resources/Actions/1_0_play_music.tres" id="9_ldkr4"]
 [ext_resource type="PackedScene" uid="uid://exevk1xrow5p" path="res://scenes/UI/BlackScreen/BlackScreen.tscn" id="9_utbpp"]
+[ext_resource type="Script" uid="uid://dsxfhjokb65jo" path="res://scripts/Character/character_controller.gd" id="11_tcjrq"]
+[ext_resource type="Resource" uid="uid://bxuqt34wi8xrm" path="res://Resources/Actions/Dialogue_action_1.tres" id="12_mwyo0"]
 [ext_resource type="AudioStream" uid="uid://dqx4ttum6r4ee" path="res://assets/Sound/SFX/Dialogue_sound_character.wav" id="13_5ay1a"]
 [ext_resource type="PackedScene" uid="uid://bjwhml6qbv5xc" path="res://scenes/AudioSystem/AudioSystem.tscn" id="13_tqxxy"]
+[ext_resource type="Resource" uid="uid://bcn30052vmk5p" path="res://Resources/Actions/MoveStefania_to_center.tres" id="14_s76x2"]
 [ext_resource type="PackedScene" uid="uid://c0b4lk8m4qa80" path="res://scenes/Characters/Estefania.tscn" id="16_liy57"]
 
 [node name="GameScene" type="Node"]
+
+[node name="WaitingTimer" type="Timer" parent="."]
 
 [node name="Dependency Injection" type="Node" parent="." node_paths=PackedStringArray("minigame_controller", "character_controller", "dialogue_controller", "black_screen", "lineal_action_controller", "audio_controller")]
 script = ExtResource("1_liy57")
@@ -52,9 +56,7 @@ z_index = 9
 [node name="Lineal_action_controller" type="Node2D" parent="." node_paths=PackedStringArray("waiting_timer")]
 script = ExtResource("5_y3j0m")
 waiting_timer = NodePath("../WaitingTimer")
-actions = Array[ExtResource("6_rurhu")]([ExtResource("7_rvs2r"), ExtResource("7_tcjrq"), ExtResource("9_ldkr4"), ExtResource("7_mw25s"), ExtResource("7_tcjrq"), ExtResource("7_b5spy")])
-
-[node name="WaitingTimer" type="Timer" parent="."]
+actions = Array[ExtResource("6_rurhu")]([ExtResource("7_tcjrq"), ExtResource("7_rvs2r"), ExtResource("9_ldkr4"), ExtResource("7_mw25s"), ExtResource("12_mwyo0"), ExtResource("14_s76x2")])
 
 [node name="DialoguePanel" parent="." instance=ExtResource("4_y3j0m")]
 z_index = 10
@@ -62,3 +64,4 @@ dialogue_character_sound = ExtResource("13_5ay1a")
 
 [node name="Estefania" parent="." instance=ExtResource("16_liy57")]
 position = Vector2(956, 253)
+script = ExtResource("11_tcjrq")

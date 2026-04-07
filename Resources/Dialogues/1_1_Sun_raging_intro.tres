@@ -8,6 +8,7 @@
 [sub_resource type="Resource" id="Resource_fum3r"]
 script = ExtResource("2_ky2gi")
 character_speaking = ExtResource("4_em6qa")
+state = 0
 dialogue_string = "ES QUE ES UNA MIERDA, NO PUEDO VER NADA CON ESTAS NUBES ALREDEDOR. ENCIMA UNA SE ME HA METIDO EN EL OJO."
 answers = Array[ExtResource("3_rgy0q")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -15,6 +16,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_3k3kc"]
 script = ExtResource("2_ky2gi")
 character_speaking = ExtResource("4_em6qa")
+state = 4
 dialogue_string = "NI SI QUIERA PUEDO DISTRAERME MIRANDO A LOS HUMANOS PORQUE NO VEO NADA. "
 answers = Array[ExtResource("3_rgy0q")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -22,6 +24,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_rgy0q"]
 script = ExtResource("2_ky2gi")
 character_speaking = ExtResource("4_em6qa")
+state = 5
 dialogue_string = "Bah que mas da, seguramente esten destruyendo algo, ultimamente es lo unico que les veo hacer..."
 answers = Array[ExtResource("3_rgy0q")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -29,6 +32,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_em6qa"]
 script = ExtResource("2_ky2gi")
 character_speaking = ExtResource("4_em6qa")
+state = 2
 dialogue_string = "¿EHM?"
 answers = Array[ExtResource("3_rgy0q")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"

@@ -2,6 +2,7 @@ extends Resource
 class_name sentence_data
 
 @export var character_speaking: character_data
+@export var state: CharacterState.character_state
 @export var dialogue_string: String
 
 @export var answers: Array[dialogue_option]

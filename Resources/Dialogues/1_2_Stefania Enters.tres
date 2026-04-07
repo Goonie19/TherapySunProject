@@ -1,41 +1,51 @@
-[gd_resource type="Resource" script_class="DialogueData" load_steps=10 format=3 uid="uid://dd12ejnvcyt24"]
+[gd_resource type="Resource" script_class="DialogueData" load_steps=12 format=3 uid="uid://dd12ejnvcyt24"]
 
 [ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_3m1vf"]
 [ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_udkft"]
 [ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_udkft"]
+[ext_resource type="Resource" path="res://Resources/Sol_Character.tres" id="4_ap0bj"]
+[ext_resource type="Resource" path="res://Resources/Estefanía.tres" id="5_cf28q"]
 
 [sub_resource type="Resource" id="Resource_008nt"]
 script = ExtResource("2_udkft")
+character_speaking = ExtResource("4_ap0bj")
+state = 1
 dialogue_string = "¿Qué es esto, me he fumado una de las nubes?"
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_udkft"]
 script = ExtResource("2_udkft")
+character_speaking = ExtResource("5_cf28q")
+state = 5
 dialogue_string = "¿Hola, se escucha? "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_ap0bj"]
 script = ExtResource("2_udkft")
+state = 0
 dialogue_string = "He venido en respuesta."
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_cf28q"]
 script = ExtResource("2_udkft")
+state = 0
 dialogue_string = "¿Respuesta a que?"
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_yoiui"]
 script = ExtResource("2_udkft")
+state = 0
 dialogue_string = "He recibido una señal, parecía venir del sol. Parecía preguntar que hacían los humanos cuando las nubes les rodean."
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_s31d3"]
 script = ExtResource("2_udkft")
+state = 0
 dialogue_string = "Pues soy tu respuesta. Cuando eso nos pasa, vamos a terapia."
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
