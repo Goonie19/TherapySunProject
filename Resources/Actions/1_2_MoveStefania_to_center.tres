@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MoveCharacterAction" load_steps=3 format=3 uid="uid://bcn30052vmk5p"]
+
+[ext_resource type="Resource" uid="uid://bbk7vc5rdtia7" path="res://Resources/Estefanía.tres" id="1_8h50k"]
+[ext_resource type="Script" uid="uid://lavplcquq1jr" path="res://scripts/Lineal Action System/Actions/move_character_action.gd" id="2_h330i"]
+
+[resource]
+script = ExtResource("2_h330i")
+character = ExtResource("1_8h50k")
+destination = Vector2(511.265, 271)
+time_to_reach_destination = 3.0
+metadata/_custom_type_script = "uid://lavplcquq1jr"

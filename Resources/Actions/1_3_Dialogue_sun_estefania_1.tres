@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DialogueAction" load_steps=3 format=3 uid="uid://byoc1sru8w3lc"]
+
+[ext_resource type="Script" uid="uid://br4crtpfmmcdx" path="res://scripts/Lineal Action System/Actions/dialogue_action.gd" id="1_c5miu"]
+[ext_resource type="Resource" uid="uid://dd12ejnvcyt24" path="res://Resources/Dialogues/1_2_Stefania Enters.tres" id="1_g0nwg"]
+
+[resource]
+script = ExtResource("1_c5miu")
+dialogue = ExtResource("1_g0nwg")
+metadata/_custom_type_script = "uid://br4crtpfmmcdx"
