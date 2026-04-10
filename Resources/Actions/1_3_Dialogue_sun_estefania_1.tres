@@ -6,4 +6,5 @@
 [resource]
 script = ExtResource("1_c5miu")
 dialogue = ExtResource("1_g0nwg")
+skip_wait = false
 metadata/_custom_type_script = "uid://br4crtpfmmcdx"

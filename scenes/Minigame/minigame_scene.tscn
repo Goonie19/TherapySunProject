@@ -76,7 +76,6 @@ collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SunSpace/Blocker Rotator/Sprite blocker/Blocker Area 2D"]
 position = Vector2(248.8, 294.954)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_byaxx")
 
 [node name="Meteor Spawner" parent="." instance=ExtResource("4_ox4ev")]

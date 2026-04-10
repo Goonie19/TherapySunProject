@@ -7,6 +7,23 @@
 [ext_resource type="Texture2D" uid="uid://cunhc25tipmko" path="res://assets/Estefania Sprites/Estefania_Orbital.png" id="3_jmyoy"]
 [ext_resource type="Texture2D" uid="uid://bou007y3rga1w" path="res://assets/Estefania Sprites/Talking_color-sprite.png" id="4_5vsnh"]
 
+[sub_resource type="Animation" id="Animation_nks5j"]
+resource_name = "Iddle"
+length = 15.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head_Sprite/Talking_color:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_wqlb8")]
+}
+
 [sub_resource type="Animation" id="Animation_dpric"]
 length = 0.001
 tracks/0/type = "value"
@@ -39,23 +56,6 @@ tracks/0/keys = {
 "values": [ExtResource("2_wqlb8"), ExtResource("4_5vsnh"), ExtResource("2_wqlb8")]
 }
 
-[sub_resource type="Animation" id="Animation_nks5j"]
-resource_name = "Iddle"
-length = 15.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Head_Sprite/Talking_color:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_wqlb8")]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r80nv"]
 _data = {
 &"Iddle": SubResource("Animation_nks5j"),
@@ -63,14 +63,13 @@ _data = {
 &"Speak": SubResource("Animation_r80nv")
 }
 
-[node name="Estefania" type="Node2D" node_paths=PackedStringArray("head_sprite", "orbital_sprite", "anim", "anim_tree")]
+[node name="Estefania" type="Node2D" node_paths=PackedStringArray("head_sprite", "orbital_sprite", "anim")]
 scale = Vector2(0.04, 0.04)
 script = ExtResource("1_wqlb8")
 head_sprite = NodePath("Head_Sprite")
 orbital_sprite = NodePath("Orbital")
 data = ExtResource("2_jmyoy")
 anim = NodePath("AnimationPlayer")
-anim_tree = NodePath("")
 
 [node name="Head_Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_bqf3f")

@@ -1,13 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://cj4asau0sfw6f"]
+[gd_scene load_steps=11 format=3 uid="uid://cj4asau0sfw6f"]
 
 [ext_resource type="Script" uid="uid://n075vu8enijl" path="res://scripts/DialogueSystem/View/dialogue_view.gd" id="1_gdf5x"]
-[ext_resource type="Texture2D" uid="uid://c0urxu83v2puw" path="res://assets/UI/Dialogue_Panel.png" id="2_ejk6b"]
 [ext_resource type="Texture2D" uid="uid://ckbmbunmmnq0x" path="res://assets/UI/Name Panel.png" id="3_t6upd"]
-
-[sub_resource type="Theme" id="Theme_t6upd"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5pj5s"]
-texture = ExtResource("2_ejk6b")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d7f5w"]
 texture = ExtResource("3_t6upd")
@@ -510,18 +504,16 @@ offset_bottom = 324.0
 grow_horizontal = 2
 grow_vertical = 0
 pivot_offset = Vector2(207.5, 58)
-theme = SubResource("Theme_t6upd")
-theme_override_styles/panel = SubResource("StyleBoxTexture_5pj5s")
 
 [node name="Name Panel" type="Panel" parent="Dialogue Image"]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -183.0
-offset_top = -12.0
-offset_right = -33.0
-offset_bottom = 28.0
+offset_left = -168.0
+offset_top = -81.0
+offset_right = -18.0
+offset_bottom = 69.0
 grow_horizontal = 0
 theme_override_styles/panel = SubResource("StyleBoxTexture_d7f5w")
 
@@ -530,6 +522,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 3.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Estefanía"
@@ -575,14 +571,19 @@ offset_right = -33.0
 offset_bottom = 61.0
 text = "Esto es una respuesta"
 
+[node name="ColorRect" type="ColorRect" parent="Dialogue Image"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 120.0
+offset_right = 416.29
+offset_bottom = 125.0
+
 [node name="TextureButton" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 200.0
 offset_top = -3.0
-offset_right = 200.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 2
