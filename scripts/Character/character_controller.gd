@@ -21,3 +21,10 @@ func move_to(destination: Vector2, time_to_reach_destination: float) -> void:
 	tween.tween_property(self, "position", destination, time_to_reach_destination)
 	await tween.finished
 	reached_destination.emit()
+
+func scale_to(target_scale: float, time_to_reach_target: float) -> void:
+	var scale_v = Vector2(target_scale, target_scale)
+	var tween = create_tween()
+	tween.tween_property(self, "scale", scale_v, time_to_reach_target)
+	await tween.finished
+	reached_destination.emit()

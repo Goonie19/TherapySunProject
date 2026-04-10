@@ -1,13 +1,13 @@
 extends Action
 
-class_name MoveCharacterAction
+class_name ScaleCharacterAction
 
 @export var character: character_data
-@export var destination: Vector2
-@export var time_to_reach_destination: float
+@export var target_scale: float
+@export var time_to_reach_scale: float
 
 func do_action() -> void:
-	character.get_controller().move_to(destination, time_to_reach_destination)
+	character.get_controller().scale_to(target_scale, time_to_reach_scale)
 	if not skip_wait :
 		await character.get_controller().reached_destination
 	on_action_finished.emit()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bodj13bauus4b"]
+[gd_scene load_steps=21 format=3 uid="uid://bodj13bauus4b"]
 
 [ext_resource type="Script" uid="uid://bw0qouy70nse5" path="res://scripts/Dependency Injection/dependency_injector.gd" id="1_liy57"]
 [ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="1_w5aja"]
@@ -16,7 +16,9 @@
 [ext_resource type="AudioStream" uid="uid://dqx4ttum6r4ee" path="res://assets/Sound/SFX/Dialogue_sound_character.wav" id="13_5ay1a"]
 [ext_resource type="PackedScene" uid="uid://bjwhml6qbv5xc" path="res://scenes/AudioSystem/AudioSystem.tscn" id="13_tqxxy"]
 [ext_resource type="Resource" uid="uid://bcn30052vmk5p" path="res://Resources/Actions/1_2_MoveStefania_to_center.tres" id="14_s76x2"]
+[ext_resource type="Resource" uid="uid://dht1twaelaaba" path="res://Resources/Actions/1_4_Move Estefania To Sun.tres" id="15_6aqbo"]
 [ext_resource type="Resource" uid="uid://byoc1sru8w3lc" path="res://Resources/Actions/1_3_Dialogue_sun_estefania_1.tres" id="15_77hjl"]
+[ext_resource type="Resource" uid="uid://do7hw3ul1uj8c" path="res://Resources/Actions/1_4_1 Shrink Estefania.tres" id="15_ro0ie"]
 [ext_resource type="PackedScene" uid="uid://c0b4lk8m4qa80" path="res://scenes/Characters/Estefania.tscn" id="16_liy57"]
 
 [node name="GameScene" type="Node"]
@@ -40,23 +42,18 @@ position = Vector2(400, 300)
 [node name="BgScene" parent="." instance=ExtResource("1_w5aja")]
 position = Vector2(400, 300)
 
-[node name="SunCharacter" parent="." instance=ExtResource("2_onqr8")]
-position = Vector2(400, 300)
-scale = Vector2(0.15, 0.15)
-
 [node name="MinigameScene" parent="." node_paths=PackedStringArray("dialogue_manager") instance=ExtResource("3_bw6k5")]
 visible = false
 position = Vector2(400, 300)
 dialogue_manager = NodePath("../DialoguePanel")
 
 [node name="BlackScreen" parent="." instance=ExtResource("9_utbpp")]
-visible = false
 z_index = 9
 
 [node name="Lineal_action_controller" type="Node2D" parent="." node_paths=PackedStringArray("waiting_timer")]
 script = ExtResource("5_y3j0m")
 waiting_timer = NodePath("../WaitingTimer")
-actions = Array[ExtResource("6_rurhu")]([ExtResource("7_tcjrq"), ExtResource("7_rvs2r"), ExtResource("9_ldkr4"), ExtResource("7_mw25s"), ExtResource("12_mwyo0"), ExtResource("14_s76x2"), ExtResource("15_77hjl")])
+actions = Array[ExtResource("6_rurhu")]([ExtResource("7_tcjrq"), ExtResource("7_rvs2r"), ExtResource("9_ldkr4"), ExtResource("7_mw25s"), ExtResource("12_mwyo0"), ExtResource("14_s76x2"), ExtResource("15_77hjl"), ExtResource("15_ro0ie"), ExtResource("15_6aqbo")])
 
 [node name="DialoguePanel" parent="." instance=ExtResource("4_y3j0m")]
 z_index = 10
@@ -64,3 +61,8 @@ dialogue_character_sound = ExtResource("13_5ay1a")
 
 [node name="Estefania" parent="." instance=ExtResource("16_liy57")]
 position = Vector2(931, 264)
+rotation_speed = 0.5
+
+[node name="SunCharacter" parent="." instance=ExtResource("2_onqr8")]
+position = Vector2(400, 300)
+scale = Vector2(0.15, 0.15)

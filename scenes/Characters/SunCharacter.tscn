@@ -93,11 +93,10 @@ _data = {
 &"Shocked": SubResource("Animation_hqrqv")
 }
 
-[node name="SunCharacter" type="Node2D" node_paths=PackedStringArray("anim", "anim_tree")]
+[node name="SunCharacter" type="Node2D" node_paths=PackedStringArray("anim")]
 script = ExtResource("1_prkou")
 data = ExtResource("2_i3r3b")
 anim = NodePath("AnimationPlayer")
-anim_tree = NodePath("")
 
 [node name="SunFire" parent="." instance=ExtResource("1_oqqtn")]
 position = Vector2(0, -6.675)
