@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://yl6yx8a2s8r8"]
+[gd_scene load_steps=15 format=3 uid="uid://yl6yx8a2s8r8"]
 
 [ext_resource type="PackedScene" uid="uid://c3webugvnq46w" path="res://scenes/Characters/Sun Fire.tscn" id="1_oqqtn"]
 [ext_resource type="Script" uid="uid://53d1ht56oms" path="res://scripts/Character/sun_controller.gd" id="1_prkou"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c7igcng1003a4" path="res://assets/Sun Sprites/Sun Sad Body.png" id="4_ehf26"]
 [ext_resource type="Texture2D" uid="uid://duav6i0bspx3w" path="res://assets/Sun Sprites/Sun Shocked.png" id="5_6vart"]
 [ext_resource type="Texture2D" uid="uid://d6qv63ak4tn3" path="res://assets/Sun Sprites/Sun Not bothering.png" id="6_hqrqv"]
+[ext_resource type="PackedScene" uid="uid://by3wluwievmon" path="res://scenes/Characters/Sun Clouds.tscn" id="8_0chno"]
 
 [sub_resource type="Animation" id="Animation_iup7j"]
 resource_name = "Meditate"
@@ -109,3 +110,5 @@ texture = ExtResource("2_oqqtn")
 libraries = {
 &"": SubResource("AnimationLibrary_ehf26")
 }
+
+[node name="SunClouds" parent="." instance=ExtResource("8_0chno")]
