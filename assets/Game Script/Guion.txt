@@ -1,457 +1,487 @@
------Guion sol-----
+-----Guion sol----- 
 
--Otra vez nublado...
+-Otra vez nublado... 
 
--¿Qué tengo que hacer? Por mucho que lo intento...
+- ¿Qué tengo que hacer? Por mucho que lo intento... 
 
--¿Qué hacen los humanos cuando esto pasa, les rodean nubes en algún momento a ellos también?
+- ¿Qué hacen los humanos cuando esto pasa, les rodean nubes en algún momento a ellos también? 
 
----Fade out y vemos al sol meditando con las nubes alrededor-----
+---Fade out y vemos al sol meditando con las nubes alrededor----- 
 
-- ES QUE ES UNA MIERDA, NO PUEDO VER NADA CON ESTAS NUBES ALREDEDOR. ENCIMA UNA SE ME HA METIDO EN EL OJO.
+	ES QUE ES UNA MIERDA, NO PUEDO VER NADA CON ESTAS NUBES ALREDEDOR. ENCIMA UNA SE ME HA METIDO EN EL OJO. 
 
--NI SI QUIERA PUEDO DISTRAERME MIRANDO A LOS HUMANOS PORQUE NO VEO NADA. 
+-NI SI QUIERA PUEDO DISTRAERME MIRANDO A LOS HUMANOS PORQUE NO VEO NADA.  
 
--Bah que mas da, seguramente esten destruyendo algo, ultimamente es lo unico que les veo hacer...
+-Bah, qué más da, seguramente estén destruyendo algo, últimamente es lo único que les veo hacer... 
 
--¿EHM?
+- ¿EHM? 
 
---- Fundido a la sala de terapia---
+--- Fundido a la sala de terapia--- 
 
--¿Qué es esto, me he fumado una de las nubes?
+- ¿Qué es esto, me he fumado una de las nubes? 
 
--Estefanía: ¿Hola, se escucha? 
+-Estefanía: ¿Hola, se escucha?  
 
--Estefanía: Hemos venido en respuesta.
+-Estefanía: He venido en respuesta. 
 
--Sol: ¿Respuesta a que? 
+-Sol: ¿Respuesta a qué?  
 
--Estefanía: He recibido una señal, parecía venir del sol. Parecía preguntar que hacían los humanos cuando las nubes les rodean.
+-Estefanía: He recibido una señal, parecía venir del sol. Parecía preguntar que hacían los humanos cuando las nubes les rodean. 
 
--Estefanía: Pues soy tu respuesta. Cuando eso nos pasa, vamos a terapia.
+-Estefanía: Pues soy tu respuesta. Cuando eso nos pasa, vamos a terapia. 
 
--Sol: Has venido a darme una sesion de terapia?
+-Sol: ¿Has venido a darme una sesión de terapia? 
 
--Estefanía: Sí.
+-Estefanía: Sí. 
 
--Sol: Eres consciente de que no tengo dinero con que pagarte no? Lo de ser una estrella gigantesca que no para de explotar hace dificil llevar efectivo.
+-Sol: ¿Eres consciente de que no tengo dinero con que pagarte no?  
 
--Estefanía: Mira, lleva 2 meses nublado en Malaga, ahora mismo con que las nubes se quiten de en medio y pueda ir a la playita te ayudo gratis.
+- Lo de ser una estrella gigantesca que no para de explotar hace difícil llevar efectivo. 
 
--Sol: Vaya interesada...
+-Estefanía: Mira, lleva 2 meses nublado en Málaga.  
 
--Estefanía: interesada lo sera tu madre. Ahora callate y vamos a empezar.
+- Ahora mismo con que las nubes se quiten de en medio y pueda ir a la playita te ayudo gratis. 
 
--Sol: Esta bien... ¿Qué tengo que hacer?
+-Sol: Vaya interesada... 
 
--Estefania: Pues primero tendríamos que identificar que está causando esto.
+-Estefanía: interesada lo será tu madre. Ahora cállate y vamos a empezar. 
 
--Estefanía: Cuentame, ¿qué sientes en estos momentos?
+-Sol: Uy 
 
--Sol: ...
+-Sol: Esta bien... ¿Qué tengo que hacer? 
 
--Sol: Es dificil describirlo. Siento como si viviera mareado...
+-Estefania: Pues primero tendríamos que identificar que está causando esto. 
 
--Sol: Intento pensar en cosas positivas, pero se me hace imposible.
+-Estefanía: Cuéntame, ¿qué sientes en estos momentos? 
 
--Sol: Como si cuando intento pensar en algo concreto, mis pensamientos negativos me gritaran...
+-Sol: ... 
 
--Estefanía: ¿Como si cuando intentaras relajarte te golpeara un meteorito en la cara?
+-Sol: Es difícil describirlo. Siento como si viviera mareado... 
 
--Sol: Si...
+-Sol: Intento concentrarme en mis pensamientos, pero se me hace imposible. 
 
--Estefanía: Muy bien vamos a hacer una cosa.
+-Sol: Como si cuando intento pensar en algo concreto, mis pensamientos negativos me gritaran... 
 
-*Estefanía se convierte en el escudo.
+-Estefanía: ¿Como si cuando intentaras relajarte te golpeara un meteorito en la cara? 
 
--Estefanía: Voy a protegerte de esos meteoritos mientras meditas.
+-Sol: Si... 
 
--Estefanía: Así momentaneamente podras ver con claridad estos pensamientos negativos y los positivos.
+-Estefanía: Muy bien vamos a hacer una cosa. 
 
--Estefanía: Yo tan solo tendré que apuntar en la dirección para bloquear los meteoritos.
+*Estefanía se convierte en el escudo. 
 
--Estefanía: ¡Al cielo con ella!
+-Estefanía: Voy a protegerte de esos meteoritos mientras meditas. 
 
-*Comienza minijuego**
+-Estefanía: Así momentáneamente podrás ver con claridad estos pensamientos negativos. 
 
--Estefanía: Vale Sol, es momento de empezar a sacar lo que tienes dentro.
+-De esa manera podremos ver que te pasa y como tratarlo. 
 
--Yo bloqueare los meteoritos para que puedas centrarte en un pensamiento a la vez.
+-Estefanía: Yo tan solo tendré que apuntar en la dirección para bloquear los meteoritos. 
 
--¿Que estas pensando ahora?
+-Estefanía: ¡Al cielo con ella! 
 
-**Secuencia 1**
+Comienza minijuego* 
 
--Sol: En lo mucho que echo de menos estar bien.
+-Estefanía: Vale Sol, es momento de empezar a sacar lo que tienes dentro. 
 
--Yo solía tener confianza en mi mismo. Algun día nublado he tenido por no tan seguido...
+-Yo bloqueare los meteoritos para que puedas centrarte en un pensamiento a la vez. 
 
-**Secuencia 2**
+- ¿Que estás pensando ahora? 
 
--Solo hay una cosa que tengo que hacer... Calentar lo suficiente para mantener el sistema.
+Secuencia 1 
 
--Pero es tremendamente aburrido.
+-Sol: En lo mucho que echo de menos estar bien. 
 
-**Secuencia 3**
+-Yo solía tener confianza en mí mismo. Algún día nublado he tenido, pero no tan seguido... 
 
--Estefanía: Has pensado en buscar algun hobby?
+Secuencia 2 
 
--Sol: Si, si te parece me pongo a hacer crochet, ¿tu crees que la lana aguantaría mi temperatura?
+-Solo hay una cosa que tengo que hacer... Calentar lo suficiente para mantener el sistema. 
 
--Sol: Solo soy una bola de luz incandescente, es todo lo que debo ser.
+-Pero es tremendamente aburrido. 
 
-**Secuencia 4**
+Secuencia 3 
 
--Estefanía: ¿Debes ser?
+-Estefanía: ¿Has pensado en buscar algún hobby? 
 
--Sol: Si, no puedo perderme en gilipolleces, no sirve de nada.
+-Sol: Si, si te parece me pongo a hacer crochet, ¿tú crees que la lana aguantaría mi temperatura? 
 
-**Secuencia 5**
+-Sol: Solo soy una bola de luz incandescente, es todo lo que debo ser. 
 
--Estefanía: ¿Y que son estas gilipolleces?
+Secuencia 4 
 
--Sol: ¿Que mas da? No es importante. De todas formas solo me hacen ponerme peor.
+-Estefanía: ¿Debes ser? 
 
--Tengo que espabilar. El sistema depende de mi, no puedo andarme con tonterías.
+-Sol: Si, no puedo perderme en gilipolleces, no sirve de nada. 
 
-**Secuencia 6**
+Secuencia 5 
 
--Estefanía: Si, el sistema depende de tu calor y orbitamos en torno a ti.
+-Estefanía: ¿Y que son estas gilipolleces? 
 
--¿Pero significa eso que no puedas ser algo mas?
+-Sol: ¿Qué más da? No es importante. De todas formas, solo me hacen ponerme peor. 
 
--...
+-Tengo que espabilar. El sistema depende de mí, no puedo andarme con tonterías. 
 
--Vamos a descansar por favor.
+Secuencia 6 
 
-**Fin de primer tramo**
+-Estefanía: Si, el sistema depende de tu calor y orbitamos en torno a ti. 
 
--Estefanía: ¿Que tal se ha sentido poder escuchar tus pensamientos sin abrumarte?
+- ¿Pero significa eso que no puedas ser algo más? 
 
--Sol: Pues ha sido una mierda, ¿por esto ganas dinero?
+-... 
 
--Estefanía: Gran parte del trabajo es tener paciencia para no darte una colleja.
+-Vamos a descansar por favor. 
 
--Sol: Eres la terapeuta menos profesional que he visto.
+Fin de primer tramo 
 
--Estefanía: ¿Algune mas ha venido a verte alguna vez?
+-Estefanía: ¿Qué tal se ha sentido poder escuchar tus pensamientos sin abrumarte? 
 
--Sol: ...
+-Sol: Pues ha sido una mierda, ¿por esto ganas dinero? 
 
--No, pero he observado mucho a los humanos, desde luego las sesiones de terapia suelen ser distintas.
+-Estefanía: Gran parte del trabajo es tener paciencia para no darte una colleja. 
 
--Estefanía: Pues te jodes, hay que tirar con lo que tenemos.
+-Sol: Eres la terapeuta menos profesional que he visto. 
 
--Sol: ...
+-Estefanía: ¿Algune más ha venido a verte alguna vez? 
 
--Gracias por venir.
+-Sol: ... 
 
--No se si funcionará, pero me alegra que vinieras.
+-No, pero he observado mucho a los humanos, desde luego las sesiones de terapia suelen ser distintas. 
 
--Estefanía: No ha sido facil, he tenido que robar esta sonda para lanzarla al espacio jaja.
+-Estefanía: Pues te jodes, hay que tirar con lo que tenemos. 
 
--Sol: ¿Eso no es muy ilegal?
+-Sol: ... 
 
--Estefanía: El mundo tiene peores cosas de las que preocuparse ahora.
+-Gracias por venir. 
 
--Como que le dieran el GOTY a Expedition 33. La gente parece muy centrada en ello.
+-No sé si funcionará, pero me alegra que vinieras. 
 
-- Sol: Se lo merecían, ¿no?
+-Estefanía: No ha sido fácil, he tenido que robar esta sonda para lanzarla al espacio jaja. 
 
-- Estefanía: No voy a entrar en eso.
+-Sol: ¿Eso no es muy ilegal? 
 
-- Bueno, ¿te ves con fuerzas para continuar?
+-Estefanía: El mundo tiene peores cosas de las que preocuparse ahora. 
 
--Sol: Vamos a ello.
+-Como que le dieran el GOTY a Expedition 33. La gente parece muy centrada en ello. 
 
-**Inicio segundo minijuego**
+- Sol: Se lo merecían, ¿no? 
 
--Estefanía: Muy bien sol, se que crees que son gilipolleces, pero me da igual.
+ 
 
--¿Que es lo que estas dejando de lado?
+- Estefanía: No voy a entrar en eso. 
 
--Concentrate en eso.
+ 
 
-**Secuencia 1**
+- Bueno, ¿te ves con fuerzas para continuar? 
 
--Sol: A veces disfruto de arder un poco mas fuerte. No demasiado, pero...
+ 
 
--Si no mantengo la calma, puede afectaros mucho.
+-Sol: Vamos a ello. 
 
-**Secuencia 2**
+Inicio segundo minijuego 
 
-Estefanía: ¿Te refieres a que moririamos?
+-Estefanía: Muy bien sol, sé qué crees que son gilipolleces, pero me da igual. 
 
-**Secuencia 3**
+- ¿Que es lo que estas dejando de lado? 
 
--Sol: Nah, no puedo arder tan fuerte, la diferencia no es tan fuerte.
+-Concéntrate en eso. 
 
--Pero os llegaría una ola de calor, y a muchos de vosotros os haría daño.
+Secuencia 1 
 
-**Secuencia 4**
+-Sol: A veces disfruto de arder un poco más fuerte. No demasiado, pero... 
 
-Estefanía: Pero sol, no puedes reprimir tu forma de ser porque moelste a otros.
+-Si no mantengo la calma, puede afectaros mucho. 
 
--No estas haciendo nada malo.
+Secuencia 2 
 
-**Secuencia 5**
+Estefanía: ¿Te refieres a que moriríamos? 
 
--Sol: Ah no? Pues lo parece, porque cada vez que ardo medio fuerte os poneis de mala baba.
+Secuencia 3 
 
--Mas ultimamente...
+-Sol: Nah, no puedo arder tan fuerte, la diferencia no es tan grande. 
 
-**Secuencia 6**
+-Pero os llegaría una ola de calor, y a muchos de vosotros os haría daño. 
 
--Estefanía: Claro, porque nos causa un malestar las altas temperaturas.
+Secuencia 4 
 
--Pero eso no es tu problema, Nosotros deberiamos adaptarnos a ello.
+Estefanía: Pero sol, no puedes reprimir tu forma de ser porque moleste a otros. 
 
--Sin embargo se han empeñado en quitar cada puto arbol de la calle.
+-No estás haciendo nada malo. 
 
--La razon de que pasemos tanto calor no eres tu, al menos no siempre.
+Secuencia 5 
 
-**Secuencia 7**
+-Sol: ¿Ah no? Pues lo parece, porque cada vez que ardo medio fuerte os poneis de mala hostia. 
 
--Sol: Y que debo hacer? Dejar que se sequen vuestros ríos?
+-Mas últimamente... 
 
--Dejar que se derritan vuestros polos?
+Secuencia 6 
 
-**Secuencia 8**
+-Estefanía: Claro, porque nos causa un malestar las altas temperaturas. 
 
--Sol: Pretendes que no haga nada?
+-Pero eso no es tu problema, Nosotros deberíamos adaptarnos a ello. 
 
--Estefanía: Sol, ya haces muchisimo.
+-Sin embargo, se han empeñado en quitar cada puto árbol de la calle. 
 
--Gracias a ti hay vida en mi planeta.
+-La razón de que pasemos tanto calor no eres tú, al menos no siempre. 
 
-**Secuencia 9**
+Secuencia 7 
 
--Gracias a ti puedo mirar por la ventana y ver mi ciudad.
+-Sol: ¿Y qué debo hacer? ¿Dejar que se sequen vuestros ríos? 
 
--Gracias a ti puedo ver el mar y escuchar las olas.
+-Dejar que se derritan vuestros polos? 
 
--¿No es eso suficiente?
+Secuencia 8 
 
-**Secuencia 10**
+-Sol: ¿Pretendes que no haga nada? 
 
-Sol: ...
+-Estefanía: Sol, ya haces muchísimo. 
 
-- Puede que tengas razon.
+-Gracias a ti hay vida en mi planeta. 
 
-- Pero no puedo evitar pensar que os ayudaría que ardiera menos...
+Secuencia 9 
 
--Estefanía: Tendras que confiar en que nos encarguemos de adaptarnos nostros mismos.
+-Gracias a ti puedo mirar por la ventana y ver mi ciudad. 
 
--Sol: ...
+-Gracias a ti puedo ver el mar y escuchar las olas. 
 
-- Necesito un descanso.
+- ¿No es eso suficiente? 
 
-**Fin secuencias 2**
+Secuencia 10 
 
--Estefanía: ¿Como te encuentras? 
+Sol: ... 
 
-Sol: Creo que un poco mejor. Pero esta mierda es complicadisima.
+-Puede que tengas razón. 
 
--Es que cada vez que empiezas a solucionar algo surgen 10 cosas mas.
+ 
 
--Es un poco abrumador mirar todo lo que hay que arreglar dentro de mi.
+-Pero no puedo evitar pensar que os ayudaría que ardiera menos... 
 
--Estefanía: Muchas de ellas no son cosas que arreglar, a veces solo tienes que aceptarlas.
+ 
 
--Sol: Oye no he preguntado y ya que estamos en el descanso...
+-Estefanía: Tendrás que confiar en que nos encarguemos de adaptarnos nosotros mismos. 
 
--Sol: Como estas tu?
+-Sol: ... 
 
--Estefanía: Oh...
+- Necesito un descanso. 
 
--Bueno he tenido momentos mejores. Ultimamente las cosas por la Tierra estan turbulentas...
+ 
 
--Y en general no, noa fecta a mi día a día. Podría mirar para otro lado.
+Fin secuencias 2 
 
--Pero no quiero hacerlo.
+-Estefanía: ¿Como te encuentras?  
 
--A veces me cabrea muchisimo, otras simlemente me quitan la energía.
+Sol: Creo que un poco mejor. Pero esta mierda es complicadísima. 
 
--Todo se ha enturbiado mucho ultimamente.
+-Es que cada vez que empiezas a solucionar algo surgen 10 cosas más. 
 
--Sol: Algo pude ver... La humanidad es muy extraña.
+-Es un poco abrumador mirar todo lo que hay que arreglar dentro de mí. 
 
-- ¿Por que no quieres mirar a otro lado?
+-Estefanía: Muchas de ellas no son cosas que arreglar, a veces solo tienes que aceptarlas. 
 
-- Estefanía: Porque si miro para otro lado, puede que en algun momento deje de importarme.
+-Sol: Oye no he preguntado y ya que estamos en el descanso... 
 
--Estefanía: No quiero que deje de importarme. No quiero convertirme en alguien a quien los demas no le importan.
+-Sol: ¿Como estas tu? 
 
--Es complicado, pero si todos miramos para otro lado, nada cambiará jamas.
+-Estefanía: Oh... 
 
-- Sol: Estefanía... no se si quiero seguir con la sesion...
+-Bueno he tenido momentos mejores. Últimamente las cosas por la Tierra están turbulentas... 
 
--Estefanía: ¿Qué, por qué? ¡estas avanzando muy bien!
+-Y en general no, no afecta a mi día a día. Podría mirar para otro lado. 
 
--Sol: Es que... Tengo miedo...
+-Pero no quiero hacerlo. 
 
--Estefanía: Es normal tener miedo, sanar a veces da vertigo.
+-A veces me cabrea muchísimo, otras simplemente me quitan la energía. 
 
--Sol: No es por eso Estefanía, pero tengo miedo que quizas te cabrees conmigo.
+-Todo se ha enturbiado mucho últimamente. 
 
--Yo... Estefanía yo he dejado de dejadod e confiar en vosotros...
+-Sol: Algo pude ver... La humanidad es muy extraña. 
 
--Estefanía: ...
+- ¿Por qué no quieres mirar a otro lado? 
 
--Sol: En parte me alegra que estas nubes esten... No puedo mirar las atrocidades que haceis...
+ 
 
--Estefanía: Vamos a explorar eso, Sol.
+- Estefanía: Porque si miro para otro lado, puede que en algún momento deje de importarme. 
 
--Expon todas esas preocupaciones, dame la oportunidad de verlo de otra manera.
+ 
 
--Sol: ¿Estas segura? Posiblemente diga cosas muy feas...
+-Estefanía: No quiero que deje de importarme. No quiero convertirme en alguien a quien los demás no le importan. 
 
--Estefanía: Lo aguantaré. Confía en mi.
+-Es complicado, pero si todos miramos para otro lado, nada cambiará jamás. 
 
-**Ultimas secuencias**
+- Sol: Estefanía... no se si quiero seguir con la sesión... 
 
--Estefanía: Muy bien Sol, sueltalo.
+ 
 
-**Secuencia 1**
+-Estefanía: ¿Qué, por qué? ¡estas avanzando muy bien! 
 
--Estoy harto de mirar en vuestra dirección. Cada vez que os observo es peor.
+-Sol: Es que... Tengo miedo... 
 
--Habeis tenido momentos buenos y momentos malos pero ¿ahora? No quiero mirar.
+-Estefanía: Es normal tener miedo, sanar a veces da vértigo. 
 
-**Secuencia 2**
+-Sol: No es por eso Estefanía, pero tengo miedo de que quizás te cabrees conmigo. 
 
-- Es horrendo todo lo que ocurre allí. Genocidios y crimenes inimaginables...
+-Yo... Estefanía yo he dejado de dejado de confiar en vosotros... 
 
-**Secuencia 3**
+-Estefanía: ... 
 
-- Y NO PASA ABSOLUTAMENTE NADA. TODOS MIRAN A OTRO LADO.
+-Sol: En parte me alegra que estas nubes estén... No puedo mirar las atrocidades que hacéis... 
 
-- TODOS PASAN DE HACER NADA Y POR ESO HE DECIDIDO HACER LO MISMO.
+-Estefanía: Vamos a explorar eso, Sol. 
 
-**Secuencia 4**
+-Expón todas esas preocupaciones, dame la oportunidad de verlo de otra manera. 
 
-- Por eso he decidido hacer lo mismo... No aguanto veros mas...
+-Sol: ¿Estás segura? Posiblemente diga cosas muy feas... 
 
-- He perdido la esperanza con vosotros...
+-Estefanía: Lo aguantaré. Confía en mí. 
 
-**Secuencia 5**
+Ultimas secuencias 
 
--Estefanía: ¡Sol!
+-Estefanía: Muy bien Sol, suéltalo. 
 
-- ¡Solo te estas concentrando en lo peor de nosotros!
+Secuencia 1 
 
--Sol: ¿Hay algo bueno?
+-Estoy harto de mirar en vuestra dirección. Cada vez que os observo es peor. 
 
-**Secuencia 6**
+-Habéis tenido momentos buenos y momentos malos, pero ¿ahora? No quiero mirar. 
 
--Estefanía: CLARO QUE LO HAY. LA HUMANIDAD ES MUCHO MAS QUE TODO LO QUE HAS RECITADO.
+Secuencia 2 
 
-- ¿Crees que nosotros no hemos visto esas atrocidades?
+-Es horrendo todo lo que ocurre allí. Genocidios y crímenes inimaginables... 
 
--Y si, es cierto que muchos miran para otro lado...
+Secuencia 3 
 
--PERO TAMBIEN HAY MUCHOS QUE HAN DECIDIDO PELEAR.
+- Y NO PASA ABSOLUTAMENTE NADA. TODOS MIRAN A OTRO LADO. 
 
-**Secuencia 7**
+- TODOS PASAN DE HACER NADA Y POR ESO HE DECIDIDO HACER LO MISMO. 
 
-- Muchos hacen lo que esta en su mano para hacer del mundo un lugar mejor.
+Secuencia 4 
 
-- ¡Pelean por un futuro mejor!
+	Por eso he decidido hacer lo mismo... No aguanto veros más... 
 
-- Sol: NO ES SUFICIENTE.
+	He perdido la esperanza con vosotros... 
 
--Sol: No sirve de nada pelear, es imposible cambiar hacia donde os dirigís.
+Secuencia 5 
 
-**Secuencia 8**
+-Estefanía: ¡Sol! 
 
--Estefanía: Eso es lo que quieren que pienses! Que tires la toalla.
+	¡Solo te estas concentrando en lo peor de nosotros! 
 
-- La humanidad esta repleta de gente mala. Gente que cree que el mundo le pertenece.
+-Sol: ¿Hay algo bueno? 
 
-- Pero tambien esta repleta de gente que se esfuerza cada dia. 
+Secuencia 6 
 
-- Pelean por un futuro libre de hijos de puta y para eso necesitan esperanza.
+-Estefanía: CLARO QUE LO HAY. LA HUMANIDAD ES MUCHO MAS QUE TODO LO QUE HAS DICHO. 
 
-**Secuencia 9** 
+	¿Crees que nosotros no hemos visto esas atrocidades? 
 
--Sol: Pero no se si quiero mirar Estefanía... Si miro y no conseguís cambiar las cosas...
+-Y sí, es cierto que muchos miran para otro lado... 
 
-- No quiero ver el mundo que surgirá si esto sigue así...
+-PERO TAMBIEN HAY MUCHOS QUE HAN DECIDIDO PELEAR. 
 
--Estefanía: Sol... somos conscientes de como puede acabar el mundo si sigue así.
+Secuencia 7 
 
--Pero tambien miramos a como puede ser el mundo si lo conseguimos. Si conseguimos hacerlo mejor.
+	Muchos hacen lo que está en su mano para hacer del mundo un lugar mejor. 
 
-**Secuencia 10**
+	¡Pelean por un futuro mejor! 
 
--Sol: ...
+	Sol: NO ES SUFICIENTE. 
 
-- Quiero creer pero...
+-Sol: No sirve de nada pelear, es imposible cambiar hacia donde os dirigís. 
 
--Estefanía: Sol, se que sabes que somos capaces de lo mejor y de lo peor.
+Secuencia 8 
 
-- Se que ver lo peor de nosotros es dificil, pero tienes que poder ver tambien lo mejor de nosotros.
+-Estefanía: ¡Eso es lo que quieren que pienses! ¡Que tires la toalla! 
 
-- Necesitamos que sigas mirando, creyendo en nosotros.
+	La humanidad está repleta de gente mala. Gente que cree que el mundo le pertenece. 
 
-**Secuencia 11**
+	Pero también está repleta de gente que se esfuerza cada día.  
 
-- sol: ¿Que pasa si todo sale mal? Perdere todo lo que merece la pena mirar...
+	Pelean por un futuro libre de hijos de puta y para eso necesitan esperanza. 
 
-- Estefanía: Si todo sale mal, volveremos a intentarlo.
+Secuencia 9  
 
-- Pero sea cual sea el resultado, sabremos que buscabamos un mejor futuro...
+-Sol: Pero no sé si quiero mirar Estefanía... Si miro y no conseguís cambiar las cosas... 
 
-- Pero para eso te necesitamos...
+	No quiero ver el mundo que surgirá si esto sigue así... 
 
-- Sol: A mi? Para que? 
+-Estefanía: Sol... somos conscientes de cómo puede acabar el mundo si sigue así. 
 
-*Secuencia 12**
+-Pero también miramos a como puede ser el mundo si lo conseguimos. Si conseguimos hacerlo mejor. 
 
-Estefanía: Porque cuando todo cambie, cuando lo consigamos y cambiemos las cosas...
+Secuencia 10 
 
--Necesitaremos levantar la vista y ver al sol salir en un mañana mejor.
+-Sol: ... 
 
-**Secuencia final**
+	Quiero creer, pero... 
 
-- ESTA BIEN, MIRARE.
+-Estefanía: Sol, sé que sabes que somos capaces de lo mejor y de lo peor. 
 
-- Quiero creer en vosotros... Puede que me siga costando, pero mirare de todas formas.
+	Se que ver lo peor de nosotros es difícil, pero tienes que poder ver también lo mejor de nosotros. 
 
-**Fin de minijuego**
+	Necesitamos que sigas mirando, creyendo en nosotros. 
 
-- ¡ey, las nuebs se han disipado!
+Secuencia 11 
 
-- VUELVO A ESTAR BIEN, LA TERAPIA FUNCIONÓ!
+	sol: ¿Qué pasa si todo sale mal? Perderé todo lo que merece la pena mirar... 
 
-- ¡Se acabó por fin!
+	Estefanía: Si todo sale mal, volveremos a intentarlo. 
 
--Estefanía: Si una polla. Te queda mucho camino Sol.
+	Pero sea cual sea el resultado, sabremos que buscábamos un mejor futuro... 
 
--Sol: Pero si ya no tengo nubes! 
+	Pero para eso te necesitamos... 
 
--Estefanía: Puede ser, pero eso no quiere decir que estes estable. Tu salud mental nos e cura con una sesión.
+	Sol: ¿A mí? ¿Para qué? 
 
-- Vendré todos los meses y tendremos una sesión para ver como avanzas y como mejorar.
+Secuencia 12* 
 
-- Será mi manera de pelear.
+Estefanía: Porque cuando todo cambie, cuando lo consigamos y cambiemos las cosas... 
 
--Sol: Esta bien... 
+-Necesitaremos levantar la vista y ver al sol salir en un mañana mejor. 
 
--Yo cumpliré mi promesa. Seguiré mirandós.
+Secuencia final 
 
-- Prometo que intentare tener esperanza.
+	ESTA BIEN, MIRARE. 
 
--Estefanía: Bueno sol, hemos termiando por hoy. Espero verte el mes que viene.
+	Quiero creer en vosotros... Puede que me siga costando, pero mirare de todas formas. 
 
-- Lo has hecho genial.
+Fin de minijuego 
 
--Sol: Gracías Estefanía... Hasta el mes que viene...
+	¡ey, las nubes se han disipado! 
 
-**Fundido a negro**
+	¡VUELVO A ESTAR BIEN, LA TERAPIA FUNCIONÓ! 
 
-Cuando lo consigaís estaré ahí. Saludandós en un mañana mejor.
+	¡Se acabó por fin! 
 
-Confiaré en vosotros.
+-Estefanía: Si una polla. Te queda mucho camino Sol. 
 
-**Creditos(?)***
+-Sol: ¡Pero si ya no tengo nubes!  
+
+-Estefanía: Puede ser, pero eso no quiere decir que estes estable. Tu salud mental no se cura con una sesión. 
+
+	Vendré todos los meses y tendremos una sesión para ver como avanzas y como mejorar. 
+
+	Será mi manera de pelear. 
+
+-Sol: Esta bien...  
+
+-Yo cumpliré mi promesa. Seguiré mirándoos. 
+
+	Prometo que intentare tener esperanza. 
+
+-Estefanía: Bueno sol, hemos terminado por hoy. Espero verte el mes que viene. 
+
+	Lo has hecho genial. 
+
+-Sol: Gracias Estefanía... Hasta el mes que viene... 
+
+Fundido a negro 
+
+Cuando lo consigáis estaré ahí.  
+
+Os daré la bienvenida a un mañana mejor. 
+
+Confiaré en vosotros. 
+
+Créditos(?)* 
+
+ 
