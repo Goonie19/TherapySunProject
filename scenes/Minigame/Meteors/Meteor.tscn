@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://b51c8aeipf64j"]
+[gd_scene load_steps=14 format=3 uid="uid://b51c8aeipf64j"]
 
 [ext_resource type="Script" uid="uid://ccdfne1heydaw" path="res://scripts/Minigame/Meteor/meteor_movement.gd" id="1_wkdxw"]
 [ext_resource type="Texture2D" uid="uid://byhcols5drhnn" path="res://assets/animations/Minigame/Meteors/Meteoritos_SpriteSheet.png" id="2_60j6k"]
+[ext_resource type="Texture2D" uid="uid://k7hx6g2eu22v" path="res://assets/animations/Minigame/Meteors/Meteor_breaking_sheet.png" id="3_pnmq1"]
 
 [sub_resource type="Animation" id="Animation_jarmb"]
 resource_name = "Meteor_Anim"
@@ -35,24 +36,88 @@ tracks/0/keys = {
 "update": 1,
 "values": [0]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Meteor Sprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_60j6k")]
+}
+
+[sub_resource type="Animation" id="Animation_du37c"]
+resource_name = "Meteor_Break"
+step = 0.0909091
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Meteor Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_pnmq1")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Meteor Sprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.363636, 0.727273),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"destroy_meteor"
+}]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ox4ev"]
 _data = {
 &"Meteor_Anim": SubResource("Animation_jarmb"),
+&"Meteor_Break": SubResource("Animation_du37c"),
 &"RESET": SubResource("Animation_byaxx")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_embft"]
 animation = &"Meteor_Anim"
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_pnmq1"]
+animation = &"Meteor_Break"
+
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_tt2mb"]
 advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_du37c"]
+advance_mode = 2
+advance_condition = &"Break"
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_pvie2"]
 states/Meteor_Anim/node = SubResource("AnimationNodeAnimation_embft")
 states/Meteor_Anim/position = Vector2(336, 92)
+states/Meteor_Break/node = SubResource("AnimationNodeAnimation_pnmq1")
+states/Meteor_Break/position = Vector2(492, 82)
 states/Start/position = Vector2(171, 81)
-transitions = ["Start", "Meteor_Anim", SubResource("AnimationNodeStateMachineTransition_tt2mb")]
+transitions = ["Start", "Meteor_Anim", SubResource("AnimationNodeStateMachineTransition_tt2mb"), "Meteor_Anim", "Meteor_Break", SubResource("AnimationNodeStateMachineTransition_du37c")]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ybkii"]
 radius = 30.0
@@ -64,7 +129,7 @@ script = ExtResource("1_wkdxw")
 rotation = -2.50978
 scale = Vector2(0.045, 0.045)
 texture = ExtResource("2_60j6k")
-hframes = 4
+hframes = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -74,6 +139,7 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_pvie2")
 anim_player = NodePath("../AnimationPlayer")
+parameters/conditions/Break = false
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 4
