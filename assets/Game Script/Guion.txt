@@ -44,7 +44,7 @@
 
 -Sol: Vaya interesada... 
 
--Estefanía: interesada lo será tu madre. Ahora cállate y vamos a empezar. 
+-Estefanía: Interesada lo será tu madre. Ahora cállate y vamos a empezar. 
 
 -Sol: Uy 
 
@@ -81,10 +81,6 @@
 -Estefanía: ¡Al cielo con ella! 
 
 Comienza minijuego* 
-
--Estefanía: Vale Sol, es momento de empezar a sacar lo que tienes dentro. 
-
--Yo bloqueare los meteoritos para que puedas centrarte en un pensamiento a la vez. 
 
 - ¿Que estás pensando ahora? 
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bodj13bauus4b"]
+[gd_scene load_steps=22 format=3 uid="uid://bodj13bauus4b"]
 
 [ext_resource type="Script" uid="uid://bw0qouy70nse5" path="res://scripts/Dependency Injection/dependency_injector.gd" id="1_liy57"]
 [ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="1_w5aja"]
@@ -20,6 +20,7 @@
 [ext_resource type="Resource" uid="uid://byoc1sru8w3lc" path="res://Resources/Actions/1_3_Dialogue_sun_estefania_1.tres" id="15_77hjl"]
 [ext_resource type="Resource" uid="uid://do7hw3ul1uj8c" path="res://Resources/Actions/1_4_1 Shrink Estefania.tres" id="15_ro0ie"]
 [ext_resource type="PackedScene" uid="uid://c0b4lk8m4qa80" path="res://scenes/Characters/Estefania.tscn" id="16_liy57"]
+[ext_resource type="Resource" uid="uid://bia1rxfhtwp0e" path="res://Resources/Actions/1_5_Minigame_1_action.tres" id="17_ro0ie"]
 
 [node name="GameScene" type="Node"]
 
@@ -43,7 +44,6 @@ position = Vector2(400, 300)
 position = Vector2(400, 300)
 
 [node name="MinigameScene" parent="." node_paths=PackedStringArray("dialogue_manager") instance=ExtResource("3_bw6k5")]
-visible = false
 position = Vector2(400, 300)
 dialogue_manager = NodePath("../DialoguePanel")
 
@@ -53,7 +53,7 @@ z_index = 9
 [node name="Lineal_action_controller" type="Node2D" parent="." node_paths=PackedStringArray("waiting_timer")]
 script = ExtResource("5_y3j0m")
 waiting_timer = NodePath("../WaitingTimer")
-actions = Array[ExtResource("6_rurhu")]([ExtResource("7_tcjrq"), ExtResource("7_rvs2r"), ExtResource("9_ldkr4"), ExtResource("7_mw25s"), ExtResource("12_mwyo0"), ExtResource("14_s76x2"), ExtResource("15_77hjl"), ExtResource("15_ro0ie"), ExtResource("15_6aqbo")])
+actions = Array[ExtResource("6_rurhu")]([ExtResource("7_tcjrq"), ExtResource("7_rvs2r"), ExtResource("9_ldkr4"), ExtResource("7_mw25s"), ExtResource("12_mwyo0"), ExtResource("14_s76x2"), ExtResource("15_77hjl"), ExtResource("15_ro0ie"), ExtResource("15_6aqbo"), ExtResource("17_ro0ie")])
 
 [node name="DialoguePanel" parent="." instance=ExtResource("4_y3j0m")]
 z_index = 10
