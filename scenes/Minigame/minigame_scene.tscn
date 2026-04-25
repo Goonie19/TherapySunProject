@@ -16,29 +16,29 @@ size = Vector2(2106.18, 627.648)
 [sub_resource type="Resource" id="Resource_ifbja"]
 script = ExtResource("7_ifbja")
 spawn_pos_label = 0
-spawn_pos = Vector2(0, -450)
+spawn_pos = Vector2(0, -250)
 metadata/_custom_type_script = "uid://cydi1s84w1ypf"
 
 [sub_resource type="Resource" id="Resource_yin35"]
 script = ExtResource("7_ifbja")
 spawn_pos_label = 4
-spawn_pos = Vector2(0, 450)
+spawn_pos = Vector2(0, 250)
 metadata/_custom_type_script = "uid://cydi1s84w1ypf"
 
 [sub_resource type="Resource" id="Resource_trg6o"]
 script = ExtResource("7_ifbja")
 spawn_pos_label = 2
-spawn_pos = Vector2(450, 0)
+spawn_pos = Vector2(250, 0)
 metadata/_custom_type_script = "uid://cydi1s84w1ypf"
 
 [sub_resource type="Resource" id="Resource_2kaf3"]
 script = ExtResource("7_ifbja")
 spawn_pos_label = 6
-spawn_pos = Vector2(-450, 0)
+spawn_pos = Vector2(-250, 0)
 metadata/_custom_type_script = "uid://cydi1s84w1ypf"
 
 [node name="MinigameScene" type="Node2D" node_paths=PackedStringArray("end_sequence_timer", "spawn_timer", "meteor_spawner", "sun_space_rotator_node")]
-position = Vector2(385, 268)
+position = Vector2(400, 300)
 script = ExtResource("1_7rs4c")
 end_sequence_timer = NodePath("EndWaitTimer")
 spawn_timer = NodePath("Spawn Timer")

@@ -1,0 +1,70 @@
+[gd_scene load_steps=8 format=3 uid="uid://ccv1rx00vh1d1"]
+
+[ext_resource type="Texture2D" uid="uid://bgjedbjad0i1x" path="res://assets/animations/Minigame/Cloud_Meteor/Cloud_1-sheet.png" id="1_ta33u"]
+
+[sub_resource type="Animation" id="Animation_uybtb"]
+resource_name = "Iddle"
+length = 0.666683
+loop_mode = 1
+step = 0.166667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.333333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_nrdgo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kyio5"]
+_data = {
+&"Iddle": SubResource("Animation_uybtb"),
+&"RESET": SubResource("Animation_nrdgo")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ta33u"]
+animation = &"Iddle"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5jy06"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_8hco0"]
+states/Iddle/node = SubResource("AnimationNodeAnimation_ta33u")
+states/Iddle/position = Vector2(287, 105)
+transitions = ["Start", "Iddle", SubResource("AnimationNodeStateMachineTransition_5jy06")]
+
+[node name="Cloud Spawn" type="Node2D"]
+z_index = 1
+scale = Vector2(0.04, 0.04)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ta33u")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_kyio5")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_8hco0")
+anim_player = NodePath("../AnimationPlayer")

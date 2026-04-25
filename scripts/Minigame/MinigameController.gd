@@ -25,6 +25,7 @@ func set_dependencies(character_controller: CharacterController, dialogue_manage
 
 func start_minigame(minigameAction: MinigameAction):
 	mini_sequence = minigameAction.sequences[current_sequence]
+	meteor_spawner.activate_clouds()
 	
 	sun_space_rotator_node.process_mode = Node.PROCESS_MODE_INHERIT
 	

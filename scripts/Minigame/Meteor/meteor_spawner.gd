@@ -4,6 +4,8 @@ class_name MeteorSpawner
 
 @export var meteor_default : PackedScene
 
+@export var cloud_list: Array[Node2D]
+
 @export var spawn_points_center: Node2D
 
 @export var meteor_spawn_points : Array[MeteorSpawnPosition]
@@ -32,3 +34,9 @@ func find_meteor_pos(pos: MeteorSpawnSequenceData.METEOR_SPAWN_POSITIONS):
 		i = -1
 		
 	return i
+
+func activate_clouds():
+	var i = 0
+	while i < cloud_list.size():
+		cloud_list[i].visible = true
+		i = i + 1
