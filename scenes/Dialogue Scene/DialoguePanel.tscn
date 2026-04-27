@@ -1,10 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://cj4asau0sfw6f"]
+[gd_scene load_steps=10 format=3 uid="uid://cj4asau0sfw6f"]
 
 [ext_resource type="Script" uid="uid://n075vu8enijl" path="res://scripts/DialogueSystem/View/dialogue_view.gd" id="1_gdf5x"]
-[ext_resource type="Texture2D" uid="uid://ckbmbunmmnq0x" path="res://assets/UI/Name Panel.png" id="3_t6upd"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d7f5w"]
-texture = ExtResource("3_t6upd")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t84l4"]
 
 [sub_resource type="Animation" id="Animation_ejk6b"]
 resource_name = "Appear"
@@ -459,7 +457,7 @@ _data = {
 &"RESET": SubResource("Animation_t6upd")
 }
 
-[node name="DialoguePanel" type="Control" node_paths=PackedStringArray("dialogue_screen_center_text", "dialogue_text", "dialogue_name_text", "answer_buttons", "timer", "dialogue_panel_animation_player")]
+[node name="DialoguePanel" type="Control" node_paths=PackedStringArray("dialogue_screen_center_text", "dialogue_text", "dialogue_panel", "dialogue_name_text", "answer_buttons", "timer", "dialogue_panel_animation_player")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -469,6 +467,7 @@ grow_vertical = 2
 script = ExtResource("1_gdf5x")
 dialogue_screen_center_text = NodePath("CanvasLayer/NarrationText")
 dialogue_text = NodePath("Dialogue Image/Dialogue Text Label")
+dialogue_panel = NodePath("Dialogue Image/Name Panel")
 dialogue_name_text = NodePath("Dialogue Image/Name Panel/Name Text Label")
 answer_buttons = [NodePath("Dialogue Image/Answers/Answer 1"), NodePath("Dialogue Image/Answers/Answer 2")]
 timer = NodePath("Timer")
@@ -515,7 +514,7 @@ offset_top = -81.0
 offset_right = -18.0
 offset_bottom = 69.0
 grow_horizontal = 0
-theme_override_styles/panel = SubResource("StyleBoxTexture_d7f5w")
+theme_override_styles/panel = SubResource("StyleBoxTexture_t84l4")
 
 [node name="Name Text Label" type="Label" parent="Dialogue Image/Name Panel"]
 layout_mode = 1

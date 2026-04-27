@@ -4,6 +4,7 @@ class_name DialogueView
 
 @export var dialogue_screen_center_text: RichTextLabel
 @export var dialogue_text: RichTextLabel
+@export var dialogue_panel: Panel
 @export var dialogue_name_text: Label
 @export var answer_buttons: Array[Button]
 @export var timer: Timer
@@ -31,6 +32,10 @@ func start_dialogue(dialogue: DialogueData):
 	presenter.start_dialogue()
 
 func set_sentence(sentence: sentence_data):
+	#changes the panel texture depending on the character
+	dialogue_panel.remove_theme_stylebox_override("panel")
+	dialogue_panel.add_theme_stylebox_override("panel", sentence.character_speaking.character_dialogue_panel)
+	
 	current_sentence = sentence.dialogue_string
 	dialogue_name_text.text = sentence.character_speaking.character_name
 	sentence.character_speaking.controller.set_character_state(sentence.state)

@@ -1,8 +1,13 @@
-[gd_resource type="Resource" script_class="character_data" load_steps=2 format=3 uid="uid://c4kl8kakl7bv2"]
+[gd_resource type="Resource" script_class="character_data" load_steps=4 format=3 uid="uid://c4kl8kakl7bv2"]
 
 [ext_resource type="Script" uid="uid://bvwqyxvrtm3ug" path="res://scripts/DialogueSystem/Model/character_data.gd" id="1_jpg57"]
+[ext_resource type="Texture2D" uid="uid://ckbmbunmmnq0x" path="res://assets/UI/Name Panel.png" id="1_lmuht"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lmuht"]
+texture = ExtResource("1_lmuht")
 
 [resource]
 script = ExtResource("1_jpg57")
 character_name = "Sol"
+character_dialogue_panel = SubResource("StyleBoxTexture_lmuht")
 metadata/_custom_type_script = "uid://bvwqyxvrtm3ug"

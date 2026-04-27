@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ccdfne1heydaw" path="res://scripts/Minigame/Meteor/meteor_movement.gd" id="1_wkdxw"]
 [ext_resource type="Texture2D" uid="uid://byhcols5drhnn" path="res://assets/animations/Minigame/Meteors/Meteoritos_SpriteSheet.png" id="2_60j6k"]
-[ext_resource type="AudioStream" uid="uid://dqx4ttum6r4ee" path="res://assets/Sound/SFX/Dialogue_sound_character.wav" id="2_du37c"]
+[ext_resource type="AudioStream" uid="uid://b5mardcmlpd0h" path="res://assets/Sound/SFX/Crash Sound.wav" id="2_du37c"]
 [ext_resource type="Texture2D" uid="uid://k7hx6g2eu22v" path="res://assets/animations/Minigame/Meteors/Meteor_breaking_sheet.png" id="3_pnmq1"]
 
 [sub_resource type="Animation" id="Animation_jarmb"]

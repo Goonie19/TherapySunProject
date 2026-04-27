@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwjw5ys38h7vt"
+path="res://.godot/imported/Kevin Mcleod higher.mp3-f387da46d6117fd94a9dc5176a731802.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound/Music/Kevin Mcleod higher.mp3"
+dest_files=["res://.godot/imported/Kevin Mcleod higher.mp3-f387da46d6117fd94a9dc5176a731802.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

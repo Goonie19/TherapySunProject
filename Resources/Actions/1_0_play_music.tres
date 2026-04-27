@@ -1,9 +1,10 @@
 [gd_resource type="Resource" script_class="PlayMusicAction" load_steps=3 format=3 uid="uid://dgvqkaw4gwytg"]
 
-[ext_resource type="AudioStream" uid="uid://befx756tth06e" path="res://assets/Sound/Music/Dissappointment - Kevin Mcleod.mp3" id="1_830xu"]
-[ext_resource type="Script" uid="uid://7vs1l762fec5" path="res://scripts/Lineal Action System/Actions/play_music_action.gd" id="1_ipw5k"]
+[ext_resource type="AudioStream" uid="uid://85kr7qgcss2m" path="res://assets/Sound/Music/kevin-macleod-space-1990.mp3" id="1_830xu"]
+[ext_resource type="Script" path="res://scripts/Lineal Action System/Actions/play_music_action.gd" id="1_ipw5k"]
 
 [resource]
 script = ExtResource("1_ipw5k")
 music_to_play = ExtResource("1_830xu")
+skip_wait = false
 metadata/_custom_type_script = "uid://7vs1l762fec5"

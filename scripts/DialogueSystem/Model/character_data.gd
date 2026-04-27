@@ -3,6 +3,7 @@ extends Resource
 class_name character_data
 
 @export var character_name: String
+@export var character_dialogue_panel: StyleBoxTexture
 
 var controller: CharacterController
 
