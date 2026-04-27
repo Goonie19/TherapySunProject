@@ -27,6 +27,10 @@ signal on_options_hidden
 
 signal on_dialogue_finished
 
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("AdvanceText") :
+		press_next_button()
+
 func start_dialogue(dialogue: DialogueData):
 	presenter = dialogue_presenter.new(self, dialogue)
 	presenter.start_dialogue()

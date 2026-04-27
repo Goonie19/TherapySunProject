@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ctwd6aklt5ujt"]
+[gd_scene load_steps=17 format=3 uid="uid://ctwd6aklt5ujt"]
 
 [ext_resource type="Script" uid="uid://coqq1jfjru4af" path="res://scripts/Minigame/MinigameController.gd" id="1_7rs4c"]
 [ext_resource type="Script" uid="uid://c1u7xqijkxsii" path="res://scripts/Minigame/Rotator/blocker_rotator.gd" id="1_jarmb"]
@@ -12,6 +12,58 @@ radius = 44.34
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_byaxx"]
 size = Vector2(2106.18, 627.648)
+
+[sub_resource type="Animation" id="Animation_kasab"]
+resource_name = "Appear"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.001, 0.001), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ifbja"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.001, 0.001)]
+}
+
+[sub_resource type="Animation" id="Animation_yin35"]
+resource_name = "Disappear"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.000999987, 0.000999987)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yin35"]
+_data = {
+&"Appear": SubResource("Animation_kasab"),
+&"Disappear": SubResource("Animation_yin35"),
+&"RESET": SubResource("Animation_ifbja")
+}
 
 [sub_resource type="Resource" id="Resource_ifbja"]
 script = ExtResource("7_ifbja")
@@ -50,8 +102,9 @@ one_shot = true
 
 [node name="Spawn Timer" type="Timer" parent="."]
 
-[node name="SunSpace" type="Node2D" parent="."]
+[node name="SunSpace" type="Node2D" parent="." node_paths=PackedStringArray("rotator")]
 script = ExtResource("2_7rs4c")
+rotator = NodePath("Blocker Rotator")
 
 [node name="Sun Area 2D" type="Area2D" parent="SunSpace"]
 collision_mask = 4
@@ -59,8 +112,10 @@ collision_mask = 4
 [node name="SunCollision" type="CollisionShape2D" parent="SunSpace/Sun Area 2D"]
 shape = SubResource("CircleShape2D_jarmb")
 
-[node name="Blocker Rotator" type="Node2D" parent="SunSpace"]
+[node name="Blocker Rotator" type="Node2D" parent="SunSpace" node_paths=PackedStringArray("animation_player")]
+scale = Vector2(0.001, 0.001)
 script = ExtResource("1_jarmb")
+animation_player = NodePath("AnimationPlayer")
 rotation_speed = 12.0
 
 [node name="Sprite blocker" type="Sprite2D" parent="SunSpace/Blocker Rotator"]
@@ -77,6 +132,11 @@ collision_mask = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SunSpace/Blocker Rotator/Sprite blocker/Blocker Area 2D"]
 position = Vector2(248.8, 294.954)
 shape = SubResource("RectangleShape2D_byaxx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SunSpace/Blocker Rotator"]
+libraries = {
+&"": SubResource("AnimationLibrary_yin35")
+}
 
 [node name="Meteor Spawner" parent="." instance=ExtResource("4_ox4ev")]
 meteor_spawn_points = Array[ExtResource("7_ifbja")]([SubResource("Resource_ifbja"), SubResource("Resource_yin35"), SubResource("Resource_trg6o"), SubResource("Resource_2kaf3")])

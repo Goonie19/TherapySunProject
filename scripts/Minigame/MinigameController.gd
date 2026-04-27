@@ -9,7 +9,7 @@ var minigame_time : float
 @export var end_sequence_timer: Timer
 @export var spawn_timer: Timer
 @export var meteor_spawner: MeteorSpawner
-@export var sun_space_rotator_node: Node2D
+@export var sun_space_rotator_node: CharacterImpactDetection
 
 var character: CharacterController
 var current_meteor_pos: int
@@ -26,6 +26,7 @@ func set_dependencies(character_controller: CharacterController, dialogue_manage
 func start_minigame(minigameAction: MinigameAction):
 	mini_sequence = minigameAction.sequences[current_sequence]
 	meteor_spawner.activate_clouds()
+	sun_space_rotator_node.set_rotator(true)
 	
 	sun_space_rotator_node.process_mode = Node.PROCESS_MODE_INHERIT
 	
@@ -36,6 +37,7 @@ func start_minigame(minigameAction: MinigameAction):
 		current_sequence = current_sequence + 1
 	
 	on_minigame_finished.emit()
+	sun_space_rotator_node.set_rotator(false)
 	
 
 func spawn_random_meteor():

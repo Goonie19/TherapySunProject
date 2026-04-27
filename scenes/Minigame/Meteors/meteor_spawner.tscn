@@ -15,13 +15,17 @@ meteor_spawn_points = Array[ExtResource("3_06x8k")]([null, null, null, null])
 [node name="SpawnPoints" type="Node2D" parent="."]
 
 [node name="Cloud Spawn" parent="SpawnPoints" instance=ExtResource("4_uybtb")]
+visible = false
 position = Vector2(0, -250)
 
 [node name="Cloud Spawn2" parent="SpawnPoints" instance=ExtResource("4_uybtb")]
+visible = false
 position = Vector2(250, 0)
 
 [node name="Cloud Spawn3" parent="SpawnPoints" instance=ExtResource("4_uybtb")]
+visible = false
 position = Vector2(0, 250)
 
 [node name="Cloud Spawn4" parent="SpawnPoints" instance=ExtResource("4_uybtb")]
+visible = false
 position = Vector2(-250, 0)

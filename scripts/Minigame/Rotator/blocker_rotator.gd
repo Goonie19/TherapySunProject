@@ -1,5 +1,8 @@
 extends Node2D
 
+class_name BlockerRotator
+
+@export var animation_player: AnimationPlayer
 @export var rotation_speed : float = 12000
 
 var target_dir : Vector2
@@ -25,6 +28,11 @@ func read_input():
 		target_dir = dir
 	
 
+func appear() -> void:
+	animation_player.play("Appear")
+	
+func disappear() -> void: 
+	animation_player.play("Disappear")
 
 func _on_blocker_area_2d_area_entered(area: Area2D) -> void:
 	print("Yo si que lo detecto")
