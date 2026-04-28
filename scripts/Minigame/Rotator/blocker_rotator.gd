@@ -7,6 +7,9 @@ class_name BlockerRotator
 
 var target_dir : Vector2
 
+signal on_appear
+signal on_disappear
+
 func _process(delta: float) -> void:
 	read_input()
 	
@@ -33,6 +36,12 @@ func appear() -> void:
 	
 func disappear() -> void: 
 	animation_player.play("Disappear")
+
+func call_appeared()->void:
+	on_appear.emit()
+
+func call_disappeared() -> void: 
+	on_disappear.emit()
 
 func _on_blocker_area_2d_area_entered(area: Area2D) -> void:
 	print("Yo si que lo detecto")

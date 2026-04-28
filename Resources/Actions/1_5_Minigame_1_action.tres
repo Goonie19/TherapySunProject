@@ -7,6 +7,6 @@
 
 [resource]
 script = ExtResource("1_aot4v")
-sequences = Array[ExtResource("2_xo31r")]([ExtResource("3_xo31r"), ExtResource("4_0ifb1"), null, null, null, null])
+sequences = Array[ExtResource("2_xo31r")]([ExtResource("3_xo31r"), ExtResource("4_0ifb1")])
 skip_wait = false
 metadata/_custom_type_script = "uid://b3yd0nah18vsa"

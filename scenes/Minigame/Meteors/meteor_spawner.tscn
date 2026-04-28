@@ -5,27 +5,11 @@
 [ext_resource type="Script" uid="uid://cydi1s84w1ypf" path="res://scripts/Minigame/Meteor/Data/meteor_spawn_position.gd" id="3_06x8k"]
 [ext_resource type="PackedScene" uid="uid://ccv1rx00vh1d1" path="res://scenes/Minigame/Meteors/cloud_spawn.tscn" id="4_uybtb"]
 
-[node name="Meteor Spawner" type="Node2D" node_paths=PackedStringArray("cloud_list", "spawn_points_center")]
+[node name="Meteor Spawner" type="Node2D" node_paths=PackedStringArray("spawn_points_center")]
 script = ExtResource("1_y5igl")
 meteor_default = ExtResource("2_06x8k")
-cloud_list = [NodePath("SpawnPoints/Cloud Spawn"), NodePath("SpawnPoints/Cloud Spawn2"), NodePath("SpawnPoints/Cloud Spawn3"), NodePath("SpawnPoints/Cloud Spawn4")]
+cloud_prefab = ExtResource("4_uybtb")
 spawn_points_center = NodePath("SpawnPoints")
 meteor_spawn_points = Array[ExtResource("3_06x8k")]([null, null, null, null])
 
 [node name="SpawnPoints" type="Node2D" parent="."]
-
-[node name="Cloud Spawn" parent="SpawnPoints" instance=ExtResource("4_uybtb")]
-visible = false
-position = Vector2(0, -250)
-
-[node name="Cloud Spawn2" parent="SpawnPoints" instance=ExtResource("4_uybtb")]
-visible = false
-position = Vector2(250, 0)
-
-[node name="Cloud Spawn3" parent="SpawnPoints" instance=ExtResource("4_uybtb")]
-visible = false
-position = Vector2(0, 250)
-
-[node name="Cloud Spawn4" parent="SpawnPoints" instance=ExtResource("4_uybtb")]
-visible = false
-position = Vector2(-250, 0)

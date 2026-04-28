@@ -25,8 +25,8 @@ func set_dependencies(character_controller: CharacterController, dialogue_manage
 
 func start_minigame(minigameAction: MinigameAction):
 	mini_sequence = minigameAction.sequences[current_sequence]
-	meteor_spawner.activate_clouds()
-	sun_space_rotator_node.set_rotator(true)
+	#Waits for the shield to appear to continue the execution of the logic
+	await sun_space_rotator_node.set_rotator(true)
 	
 	sun_space_rotator_node.process_mode = Node.PROCESS_MODE_INHERIT
 	
@@ -37,7 +37,7 @@ func start_minigame(minigameAction: MinigameAction):
 		current_sequence = current_sequence + 1
 	
 	on_minigame_finished.emit()
-	sun_space_rotator_node.set_rotator(false)
+	await sun_space_rotator_node.set_rotator(false)
 	
 
 func spawn_random_meteor():

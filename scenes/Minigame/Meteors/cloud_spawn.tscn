@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://ccv1rx00vh1d1"]
+[gd_scene load_steps=10 format=3 uid="uid://ccv1rx00vh1d1"]
 
+[ext_resource type="Script" uid="uid://rdd48ohjikrc" path="res://scripts/Minigame/Meteor/cloud_spawn.gd" id="1_5jy06"]
 [ext_resource type="Texture2D" uid="uid://bgjedbjad0i1x" path="res://assets/animations/Minigame/Cloud_Meteor/Cloud_1-sheet.png" id="1_ta33u"]
 
 [sub_resource type="Animation" id="Animation_uybtb"]
@@ -35,8 +36,14 @@ tracks/0/keys = {
 "values": [0]
 }
 
+[sub_resource type="Animation" id="Animation_ta33u"]
+resource_name = "Appear"
+length = 0.666685
+step = 0.166667
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kyio5"]
 _data = {
+&"Appear": SubResource("Animation_ta33u"),
 &"Iddle": SubResource("Animation_uybtb"),
 &"RESET": SubResource("Animation_nrdgo")
 }
@@ -44,17 +51,18 @@ _data = {
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ta33u"]
 animation = &"Iddle"
 
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5jy06"]
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ta33u"]
 advance_mode = 2
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_8hco0"]
 states/Iddle/node = SubResource("AnimationNodeAnimation_ta33u")
-states/Iddle/position = Vector2(287, 105)
-transitions = ["Start", "Iddle", SubResource("AnimationNodeStateMachineTransition_5jy06")]
+states/Iddle/position = Vector2(327, 107)
+transitions = ["Start", "Iddle", SubResource("AnimationNodeStateMachineTransition_ta33u")]
 
 [node name="Cloud Spawn" type="Node2D"]
 z_index = 1
-scale = Vector2(0.04, 0.04)
+scale = Vector2(0.000999998, 0.000999998)
+script = ExtResource("1_5jy06")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ta33u")

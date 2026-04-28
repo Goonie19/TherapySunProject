@@ -15,5 +15,7 @@ func receive_impact(area: Area2D):
 func set_rotator(spawn: bool) -> void:
 	if spawn :
 		rotator.appear()
+		await rotator.on_appear
 	else: 
 		rotator.disappear()
+		await rotator.on_disappear
