@@ -3,14 +3,14 @@ extends Node2D
 class_name CharacterImpactDetection
 
 @export var rotator: BlockerRotator
-var character: CharacterController
+var character: SunController
 
-func set_dependencies(char: CharacterController):
+func set_dependencies(char: SunController):
 	character = char
 
 func receive_impact(area: Area2D): 
-	if(character):
-		character.set_character_state(CharacterState.character_state.Hit)
+	if(character != null):
+		character.Hit()
 
 func set_rotator(spawn: bool) -> void:
 	if spawn :

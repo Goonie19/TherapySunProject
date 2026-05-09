@@ -3,6 +3,11 @@
 [ext_resource type="Script" uid="uid://rdd48ohjikrc" path="res://scripts/Minigame/Meteor/cloud_spawn.gd" id="1_5jy06"]
 [ext_resource type="Texture2D" uid="uid://bgjedbjad0i1x" path="res://assets/animations/Minigame/Cloud_Meteor/Cloud_1-sheet.png" id="1_ta33u"]
 
+[sub_resource type="Animation" id="Animation_ta33u"]
+resource_name = "Appear"
+length = 0.666685
+step = 0.166667
+
 [sub_resource type="Animation" id="Animation_uybtb"]
 resource_name = "Iddle"
 length = 0.666683
@@ -35,11 +40,6 @@ tracks/0/keys = {
 "update": 1,
 "values": [0]
 }
-
-[sub_resource type="Animation" id="Animation_ta33u"]
-resource_name = "Appear"
-length = 0.666685
-step = 0.166667
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kyio5"]
 _data = {

@@ -14,3 +14,4 @@ enum METEOR_SPAWN_POSITIONS {
 
 @export var spawn_pos: METEOR_SPAWN_POSITIONS
 @export var time_stamp: float
+@export var meteor_speed: float = 201

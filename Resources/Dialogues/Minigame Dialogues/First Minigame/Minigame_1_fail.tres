@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://dnuo3c1h3tne7"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_xxqew"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_n1opq"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_w20vl"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="4_8em2r"]
+
+[sub_resource type="Resource" id="Resource_krgyp"]
+script = ExtResource("2_n1opq")
+character_speaking = ExtResource("4_8em2r")
+state = 5
+dialogue_string = "Me cago en dios así no hay quien medite.!"
+answers = Array[ExtResource("3_w20vl")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_w20vl"]
+script = ExtResource("2_n1opq")
+character_speaking = ExtResource("4_8em2r")
+state = 3
+dialogue_string = "Venga vamos de nuevo."
+answers = Array[ExtResource("3_w20vl")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_xxqew")
+narration_dialogue = false
+dialogue_id = "Fail_1"
+sentences = Array[ExtResource("2_n1opq")]([SubResource("Resource_krgyp"), SubResource("Resource_w20vl")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

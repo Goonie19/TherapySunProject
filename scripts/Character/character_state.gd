@@ -4,7 +4,10 @@ enum character_state {
 	Sad,
 	Shocked,
 	Meditating,
+	SadMeditating,
+	AngryMeditating,
 	Hit,
 	NotBother,
-	Speak
+	Speak,
+	Angry
 }

@@ -16,11 +16,16 @@ var current_meteor_pos: int
 var mini_sequence: MinigameSequence
 var current_sequence: int
 
+var current_hits : int = 0
+
 signal on_meteor_sequence_finished
 signal on_minigame_finished
 
-func set_dependencies(character_controller: CharacterController, dialogue_manager: DialogueView):
+
+func set_dependencies(character_controller: SunController, dialogue_manager: DialogueView):
 	character = character_controller
+	sun_space_rotator_node.set_dependencies(character_controller)
+	character.on_hit.connect(add_hits)
 	self.dialogue_manager = dialogue_manager
 
 func start_minigame(minigameAction: MinigameAction):
@@ -34,14 +39,16 @@ func start_minigame(minigameAction: MinigameAction):
 		mini_sequence = minigameAction.sequences[current_sequence]
 		current_meteor_pos = 0
 		await run_current_sequence_async()
-		current_sequence = current_sequence + 1
+		if current_hits <= 3:
+			current_sequence = current_sequence + 1
+		current_hits = 0
 	
 	on_minigame_finished.emit()
 	await sun_space_rotator_node.set_rotator(false)
 	
 
-func spawn_random_meteor():
-	meteor_spawner.spawn_meteor(sun_space_rotator_node, mini_sequence.sequence[current_meteor_pos].spawn_pos)
+func spawn_current_meteor():
+	meteor_spawner.spawn_meteor(sun_space_rotator_node, mini_sequence.sequence[current_meteor_pos].meteor_speed, mini_sequence.sequence[current_meteor_pos].spawn_pos)
 	current_meteor_pos += 1
 	
 	if current_meteor_pos < mini_sequence.sequence.size():
@@ -58,8 +65,12 @@ func run_current_sequence_async() -> void:
 	play_metor_sequence()
 	await on_meteor_sequence_finished
 	
-	if(mini_sequence.dialogue_at_end != null):
-		dialogue_manager.start_dialogue(mini_sequence.dialogue_at_end)
+	if current_hits <= 3 :
+		if(mini_sequence.dialogue_at_end != null):
+			dialogue_manager.start_dialogue(mini_sequence.dialogue_at_end)
+			await dialogue_manager.on_dialogue_finished	
+	else :
+		dialogue_manager.start_dialogue(mini_sequence.failing_dialogue)
 		await dialogue_manager.on_dialogue_finished	
 
 
@@ -71,3 +82,7 @@ func finish_spawn_sequence():
 	end_sequence_timer.start(mini_sequence.ending_wait_time)
 	await end_sequence_timer.timeout
 	on_meteor_sequence_finished.emit()
+	
+
+func add_hits():
+	current_hits = current_hits + 1

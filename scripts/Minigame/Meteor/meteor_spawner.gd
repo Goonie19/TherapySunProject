@@ -11,7 +11,7 @@ class_name MeteorSpawner
 
 @export var meteor_spawn_points : Array[MeteorSpawnPosition]
 
-func spawn_meteor(objective: Node2D, pos: MeteorSpawnSequenceData.METEOR_SPAWN_POSITIONS = MeteorSpawnSequenceData.METEOR_SPAWN_POSITIONS.UP):
+func spawn_meteor(objective: Node2D, speed : float = 200 ,pos: MeteorSpawnSequenceData.METEOR_SPAWN_POSITIONS = MeteorSpawnSequenceData.METEOR_SPAWN_POSITIONS.UP):
 	var cloud = cloud_prefab.instantiate()
 	add_child(cloud)
 	cloud.global_position = spawn_points_center.global_position + meteor_spawn_points[find_meteor_pos(pos)].spawn_pos

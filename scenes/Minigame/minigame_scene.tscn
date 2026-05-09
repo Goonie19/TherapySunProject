@@ -169,6 +169,6 @@ libraries = {
 [node name="Meteor Spawner" parent="." instance=ExtResource("4_ox4ev")]
 meteor_spawn_points = Array[ExtResource("7_ifbja")]([SubResource("Resource_ifbja"), SubResource("Resource_yin35"), SubResource("Resource_trg6o"), SubResource("Resource_2kaf3")])
 
-[connection signal="timeout" from="Spawn Timer" to="." method="spawn_random_meteor"]
+[connection signal="timeout" from="Spawn Timer" to="." method="spawn_current_meteor"]
 [connection signal="area_entered" from="SunSpace/Sun Area 2D" to="SunSpace" method="receive_impact"]
 [connection signal="area_entered" from="SunSpace/Blocker Rotator/Sprite blocker/Blocker Area 2D" to="SunSpace/Blocker Rotator" method="_on_blocker_area_2d_area_entered"]

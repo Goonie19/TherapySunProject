@@ -9,3 +9,5 @@ class_name MinigameSequence
 @export var sequence: Array[MeteorSpawnSequenceData] = []
 
 @export var dialogue_at_end: DialogueData
+
+@export var failing_dialogue: DialogueData
