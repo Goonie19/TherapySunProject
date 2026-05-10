@@ -34,8 +34,7 @@ func start_minigame(minigameAction: MinigameAction):
 	await sun_space_rotator_node.set_rotator(true)
 	
 	sun_space_rotator_node.process_mode = Node.PROCESS_MODE_INHERIT
-	
-	for n in range(0, minigameAction.sequences.size()):
+	while current_sequence < minigameAction.sequences.size():
 		mini_sequence = minigameAction.sequences[current_sequence]
 		current_meteor_pos = 0
 		await run_current_sequence_async()

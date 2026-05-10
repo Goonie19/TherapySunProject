@@ -42,11 +42,8 @@ func set_sentence(sentence: sentence_data):
 	
 	current_sentence = sentence.dialogue_string
 	dialogue_name_text.text = sentence.character_speaking.character_name
+	#Maybe you can put again character's speaking state, but maybe not
 	sentence.character_speaking.controller.set_character_state(sentence.state)
-
-func set_character_state_iddle(sentence: sentence_data) -> void:
-	sentence.character_speaking.controller.set_character_state(CharacterState.character_state.Iddle)
-
 
 func update_text(index: int):
 	dialogue_screen_center_text.text = ""
