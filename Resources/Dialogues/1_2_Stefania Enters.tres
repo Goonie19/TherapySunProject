@@ -41,7 +41,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_yoiui"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("5_cf28q")
-state = 6
+state = 0
 dialogue_string = "He recibido una señal, parecía venir del sol. Parecía preguntar que hacían los humanos cuando las nubes les rodean."
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -49,7 +49,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_s31d3"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("5_cf28q")
-state = 6
+state = 0
 dialogue_string = "Pues soy tu respuesta. Cuando eso nos pasa, vamos a terapia."
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -57,7 +57,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_lhygs"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("4_ap0bj")
-state = 0
+state = 1
 dialogue_string = "¿Has venido a darme una sesión de terapia? "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -65,7 +65,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_olnnt"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("5_cf28q")
-state = 6
+state = 0
 dialogue_string = "Sí. "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -73,7 +73,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_bugv5"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("4_ap0bj")
-state = 0
+state = 7
 dialogue_string = "¿Eres consciente de que no tengo dinero con que pagarte no?  "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -81,7 +81,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_nic4v"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("4_ap0bj")
-state = 0
+state = 7
 dialogue_string = "Lo de ser una estrella gigantesca que no para de explotar hace difícil llevar efectivo. "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -97,7 +97,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_bpib0"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("5_cf28q")
-state = 6
+state = 0
 dialogue_string = "Ahora mismo con que las nubes se quiten de en medio y pueda ir a la playita te ayudo gratis. "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -105,7 +105,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_nixpl"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("4_ap0bj")
-state = 0
+state = 7
 dialogue_string = "Vaya interesada... "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -113,7 +113,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_6frge"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("5_cf28q")
-state = 6
+state = 0
 dialogue_string = "Interesada lo será tu madre. Ahora cállate y vamos a empezar. "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -129,7 +129,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_827ht"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("4_ap0bj")
-state = 0
+state = 1
 dialogue_string = "Esta bien... ¿Qué tengo que hacer? "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -137,7 +137,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_1xauv"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("5_cf28q")
-state = 6
+state = 0
 dialogue_string = "Pues primero tendríamos que identificar que está causando esto. "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -145,7 +145,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_7dtj2"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("5_cf28q")
-state = 6
+state = 0
 dialogue_string = "Cuéntame, ¿qué sientes en estos momentos? "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -185,7 +185,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_4qpll"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("5_cf28q")
-state = 6
+state = 0
 dialogue_string = "¿Como si cuando intentaras relajarte te golpeara un meteorito en la cara? "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
