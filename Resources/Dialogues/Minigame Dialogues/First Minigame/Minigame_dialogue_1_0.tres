@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueData" load_steps=10 format=3 uid="uid://j6yljkxkhjmm"]
+[gd_resource type="Resource" script_class="DialogueData" load_steps=11 format=3 uid="uid://j6yljkxkhjmm"]
 
 [ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_i1ggg"]
 [ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_x13m6"]
@@ -25,7 +25,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_x13m6")
 character_speaking = ExtResource("4_3b24e")
 state = 0
-dialogue_string = "De esa manera podremos ver que te pasa y como tratarlo. "
+dialogue_string = "De esta manera podremos ver que te pasa y como tratarlo. "
 answers = Array[ExtResource("3_lhud8")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -34,6 +34,14 @@ script = ExtResource("2_x13m6")
 character_speaking = ExtResource("4_3b24e")
 state = 0
 dialogue_string = "Yo tan solo tendré que apuntar en la dirección para bloquear los meteoritos. "
+answers = Array[ExtResource("3_lhud8")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_lekra"]
+script = ExtResource("2_x13m6")
+character_speaking = ExtResource("4_3b24e")
+state = 0
+dialogue_string = "¡Vamos a empezar! "
 answers = Array[ExtResource("3_lhud8")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -48,6 +56,6 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [resource]
 script = ExtResource("1_i1ggg")
 narration_dialogue = false
-dialogue_id = "First sequence"
-sentences = Array[ExtResource("2_x13m6")]([SubResource("Resource_1nbfs"), SubResource("Resource_1dd3t"), SubResource("Resource_lhud8"), SubResource("Resource_3b24e"), SubResource("Resource_kf13q")])
+dialogue_id = "Empecemos"
+sentences = Array[ExtResource("2_x13m6")]([SubResource("Resource_1nbfs"), SubResource("Resource_1dd3t"), SubResource("Resource_lhud8"), SubResource("Resource_3b24e"), SubResource("Resource_lekra"), SubResource("Resource_kf13q")])
 metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

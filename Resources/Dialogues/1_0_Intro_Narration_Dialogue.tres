@@ -24,8 +24,8 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_0cbig"]
 script = ExtResource("2_h5oxd")
 character_speaking = ExtResource("4_awqfr")
-state = 0
-dialogue_string = "¿Qué hacen los humanos cuando esto pasa, les rodean nubes en algún momento a ellos también?"
+state = 1
+dialogue_string = "¿Qué hacen los humanos,les rodean nubes en algún momento a ellos también? "
 answers = Array[ExtResource("3_awqfr")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

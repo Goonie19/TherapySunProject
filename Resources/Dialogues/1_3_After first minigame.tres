@@ -1,0 +1,174 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=26 format=3 uid="uid://ci8y1gmem0mxl"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_mdajb"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_adpen"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_g8f4p"]
+[ext_resource type="Resource" uid="uid://bbk7vc5rdtia7" path="res://Resources/Estefanía.tres" id="4_3vad8"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="5_3vad8"]
+
+[sub_resource type="Resource" id="Resource_jlvtw"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("4_3vad8")
+state = 0
+dialogue_string = "¿Qué tal se ha sentido poder escuchar tus pensamientos sin abrumarte? "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_o2jvj"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("5_3vad8")
+state = 9
+dialogue_string = "Pues ha sido una mierda, ¿por esto ganas dinero? "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_3vad8"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("4_3vad8")
+state = 0
+dialogue_string = "Gran parte del trabajo es tener paciencia para no darte una colleja. "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_000hs"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("5_3vad8")
+state = 7
+dialogue_string = "Eres la terapeuta menos profesional que he visto. "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_wkyxq"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("4_3vad8")
+state = 0
+dialogue_string = "¿Algune más ha venido a verte alguna vez? "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_nexyh"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("5_3vad8")
+state = 7
+dialogue_string = "No, pero he observado mucho a los humanos, desde luego las sesiones de terapia suelen ser distintas. "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_8bs00"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("4_3vad8")
+state = 0
+dialogue_string = "Pues te jodes, hay que tirar con lo que tenemos. "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_ubxje"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("5_3vad8")
+state = 1
+dialogue_string = "..."
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_swj7l"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("5_3vad8")
+state = 1
+dialogue_string = "Gracias por venir. "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_6tac4"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("5_3vad8")
+state = 1
+dialogue_string = "No sé si funcionará, pero me alegra que vinieras."
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_35d61"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("4_3vad8")
+state = 0
+dialogue_string = "No ha sido fácil, he tenido que robar esta sonda para lanzarla al espacio jaja. "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_24fha"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("5_3vad8")
+state = 2
+dialogue_string = "¿Eso no es muy ilegal? "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_bt8dr"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("4_3vad8")
+state = 0
+dialogue_string = "El mundo tiene peores cosas de las que preocuparse ahora."
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_5gmgk"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("4_3vad8")
+state = 0
+dialogue_string = "Como que le dieran el GOTY a Expedition 33. La gente parece muy cabreada con eso. "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_w8nl8"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("5_3vad8")
+state = 1
+dialogue_string = "Se lo merecían, ¿no? "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_uny30"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("4_3vad8")
+state = 0
+dialogue_string = "..."
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_0p1lp"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("5_3vad8")
+state = 0
+dialogue_string = "..."
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_q8g6p"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("4_3vad8")
+state = 0
+dialogue_string = " No voy a entrar en eso. "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_saegi"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("4_3vad8")
+state = 0
+dialogue_string = "Bueno, ¿te ves con fuerzas para continuar? "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_q3q51"]
+script = ExtResource("2_adpen")
+character_speaking = ExtResource("5_3vad8")
+state = 3
+dialogue_string = "Vamos a ello. "
+answers = Array[ExtResource("3_g8f4p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_mdajb")
+narration_dialogue = false
+dialogue_id = "1st Mini finished"
+sentences = Array[ExtResource("2_adpen")]([SubResource("Resource_jlvtw"), SubResource("Resource_o2jvj"), SubResource("Resource_3vad8"), SubResource("Resource_000hs"), SubResource("Resource_wkyxq"), SubResource("Resource_nexyh"), SubResource("Resource_8bs00"), SubResource("Resource_ubxje"), SubResource("Resource_swj7l"), SubResource("Resource_6tac4"), SubResource("Resource_35d61"), SubResource("Resource_24fha"), SubResource("Resource_bt8dr"), SubResource("Resource_5gmgk"), SubResource("Resource_w8nl8"), SubResource("Resource_uny30"), SubResource("Resource_0p1lp"), SubResource("Resource_q8g6p"), SubResource("Resource_saegi"), SubResource("Resource_q3q51")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

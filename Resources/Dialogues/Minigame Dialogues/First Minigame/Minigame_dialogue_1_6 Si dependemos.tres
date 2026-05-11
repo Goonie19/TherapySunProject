@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=10 format=3 uid="uid://chf1moltq30s5"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_q6wah"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_4khto"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_16d2o"]
+[ext_resource type="Resource" uid="uid://bbk7vc5rdtia7" path="res://Resources/Estefanía.tres" id="4_5vjhl"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="5_5vjhl"]
+
+[sub_resource type="Resource" id="Resource_krkjd"]
+script = ExtResource("2_4khto")
+character_speaking = ExtResource("4_5vjhl")
+state = 0
+dialogue_string = "Si, el sistema depende de tu calor y orbitamos en torno a ti. "
+answers = Array[ExtResource("3_16d2o")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_uuhp0"]
+script = ExtResource("2_4khto")
+character_speaking = ExtResource("4_5vjhl")
+state = 0
+dialogue_string = "¿Pero significa eso que no puedas ser algo más? "
+answers = Array[ExtResource("3_16d2o")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_leggp"]
+script = ExtResource("2_4khto")
+character_speaking = ExtResource("5_5vjhl")
+state = 4
+dialogue_string = "... "
+answers = Array[ExtResource("3_16d2o")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_5vjhl"]
+script = ExtResource("2_4khto")
+character_speaking = ExtResource("5_5vjhl")
+state = 4
+dialogue_string = "Vamos a descansar por favor. "
+answers = Array[ExtResource("3_16d2o")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_q6wah")
+narration_dialogue = false
+dialogue_id = "Si, dependemos"
+sentences = Array[ExtResource("2_4khto")]([SubResource("Resource_krkjd"), SubResource("Resource_uuhp0"), SubResource("Resource_leggp"), SubResource("Resource_5vjhl")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

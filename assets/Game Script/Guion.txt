@@ -4,19 +4,19 @@
 
 - ¿Qué tengo que hacer? Por mucho que lo intento... 
 
-- ¿Qué hacen los humanos cuando esto pasa, les rodean nubes en algún momento a ellos también? 
+- ¿Qué hacen los humanos,les rodean nubes en algún momento a ellos también? 
 
 ---Fade out y vemos al sol meditando con las nubes alrededor----- 
 
-	ES QUE ES UNA MIERDA, NO PUEDO VER NADA CON ESTAS NUBES ALREDEDOR. ENCIMA UNA SE ME HA METIDO EN EL OJO. 
+-ES QUE ES UNA MIERDA, NO PUEDO VER NADA CON ESTAS NUBES ALREDEDOR. ENCIMA UNA SE ME HA METIDO EN EL OJO. 
 
 -NI SI QUIERA PUEDO DISTRAERME MIRANDO A LOS HUMANOS PORQUE NO VEO NADA.  
 
--Bah, qué más da, seguramente estén destruyendo algo, últimamente es lo único que les veo hacer... 
+-Bah, qué más da, es mejor no mirar mucho... 
 
 - ¿EHM? 
 
---- Fundido a la sala de terapia--- 
+--- Entra Estefanía--- 
 
 - ¿Qué es esto, me he fumado una de las nubes? 
 
@@ -26,7 +26,7 @@
 
 -Sol: ¿Respuesta a qué?  
 
--Estefanía: He recibido una señal, parecía venir del sol. Parecía preguntar que hacían los humanos cuando las nubes les rodean. 
+-Estefanía: He recibido una señal. Querías saber que hacían los humanos cuando las nubes les rodean. 
 
 -Estefanía: Pues soy tu respuesta. Cuando eso nos pasa, vamos a terapia. 
 
@@ -44,9 +44,11 @@
 
 -Sol: Vaya interesada... 
 
--Estefanía: Interesada lo será tu madre. Ahora cállate y vamos a empezar. 
+-Estefanía: Interesada lo será tu madre.
 
--Sol: Uy 
+-Sol: Uy.
+
+-Estefanía: Ahora cállate y vamos a empezar. 
 
 -Sol: Esta bien... ¿Qué tengo que hacer? 
 
@@ -60,25 +62,23 @@
 
 -Sol: Intento concentrarme en mis pensamientos, pero se me hace imposible. 
 
--Sol: Como si cuando intento pensar en algo concreto, mis pensamientos negativos me gritaran... 
-
 -Estefanía: ¿Como si cuando intentaras relajarte te golpeara un meteorito en la cara? 
 
 -Sol: Si... 
 
 -Estefanía: Muy bien vamos a hacer una cosa. 
 
-*Estefanía se convierte en el escudo. 
+***Estefanía se convierte en el escudo. ***
 
 -Estefanía: Voy a protegerte de esos meteoritos mientras meditas. 
 
 -Estefanía: Así momentáneamente podrás ver con claridad estos pensamientos negativos. 
 
--De esa manera podremos ver que te pasa y como tratarlo. 
+-De esta manera podremos ver que te pasa y como tratarlo. 
 
 -Estefanía: Yo tan solo tendré que apuntar en la dirección para bloquear los meteoritos. 
 
--Estefanía: ¡Al cielo con ella! 
+-Estefanía: ¡Vamos a empezar! 
 
 Comienza minijuego* 
 
@@ -94,7 +94,7 @@ Secuencia 2
 
 -Solo hay una cosa que tengo que hacer... Calentar lo suficiente para mantener el sistema. 
 
--Pero es tremendamente aburrido. 
+-Pero hay tantas cosas con las que tengo que tener cuidado que se hace un coñazo. 
 
 Secuencia 3 
 
@@ -128,7 +128,7 @@ Secuencia 6
 
 -Vamos a descansar por favor. 
 
-Fin de primer tramo 
+-------Fin de primer tramo-------- 
 
 -Estefanía: ¿Qué tal se ha sentido poder escuchar tus pensamientos sin abrumarte? 
 
@@ -162,7 +162,9 @@ Fin de primer tramo
 
 - Sol: Se lo merecían, ¿no? 
 
- 
+ Estefanía: ...
+
+ Sol:...
 
 - Estefanía: No voy a entrar en eso. 
 
@@ -170,9 +172,9 @@ Fin de primer tramo
 
 - Bueno, ¿te ves con fuerzas para continuar? 
 
- 
-
 -Sol: Vamos a ello. 
+
+**Implementado**
 
 Inicio segundo minijuego 
 
@@ -248,13 +250,11 @@ Sol: ...
 
 -Puede que tengas razón. 
 
- 
-
 -Pero no puedo evitar pensar que os ayudaría que ardiera menos... 
 
- 
+-Estefanía: Tendrás que confiar en nosotros sol. 
 
--Estefanía: Tendrás que confiar en que nos encarguemos de adaptarnos nosotros mismos. 
+-Estefanía: A veces solo puedes confiar en que el resto y esperar que puedan cuidar de si mismos.
 
 -Sol: ... 
 
@@ -282,7 +282,7 @@ Sol: Creo que un poco mejor. Pero esta mierda es complicadísima.
 
 -Bueno he tenido momentos mejores. Últimamente las cosas por la Tierra están turbulentas... 
 
--Y en general no, no afecta a mi día a día. Podría mirar para otro lado. 
+-Y en general no afecta a mi día a día. Podría mirar para otro lado. 
 
 -Pero no quiero hacerlo. 
 
@@ -300,31 +300,35 @@ Sol: Creo que un poco mejor. Pero esta mierda es complicadísima.
 
  
 
--Estefanía: No quiero que deje de importarme. No quiero convertirme en alguien a quien los demás no le importan. 
+-Estefanía: No quiero que deje de importarme. 
+
+- No quiero convertirme en alguien a quien los demás le dan igual. 
 
 -Es complicado, pero si todos miramos para otro lado, nada cambiará jamás. 
 
-- Sol: Estefanía... no se si quiero seguir con la sesión... 
+- Sol: ¿Y qué pretendes hacer? No es como si pudieras salvar el mundo. 
 
+- Estefanía: Claro que no puedo salvar el mundo. Sería estúpido pensarlo.
+
+- Pero tampoco va a servir de nada que me quede quieta.
+
+- Siempre puedo ayudar a une vecine a cargar la compra.
+
+- O ayudar en alguna causa que crea justa a nivel local.
+
+- Sol: ¿Pero qué más da? eso no va a cambiar nada.
+
+- Es imposible cambiar nada.
  
-
--Estefanía: ¿Qué, por qué? ¡estas avanzando muy bien! 
-
--Sol: Es que... Tengo miedo... 
-
--Estefanía: Es normal tener miedo, sanar a veces da vértigo. 
-
--Sol: No es por eso Estefanía, pero tengo miedo de que quizás te cabrees conmigo. 
-
--Yo... Estefanía yo he dejado de dejado de confiar en vosotros... 
-
 -Estefanía: ... 
 
--Sol: En parte me alegra que estas nubes estén... No puedo mirar las atrocidades que hacéis... 
+-Sol: En parte me alegra que estas nubes estén... 
+
+- No puedo mirar las atrocidades que hacéis... 
 
 -Estefanía: Vamos a explorar eso, Sol. 
 
--Expón todas esas preocupaciones, dame la oportunidad de verlo de otra manera. 
+- Dame la oportunidad de cambiar lo que piensas. 
 
 -Sol: ¿Estás segura? Posiblemente diga cosas muy feas... 
 
@@ -352,7 +356,7 @@ Secuencia 3
 
 Secuencia 4 
 
-	Por eso he decidido hacer lo mismo... No aguanto veros más... 
+	No aguanto veros más... 
 
 	He perdido la esperanza con vosotros... 
 
@@ -399,20 +403,25 @@ Secuencia 9
 -Sol: Pero no sé si quiero mirar Estefanía... Si miro y no conseguís cambiar las cosas... 
 
 	No quiero ver el mundo que surgirá si esto sigue así... 
+	
+
+Secuencia 
 
 -Estefanía: Sol... somos conscientes de cómo puede acabar el mundo si sigue así. 
 
 -Pero también miramos a como puede ser el mundo si lo conseguimos. Si conseguimos hacerlo mejor. 
 
-Secuencia 10 
-
 -Sol: ... 
+
+Secuencia 10 
 
 	Quiero creer, pero... 
 
 -Estefanía: Sol, sé que sabes que somos capaces de lo mejor y de lo peor. 
 
-	Se que ver lo peor de nosotros es difícil, pero tienes que poder ver también lo mejor de nosotros. 
+	Se que es fácil ver lo peor en nostros...
+	
+	-Pero tienes que seguir mirando para poder ver lo mejor. 
 
 	Necesitamos que sigas mirando, creyendo en nosotros. 
 
@@ -425,6 +434,8 @@ Secuencia 11
 	Pero sea cual sea el resultado, sabremos que buscábamos un mejor futuro... 
 
 	Pero para eso te necesitamos... 
+
+Secuencia
 
 	Sol: ¿A mí? ¿Para qué? 
 
@@ -457,6 +468,10 @@ Fin de minijuego
 	Vendré todos los meses y tendremos una sesión para ver como avanzas y como mejorar. 
 
 	Será mi manera de pelear. 
+	
+	Mi manera de cambiar el mundo un poco a mejor.
+	
+	Ya sabes, no arreglará el mundo, pero ayudará un poco.
 
 -Sol: Esta bien...  
 

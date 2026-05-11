@@ -10,7 +10,7 @@
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("4_ap0bj")
 state = 2
-dialogue_string = "¿Qué es esto, me he fumado una de las nubes?"
+dialogue_string = "- ¿Qué es esto, me he fumado una de las nubes?"
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -34,7 +34,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("4_ap0bj")
 state = 1
-dialogue_string = "¿Respuesta a que?"
+dialogue_string = "¿Respuesta a qué? "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -42,7 +42,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("5_cf28q")
 state = 0
-dialogue_string = "He recibido una señal, parecía venir del sol. Parecía preguntar que hacían los humanos cuando las nubes les rodean."
+dialogue_string = "He recibido una señal. Querías saber que hacían los humanos cuando las nubes les rodean."
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -114,7 +114,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("5_cf28q")
 state = 0
-dialogue_string = "Interesada lo será tu madre. Ahora cállate y vamos a empezar. "
+dialogue_string = "Interesada lo será tu madre."
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -123,6 +123,14 @@ script = ExtResource("2_udkft")
 character_speaking = ExtResource("4_ap0bj")
 state = 2
 dialogue_string = "Uy."
+answers = Array[ExtResource("3_udkft")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_nnxvf"]
+script = ExtResource("2_udkft")
+character_speaking = ExtResource("5_cf28q")
+state = 0
+dialogue_string = "Ahora cállate y vamos a empezar. "
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -174,14 +182,6 @@ dialogue_string = "Intento concentrarme en mis pensamientos, pero se me hace imp
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
-[sub_resource type="Resource" id="Resource_nnxvf"]
-script = ExtResource("2_udkft")
-character_speaking = ExtResource("4_ap0bj")
-state = 1
-dialogue_string = "Como si cuando intento pensar en algo concreto, mis pensamientos negativos me gritaran... "
-answers = Array[ExtResource("3_udkft")]([])
-metadata/_custom_type_script = "uid://btw443pl7fl7o"
-
 [sub_resource type="Resource" id="Resource_4qpll"]
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("5_cf28q")
@@ -210,5 +210,5 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("1_3m1vf")
 narration_dialogue = false
 dialogue_id = "Dialogue_1_2"
-sentences = Array[ExtResource("2_udkft")]([SubResource("Resource_008nt"), SubResource("Resource_udkft"), SubResource("Resource_ap0bj"), SubResource("Resource_cf28q"), SubResource("Resource_yoiui"), SubResource("Resource_s31d3"), SubResource("Resource_lhygs"), SubResource("Resource_olnnt"), SubResource("Resource_bugv5"), SubResource("Resource_nic4v"), SubResource("Resource_mrgbk"), SubResource("Resource_bpib0"), SubResource("Resource_nixpl"), SubResource("Resource_6frge"), SubResource("Resource_on2j8"), SubResource("Resource_827ht"), SubResource("Resource_1xauv"), SubResource("Resource_7dtj2"), SubResource("Resource_aqsmu"), SubResource("Resource_6v08x"), SubResource("Resource_7s751"), SubResource("Resource_nnxvf"), SubResource("Resource_4qpll"), SubResource("Resource_4wt54"), SubResource("Resource_nttme")])
+sentences = Array[ExtResource("2_udkft")]([SubResource("Resource_008nt"), SubResource("Resource_udkft"), SubResource("Resource_ap0bj"), SubResource("Resource_cf28q"), SubResource("Resource_yoiui"), SubResource("Resource_s31d3"), SubResource("Resource_lhygs"), SubResource("Resource_olnnt"), SubResource("Resource_bugv5"), SubResource("Resource_nic4v"), SubResource("Resource_mrgbk"), SubResource("Resource_bpib0"), SubResource("Resource_nixpl"), SubResource("Resource_6frge"), SubResource("Resource_on2j8"), SubResource("Resource_nnxvf"), SubResource("Resource_827ht"), SubResource("Resource_1xauv"), SubResource("Resource_7dtj2"), SubResource("Resource_aqsmu"), SubResource("Resource_6v08x"), SubResource("Resource_7s751"), SubResource("Resource_4qpll"), SubResource("Resource_4wt54"), SubResource("Resource_nttme")])
 metadata/_custom_type_script = "uid://b4bbkbioa7dsg"
