@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://cvr107h2yumr0"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_28nd7"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_falbx"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_falbx"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="4_tayg3"]
+
+[sub_resource type="Resource" id="Resource_tayg3"]
+script = ExtResource("2_falbx")
+character_speaking = ExtResource("4_tayg3")
+state = 5
+dialogue_string = "Es horrendo todo lo que ocurre allí. Genocidios y crímenes inimaginables... "
+answers = Array[ExtResource("3_falbx")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_28nd7")
+narration_dialogue = false
+dialogue_id = "Es horrendo"
+sentences = Array[ExtResource("2_falbx")]([SubResource("Resource_tayg3")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

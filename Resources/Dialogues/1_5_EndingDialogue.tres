@@ -1,0 +1,150 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=23 format=3 uid="uid://bou07xtnw7raj"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_axiw1"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_fm3x6"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_di42d"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="4_vj6p0"]
+[ext_resource type="Resource" uid="uid://bbk7vc5rdtia7" path="res://Resources/Estefanía.tres" id="5_fm3x6"]
+
+[sub_resource type="Resource" id="Resource_uc4sb"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("4_vj6p0")
+state = 2
+dialogue_string = "¡Ey, las nubes se han disipado! "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_l5jw5"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("4_vj6p0")
+state = 2
+dialogue_string = "¡VUELVO A ESTAR BIEN, LA TERAPIA FUNCIONÓ! "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_egg7v"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("4_vj6p0")
+state = 2
+dialogue_string = "¡Se acabó por fin! "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_8s3y2"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("5_fm3x6")
+state = 0
+dialogue_string = "Si una polla.  "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_t0ymp"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("5_fm3x6")
+state = 0
+dialogue_string = "Te queda mucho camino, Sol."
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_dqxhp"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("4_vj6p0")
+state = 1
+dialogue_string = "¡Pero si ya no tengo nubes! "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_jpree"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("5_fm3x6")
+state = 0
+dialogue_string = "Puede ser, pero eso no quiere decir que estes estable. Tu salud mental no se cura con una sesión. "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_fm3x6"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("5_fm3x6")
+state = 0
+dialogue_string = "Vendré todos los meses y tendremos una sesión para ver como avanzas y como mejorar. "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_di42d"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("5_fm3x6")
+state = 0
+dialogue_string = "Será mi manera de pelear. "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_vj6p0"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("5_fm3x6")
+state = 0
+dialogue_string = "Mi manera de cambiar el mundo un poco a mejor."
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_6oknr"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("5_fm3x6")
+state = 0
+dialogue_string = "Ya sabes, no arreglará el mundo, pero ayudará un poco."
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_me13a"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("4_vj6p0")
+state = 1
+dialogue_string = "Esta bien...  "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_imml4"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("4_vj6p0")
+state = 1
+dialogue_string = "Yo cumpliré mi promesa. Seguiré mirándoos. "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_edtxb"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("4_vj6p0")
+state = 7
+dialogue_string = "Prometo que intentare tener esperanza. "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_ig226"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("5_fm3x6")
+state = 0
+dialogue_string = "Bueno sol, hemos terminado por hoy. Espero verte el mes que viene. "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_tq5ch"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("5_fm3x6")
+state = 0
+dialogue_string = "Lo has hecho genial."
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_enf3e"]
+script = ExtResource("2_fm3x6")
+character_speaking = ExtResource("4_vj6p0")
+state = 1
+dialogue_string = "Gracias Estefanía... Hasta el mes que viene... "
+answers = Array[ExtResource("3_di42d")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_axiw1")
+narration_dialogue = false
+dialogue_id = "Ending"
+sentences = Array[ExtResource("2_fm3x6")]([SubResource("Resource_uc4sb"), SubResource("Resource_l5jw5"), SubResource("Resource_egg7v"), SubResource("Resource_8s3y2"), SubResource("Resource_t0ymp"), SubResource("Resource_dqxhp"), SubResource("Resource_jpree"), SubResource("Resource_fm3x6"), SubResource("Resource_di42d"), SubResource("Resource_vj6p0"), SubResource("Resource_6oknr"), SubResource("Resource_me13a"), SubResource("Resource_imml4"), SubResource("Resource_edtxb"), SubResource("Resource_ig226"), SubResource("Resource_tq5ch"), SubResource("Resource_enf3e")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

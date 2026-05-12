@@ -174,13 +174,11 @@ Secuencia 6
 
 -Sol: Vamos a ello. 
 
-**Implementado**
-
 Inicio segundo minijuego 
 
 -Estefanía: Muy bien sol, sé qué crees que son gilipolleces, pero me da igual. 
 
-- ¿Que es lo que estas dejando de lado? 
+- ¿Qué es lo que estas dejando de lado? 
 
 -Concéntrate en eso. 
 
@@ -453,13 +451,15 @@ Secuencia final
 
 Fin de minijuego 
 
+**Implementado**
+
 	¡ey, las nubes se han disipado! 
 
 	¡VUELVO A ESTAR BIEN, LA TERAPIA FUNCIONÓ! 
 
 	¡Se acabó por fin! 
 
--Estefanía: Si una polla. Te queda mucho camino Sol. 
+-Estefanía: Si una polla. Te queda mucho camino, Sol. 
 
 -Sol: ¡Pero si ya no tengo nubes!  
 

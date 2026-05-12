@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=9 format=3 uid="uid://bck7w6621h0om"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_i2h68"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_hoani"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_hoani"]
+[ext_resource type="Resource" uid="uid://bbk7vc5rdtia7" path="res://Resources/Estefanía.tres" id="4_rt45s"]
+
+[sub_resource type="Resource" id="Resource_rt45s"]
+script = ExtResource("2_hoani")
+character_speaking = ExtResource("4_rt45s")
+state = 0
+dialogue_string = "¡Eso es lo que quieren que pienses! ¡Que tires la toalla! "
+answers = Array[ExtResource("3_hoani")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_6poch"]
+script = ExtResource("2_hoani")
+character_speaking = ExtResource("4_rt45s")
+state = 0
+dialogue_string = "La humanidad está repleta de gente mala. Gente que cree que el mundo le pertenece. "
+answers = Array[ExtResource("3_hoani")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_nyiuq"]
+script = ExtResource("2_hoani")
+character_speaking = ExtResource("4_rt45s")
+state = 0
+dialogue_string = "Pero también está repleta de gente que se esfuerza cada día.  "
+answers = Array[ExtResource("3_hoani")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_wdihc"]
+script = ExtResource("2_hoani")
+character_speaking = ExtResource("4_rt45s")
+state = 0
+dialogue_string = "Pelean por un futuro libre de hijos de puta y para eso necesitan esperanza. "
+answers = Array[ExtResource("3_hoani")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_i2h68")
+narration_dialogue = false
+dialogue_id = ""
+sentences = Array[ExtResource("2_hoani")]([SubResource("Resource_rt45s"), SubResource("Resource_6poch"), SubResource("Resource_nyiuq"), SubResource("Resource_wdihc")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://of6qt4w32uqn"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_qkoxf"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_y7pdc"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_4dcad"]
+[ext_resource type="Resource" uid="uid://bbk7vc5rdtia7" path="res://Resources/Estefanía.tres" id="4_v5kxi"]
+
+[sub_resource type="Resource" id="Resource_tyvwn"]
+script = ExtResource("2_y7pdc")
+character_speaking = ExtResource("4_v5kxi")
+state = 0
+dialogue_string = "Pero sol, no puedes reprimir tu forma de ser porque moleste a otros. "
+answers = Array[ExtResource("3_4dcad")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_t1yd2"]
+script = ExtResource("2_y7pdc")
+character_speaking = ExtResource("4_v5kxi")
+state = 0
+dialogue_string = "No estás haciendo nada malo."
+answers = Array[ExtResource("3_4dcad")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_qkoxf")
+narration_dialogue = false
+dialogue_id = "Pero sol"
+sentences = Array[ExtResource("2_y7pdc")]([SubResource("Resource_tyvwn"), SubResource("Resource_t1yd2")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

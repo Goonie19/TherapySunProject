@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://dr1mir85ipagq"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_krbxo"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_en3jn"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_cw58l"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="4_kqnlc"]
+
+[sub_resource type="Resource" id="Resource_xon1m"]
+script = ExtResource("2_en3jn")
+character_speaking = ExtResource("4_kqnlc")
+state = 5
+dialogue_string = "Estefanía espabila coño, me estan reventando."
+answers = Array[ExtResource("3_cw58l")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_h8vgp"]
+script = ExtResource("2_en3jn")
+character_speaking = ExtResource("4_kqnlc")
+state = 3
+dialogue_string = "Venga, vamos de nuevo."
+answers = Array[ExtResource("3_cw58l")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_krbxo")
+narration_dialogue = false
+dialogue_id = ""
+sentences = Array[ExtResource("2_en3jn")]([SubResource("Resource_xon1m"), SubResource("Resource_h8vgp")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

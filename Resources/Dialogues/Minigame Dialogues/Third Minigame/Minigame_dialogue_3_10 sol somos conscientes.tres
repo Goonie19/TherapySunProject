@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=9 format=3 uid="uid://o1rs2vg7wjgh"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_3blpr"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_0xcsf"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_cchmw"]
+[ext_resource type="Resource" uid="uid://bbk7vc5rdtia7" path="res://Resources/Estefanía.tres" id="4_2itdo"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="5_2itdo"]
+
+[sub_resource type="Resource" id="Resource_5aoe2"]
+script = ExtResource("2_0xcsf")
+character_speaking = ExtResource("4_2itdo")
+state = 0
+dialogue_string = "Sol... somos conscientes de cómo puede acabar el mundo si sigue así. "
+answers = Array[ExtResource("3_cchmw")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_2n4cf"]
+script = ExtResource("2_0xcsf")
+character_speaking = ExtResource("4_2itdo")
+state = 0
+dialogue_string = "Pero también miramos a como puede ser el mundo si lo conseguimos. Si conseguimos hacerlo mejor. "
+answers = Array[ExtResource("3_cchmw")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_lbp5m"]
+script = ExtResource("2_0xcsf")
+character_speaking = ExtResource("5_2itdo")
+state = 4
+dialogue_string = "... "
+answers = Array[ExtResource("3_cchmw")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_3blpr")
+narration_dialogue = false
+dialogue_id = "Sol somos conscientes"
+sentences = Array[ExtResource("2_0xcsf")]([SubResource("Resource_5aoe2"), SubResource("Resource_2n4cf"), SubResource("Resource_lbp5m")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

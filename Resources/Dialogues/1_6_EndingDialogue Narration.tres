@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=8 format=3 uid="uid://by7jo2q3hcyo2"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_33wxp"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_gpyng"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_3jb5p"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="4_k2eo6"]
+
+[sub_resource type="Resource" id="Resource_0boq5"]
+script = ExtResource("2_gpyng")
+character_speaking = ExtResource("4_k2eo6")
+state = 3
+dialogue_string = "Cuando lo consigáis estaré ahí."
+answers = Array[ExtResource("3_3jb5p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_3jb5p"]
+script = ExtResource("2_gpyng")
+character_speaking = ExtResource("4_k2eo6")
+state = 3
+dialogue_string = "Os daré la bienvenida a un mañana mejor. "
+answers = Array[ExtResource("3_3jb5p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_k2eo6"]
+script = ExtResource("2_gpyng")
+character_speaking = ExtResource("4_k2eo6")
+state = 3
+dialogue_string = "Confiaré en vosotros. "
+answers = Array[ExtResource("3_3jb5p")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_33wxp")
+narration_dialogue = true
+dialogue_id = "Ending narration"
+sentences = Array[ExtResource("2_gpyng")]([SubResource("Resource_0boq5"), SubResource("Resource_3jb5p"), SubResource("Resource_k2eo6")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

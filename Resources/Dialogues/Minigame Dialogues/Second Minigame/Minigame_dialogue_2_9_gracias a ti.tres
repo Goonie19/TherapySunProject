@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=8 format=3 uid="uid://dwm3cah5oelhx"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_6b4sf"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_1x0im"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_v0uby"]
+[ext_resource type="Resource" uid="uid://bbk7vc5rdtia7" path="res://Resources/Estefanía.tres" id="4_qikml"]
+
+[sub_resource type="Resource" id="Resource_qbjjh"]
+script = ExtResource("2_1x0im")
+character_speaking = ExtResource("4_qikml")
+state = 0
+dialogue_string = "Gracias a ti puedo mirar por la ventana y ver mi ciudad."
+answers = Array[ExtResource("3_v0uby")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_t6eyf"]
+script = ExtResource("2_1x0im")
+character_speaking = ExtResource("4_qikml")
+state = 0
+dialogue_string = "Gracias a ti puedo ver el mar y escuchar las olas. "
+answers = Array[ExtResource("3_v0uby")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_v0uby"]
+script = ExtResource("2_1x0im")
+character_speaking = ExtResource("4_qikml")
+state = 0
+dialogue_string = "¿No es eso suficiente? "
+answers = Array[ExtResource("3_v0uby")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_6b4sf")
+narration_dialogue = false
+dialogue_id = "Gracias a ti"
+sentences = Array[ExtResource("2_1x0im")]([SubResource("Resource_qbjjh"), SubResource("Resource_t6eyf"), SubResource("Resource_v0uby")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

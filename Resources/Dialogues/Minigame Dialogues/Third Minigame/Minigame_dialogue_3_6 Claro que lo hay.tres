@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=9 format=3 uid="uid://j1uef01l5xub"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_u6rmx"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_4xcbc"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_6g3l4"]
+[ext_resource type="Resource" uid="uid://bbk7vc5rdtia7" path="res://Resources/Estefanía.tres" id="4_xxac4"]
+
+[sub_resource type="Resource" id="Resource_m64k5"]
+script = ExtResource("2_4xcbc")
+character_speaking = ExtResource("4_xxac4")
+state = 0
+dialogue_string = "CLARO QUE LO HAY. LA HUMANIDAD ES MUCHO MAS QUE TODO LO QUE HAS DICHO. "
+answers = Array[ExtResource("3_6g3l4")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_a0nh6"]
+script = ExtResource("2_4xcbc")
+character_speaking = ExtResource("4_xxac4")
+state = 0
+dialogue_string = "¿Crees que nosotros no hemos visto esas atrocidades? "
+answers = Array[ExtResource("3_6g3l4")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_3ij4i"]
+script = ExtResource("2_4xcbc")
+character_speaking = ExtResource("4_xxac4")
+state = 0
+dialogue_string = "Y sí, es cierto que muchos miran para otro lado... "
+answers = Array[ExtResource("3_6g3l4")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_cua30"]
+script = ExtResource("2_4xcbc")
+character_speaking = ExtResource("4_xxac4")
+state = 0
+dialogue_string = "PERO TAMBIEN HAY MUCHOS QUE HAN DECIDIDO PELEAR. "
+answers = Array[ExtResource("3_6g3l4")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_u6rmx")
+narration_dialogue = false
+dialogue_id = "Claro que lo hay"
+sentences = Array[ExtResource("2_4xcbc")]([SubResource("Resource_m64k5"), SubResource("Resource_a0nh6"), SubResource("Resource_3ij4i"), SubResource("Resource_cua30")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

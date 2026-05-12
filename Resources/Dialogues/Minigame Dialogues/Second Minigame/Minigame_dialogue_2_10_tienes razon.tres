@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=13 format=3 uid="uid://bdpag85xg3tq7"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_76swc"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_q7qlj"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_3e1w4"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="4_xh821"]
+[ext_resource type="Resource" uid="uid://bbk7vc5rdtia7" path="res://Resources/Estefanía.tres" id="5_xh821"]
+
+[sub_resource type="Resource" id="Resource_f2068"]
+script = ExtResource("2_q7qlj")
+character_speaking = ExtResource("4_xh821")
+state = 4
+dialogue_string = "... "
+answers = Array[ExtResource("3_3e1w4")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_7fs35"]
+script = ExtResource("2_q7qlj")
+character_speaking = ExtResource("4_xh821")
+state = 4
+dialogue_string = "Puede que tengas razón. "
+answers = Array[ExtResource("3_3e1w4")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_1uxo2"]
+script = ExtResource("2_q7qlj")
+character_speaking = ExtResource("4_xh821")
+state = 4
+dialogue_string = "Pero no puedo evitar pensar que os ayudaría que ardiera menos... "
+answers = Array[ExtResource("3_3e1w4")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_sinsd"]
+script = ExtResource("2_q7qlj")
+character_speaking = ExtResource("5_xh821")
+state = 0
+dialogue_string = "Tendrás que confiar en nosotros sol. "
+answers = Array[ExtResource("3_3e1w4")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_8fbdv"]
+script = ExtResource("2_q7qlj")
+character_speaking = ExtResource("5_xh821")
+state = 0
+dialogue_string = "A veces solo puedes confiar en que el resto y esperar que puedan cuidar de si mismos."
+answers = Array[ExtResource("3_3e1w4")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_xh821"]
+script = ExtResource("2_q7qlj")
+character_speaking = ExtResource("4_xh821")
+state = 4
+dialogue_string = "... "
+answers = Array[ExtResource("3_3e1w4")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_8hqq4"]
+script = ExtResource("2_q7qlj")
+character_speaking = ExtResource("4_xh821")
+state = 4
+dialogue_string = "Necesito un descanso. "
+answers = Array[ExtResource("3_3e1w4")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_76swc")
+narration_dialogue = false
+dialogue_id = "Tienes razon"
+sentences = Array[ExtResource("2_q7qlj")]([SubResource("Resource_f2068"), SubResource("Resource_7fs35"), SubResource("Resource_1uxo2"), SubResource("Resource_sinsd"), SubResource("Resource_8fbdv"), SubResource("Resource_xh821"), SubResource("Resource_8hqq4")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

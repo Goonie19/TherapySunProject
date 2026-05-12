@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=10 format=3 uid="uid://bejdejk2lvyqi"]
+
+[ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_chmbq"]
+[ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_42l35"]
+[ext_resource type="Script" uid="uid://w2ys2wl2pcs7" path="res://scripts/DialogueSystem/Model/dialogue_option.gd" id="3_42l35"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="4_dox64"]
+[ext_resource type="Resource" uid="uid://bbk7vc5rdtia7" path="res://Resources/Estefanía.tres" id="5_daiw7"]
+
+[sub_resource type="Resource" id="Resource_dox64"]
+script = ExtResource("2_42l35")
+character_speaking = ExtResource("4_dox64")
+state = 4
+dialogue_string = "¿Qué pasa si todo sale mal? Perderé todo lo que merece la pena mirar... "
+answers = Array[ExtResource("3_42l35")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_daiw7"]
+script = ExtResource("2_42l35")
+character_speaking = ExtResource("5_daiw7")
+state = 0
+dialogue_string = "Si todo sale mal, volveremos a intentarlo. "
+answers = Array[ExtResource("3_42l35")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_yhmhc"]
+script = ExtResource("2_42l35")
+character_speaking = ExtResource("5_daiw7")
+state = 0
+dialogue_string = "Pero sea cual sea el resultado, sabremos que buscábamos un mejor futuro... "
+answers = Array[ExtResource("3_42l35")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_ogg8t"]
+script = ExtResource("2_42l35")
+character_speaking = ExtResource("5_daiw7")
+state = 0
+dialogue_string = "Pero para eso te necesitamos... "
+answers = Array[ExtResource("3_42l35")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[resource]
+script = ExtResource("1_chmbq")
+narration_dialogue = false
+dialogue_id = "Que apsa si sale mal"
+sentences = Array[ExtResource("2_42l35")]([SubResource("Resource_dox64"), SubResource("Resource_daiw7"), SubResource("Resource_yhmhc"), SubResource("Resource_ogg8t")])
+metadata/_custom_type_script = "uid://b4bbkbioa7dsg"
