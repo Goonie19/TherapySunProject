@@ -9,12 +9,13 @@
 script = ExtResource("2_0jx31")
 character_speaking = ExtResource("4_4cx72")
 state = 3
-dialogue_string = "olo hay una cosa que tengo que hacer... Calentar lo suficiente para mantener el sistema."
+dialogue_string = "Solo hay una cosa que tengo que hacer... Calentar lo suficiente para mantener el sistema."
 answers = Array[ExtResource("3_t44em")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_d4rlf"]
 script = ExtResource("2_0jx31")
+character_speaking = ExtResource("4_4cx72")
 state = 4
 dialogue_string = "Pero hay tantas cosas con las que tengo que tener cuidado que se hace un coñazo. "
 answers = Array[ExtResource("3_t44em")]([])

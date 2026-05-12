@@ -26,7 +26,7 @@ func spawn_meteor(objective: Node2D, speed : float = 200 ,pos: MeteorSpawnSequen
 	
 	var dir = (objective.global_position - meteor.global_position).normalized()
 	
-	meteor.initialize(200, dir)
+	meteor.initialize(speed, dir)
 
 #Finds index of specific element
 func find_meteor_pos(pos: MeteorSpawnSequenceData.METEOR_SPAWN_POSITIONS):

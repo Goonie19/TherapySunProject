@@ -7,7 +7,7 @@ class_name MeteorMovement
 @export var anim_tree: AnimationTree
 
 
-var speed : float = 201
+var speed : float
 
 var direction: Vector2 =Vector2(0,-1)
 

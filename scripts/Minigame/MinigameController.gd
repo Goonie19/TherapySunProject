@@ -17,9 +17,11 @@ var mini_sequence: MinigameSequence
 var current_sequence: int
 
 var current_hits : int = 0
+var repeating_sequence: bool = false
 
 signal on_meteor_sequence_finished
 signal on_minigame_finished
+
 
 
 func set_dependencies(character_controller: SunController, dialogue_manager: DialogueView):
@@ -57,7 +59,7 @@ func spawn_current_meteor():
 
 
 func run_current_sequence_async() -> void:
-	if(mini_sequence.dialogue_at_begining != null):
+	if(mini_sequence.dialogue_at_begining != null && not repeating_sequence):
 		dialogue_manager.start_dialogue(mini_sequence.dialogue_at_begining)
 		await dialogue_manager.on_dialogue_finished
 	
@@ -65,11 +67,13 @@ func run_current_sequence_async() -> void:
 	await on_meteor_sequence_finished
 	
 	if current_hits <= 3 :
+		repeating_sequence = false
 		if(mini_sequence.dialogue_at_end != null):
 			dialogue_manager.start_dialogue(mini_sequence.dialogue_at_end)
 			await dialogue_manager.on_dialogue_finished	
 	else :
 		dialogue_manager.start_dialogue(mini_sequence.failing_dialogue)
+		repeating_sequence = true
 		await dialogue_manager.on_dialogue_finished	
 
 

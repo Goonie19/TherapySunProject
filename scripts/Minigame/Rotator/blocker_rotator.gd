@@ -44,4 +44,4 @@ func call_disappeared() -> void:
 	on_disappear.emit()
 
 func _on_blocker_area_2d_area_entered(area: Area2D) -> void:
-	print("Yo si que lo detecto")
+	pass

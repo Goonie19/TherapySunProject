@@ -1,0 +1,59 @@
+[gd_scene load_steps=14 format=3 uid="uid://ctt1ahnhd0rjd"]
+
+[ext_resource type="Script" uid="uid://bw0qouy70nse5" path="res://scripts/Dependency Injection/dependency_injector.gd" id="1_daggr"]
+[ext_resource type="PackedScene" uid="uid://bjwhml6qbv5xc" path="res://scenes/AudioSystem/AudioSystem.tscn" id="2_f2iih"]
+[ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="3_e86sv"]
+[ext_resource type="PackedScene" uid="uid://ctwd6aklt5ujt" path="res://scenes/Minigame/minigame_scene.tscn" id="4_3s6ht"]
+[ext_resource type="PackedScene" uid="uid://exevk1xrow5p" path="res://scenes/UI/BlackScreen/BlackScreen.tscn" id="5_rs52x"]
+[ext_resource type="Script" uid="uid://20tta8lilgku" path="res://scripts/Lineal Action System/lineal_action_system.gd" id="6_i8v74"]
+[ext_resource type="Script" uid="uid://bgwp1y62wtlea" path="res://scripts/Lineal Action System/Actions/action.gd" id="7_17r02"]
+[ext_resource type="Resource" uid="uid://0bn44tpjm5ic" path="res://Resources/Actions/fade_out_1.tres" id="11_p1txp"]
+[ext_resource type="Resource" uid="uid://bia1rxfhtwp0e" path="res://Resources/Actions/1_5_Minigame_1_action.tres" id="17_31ijo"]
+[ext_resource type="PackedScene" uid="uid://cj4asau0sfw6f" path="res://scenes/Dialogue Scene/DialoguePanel.tscn" id="18_4gdji"]
+[ext_resource type="AudioStream" uid="uid://dqx4ttum6r4ee" path="res://assets/Sound/SFX/Dialogue_sound_character.wav" id="19_wi1s2"]
+[ext_resource type="PackedScene" uid="uid://c0b4lk8m4qa80" path="res://scenes/Characters/Estefania.tscn" id="20_xupp5"]
+[ext_resource type="PackedScene" uid="uid://yl6yx8a2s8r8" path="res://scenes/Characters/SunCharacter.tscn" id="21_i136p"]
+
+[node name="GameScene" type="Node"]
+
+[node name="WaitingTimer" type="Timer" parent="."]
+
+[node name="Dependency Injection" type="Node" parent="." node_paths=PackedStringArray("minigame_controller", "character_controller", "dialogue_controller", "black_screen", "lineal_action_controller", "audio_controller")]
+script = ExtResource("1_daggr")
+minigame_controller = NodePath("../MinigameScene")
+character_controller = NodePath("../SunCharacter")
+dialogue_controller = NodePath("../DialoguePanel")
+black_screen = NodePath("../BlackScreen")
+lineal_action_controller = NodePath("../Lineal_action_controller")
+audio_controller = NodePath("../AudioSystem")
+
+[node name="AudioSystem" parent="." instance=ExtResource("2_f2iih")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(400, 300)
+
+[node name="BgScene" parent="." instance=ExtResource("3_e86sv")]
+position = Vector2(400, 300)
+
+[node name="MinigameScene" parent="." node_paths=PackedStringArray("dialogue_manager") instance=ExtResource("4_3s6ht")]
+dialogue_manager = NodePath("../DialoguePanel")
+
+[node name="BlackScreen" parent="." instance=ExtResource("5_rs52x")]
+z_index = 9
+
+[node name="Lineal_action_controller" type="Node2D" parent="." node_paths=PackedStringArray("waiting_timer")]
+script = ExtResource("6_i8v74")
+waiting_timer = NodePath("../WaitingTimer")
+actions = Array[ExtResource("7_17r02")]([ExtResource("11_p1txp"), ExtResource("17_31ijo")])
+
+[node name="DialoguePanel" parent="." instance=ExtResource("18_4gdji")]
+z_index = 10
+dialogue_character_sound = ExtResource("19_wi1s2")
+
+[node name="Estefania" parent="." instance=ExtResource("20_xupp5")]
+position = Vector2(931, 264)
+rotation_speed = 0.5
+
+[node name="SunCharacter" parent="." instance=ExtResource("21_i136p")]
+position = Vector2(400, 300)
+scale = Vector2(0.15, 0.15)

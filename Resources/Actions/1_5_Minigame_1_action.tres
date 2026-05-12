@@ -1,12 +1,16 @@
-[gd_resource type="Resource" script_class="MinigameAction" load_steps=5 format=3 uid="uid://bia1rxfhtwp0e"]
+[gd_resource type="Resource" script_class="MinigameAction" load_steps=9 format=3 uid="uid://bia1rxfhtwp0e"]
 
 [ext_resource type="Script" uid="uid://b3yd0nah18vsa" path="res://scripts/Lineal Action System/Actions/minigame_action.gd" id="1_aot4v"]
 [ext_resource type="Script" uid="uid://ch3pmcg2j4tr3" path="res://scripts/Minigame/Minigame Sequences/minigame_sequence.gd" id="2_xo31r"]
 [ext_resource type="Resource" uid="uid://cvnd3l2fojt0l" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Minigame_1_Sequence_1_1.tres" id="3_xo31r"]
 [ext_resource type="Resource" uid="uid://px5ffl7s47yq" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Minigame_1_Sequence_2_2.tres" id="4_0ifb1"]
+[ext_resource type="Resource" uid="uid://defg3uc221bwm" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Minigame_1_Sequence_3_3.tres" id="5_kpme4"]
+[ext_resource type="Resource" uid="uid://cmmdve5xemy56" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Minigame_1_Sequence_4_4.tres" id="6_pvuka"]
+[ext_resource type="Resource" uid="uid://bg0yrg4qxyyhr" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Minigame_1_Sequence_5_5.tres" id="7_1y2n3"]
+[ext_resource type="Resource" uid="uid://by6mnvgim70le" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Minigame_1_Sequence_6_6.tres" id="8_x6h1q"]
 
 [resource]
 script = ExtResource("1_aot4v")
-sequences = Array[ExtResource("2_xo31r")]([ExtResource("3_xo31r"), ExtResource("4_0ifb1")])
+sequences = Array[ExtResource("2_xo31r")]([ExtResource("3_xo31r"), ExtResource("4_0ifb1"), ExtResource("5_kpme4"), ExtResource("6_pvuka"), ExtResource("7_1y2n3"), ExtResource("8_x6h1q")])
 skip_wait = false
 metadata/_custom_type_script = "uid://b3yd0nah18vsa"
