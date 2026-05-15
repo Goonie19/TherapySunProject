@@ -7,8 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://exevk1xrow5p" path="res://scenes/UI/BlackScreen/BlackScreen.tscn" id="5_rs52x"]
 [ext_resource type="Script" uid="uid://20tta8lilgku" path="res://scripts/Lineal Action System/lineal_action_system.gd" id="6_i8v74"]
 [ext_resource type="Script" uid="uid://bgwp1y62wtlea" path="res://scripts/Lineal Action System/Actions/action.gd" id="7_17r02"]
+[ext_resource type="Resource" uid="uid://dtt7fx1kcwf21" path="res://Resources/Actions/1_x_Minigame_2_action.tres" id="9_u1rdy"]
 [ext_resource type="Resource" uid="uid://0bn44tpjm5ic" path="res://Resources/Actions/fade_out_1.tres" id="11_p1txp"]
-[ext_resource type="Resource" uid="uid://bia1rxfhtwp0e" path="res://Resources/Actions/1_5_Minigame_1_action.tres" id="17_31ijo"]
 [ext_resource type="PackedScene" uid="uid://cj4asau0sfw6f" path="res://scenes/Dialogue Scene/DialoguePanel.tscn" id="18_4gdji"]
 [ext_resource type="AudioStream" uid="uid://dqx4ttum6r4ee" path="res://assets/Sound/SFX/Dialogue_sound_character.wav" id="19_wi1s2"]
 [ext_resource type="PackedScene" uid="uid://c0b4lk8m4qa80" path="res://scenes/Characters/Estefania.tscn" id="20_xupp5"]
@@ -44,7 +44,7 @@ z_index = 9
 [node name="Lineal_action_controller" type="Node2D" parent="." node_paths=PackedStringArray("waiting_timer")]
 script = ExtResource("6_i8v74")
 waiting_timer = NodePath("../WaitingTimer")
-actions = Array[ExtResource("7_17r02")]([ExtResource("11_p1txp"), ExtResource("17_31ijo")])
+actions = Array[ExtResource("7_17r02")]([ExtResource("11_p1txp"), ExtResource("9_u1rdy")])
 
 [node name="DialoguePanel" parent="." instance=ExtResource("18_4gdji")]
 z_index = 10

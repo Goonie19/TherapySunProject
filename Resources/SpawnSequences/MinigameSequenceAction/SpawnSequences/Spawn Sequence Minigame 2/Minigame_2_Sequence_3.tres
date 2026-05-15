@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="MinigameSequence" load_steps=11 format=3 uid="uid://dypxan65pkj7u"]
+
+[ext_resource type="Resource" uid="uid://bi5dsqj73eu7x" path="res://Resources/Dialogues/Minigame Dialogues/Second Minigame/Minigame_dialogue_2_2_Te refieres a.tres" id="1_bu431"]
+[ext_resource type="Resource" uid="uid://dr1mir85ipagq" path="res://Resources/Dialogues/Minigame Dialogues/Second Minigame/Second_Minigame_Fail.tres" id="2_gjnc8"]
+[ext_resource type="Script" uid="uid://ch3pmcg2j4tr3" path="res://scripts/Minigame/Minigame Sequences/minigame_sequence.gd" id="3_6e43e"]
+[ext_resource type="Script" uid="uid://c5tpqd3aj2lu6" path="res://scripts/Minigame/Meteor/Data/meteor_spawn_sequence_data.gd" id="4_qvcq0"]
+
+[sub_resource type="Resource" id="Resource_u3bd7"]
+script = ExtResource("4_qvcq0")
+spawn_pos = 4
+time_stamp = 1.0
+meteor_speed = 400.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_m56r4"]
+script = ExtResource("4_qvcq0")
+spawn_pos = 4
+time_stamp = 0.25
+meteor_speed = 400.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_xhiou"]
+script = ExtResource("4_qvcq0")
+spawn_pos = 2
+time_stamp = 0.6
+meteor_speed = 400.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_7mrcp"]
+script = ExtResource("4_qvcq0")
+spawn_pos = 2
+time_stamp = 0.25
+meteor_speed = 400.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_kxw1r"]
+script = ExtResource("4_qvcq0")
+spawn_pos = 0
+time_stamp = 1.0
+meteor_speed = 400.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_wsx5g"]
+script = ExtResource("4_qvcq0")
+spawn_pos = 6
+time_stamp = 0.5
+meteor_speed = 400.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[resource]
+script = ExtResource("3_6e43e")
+ending_wait_time = 3.0
+dialogue_at_begining = ExtResource("1_bu431")
+sequence = Array[ExtResource("4_qvcq0")]([SubResource("Resource_u3bd7"), SubResource("Resource_m56r4"), SubResource("Resource_m56r4"), SubResource("Resource_xhiou"), SubResource("Resource_7mrcp"), SubResource("Resource_7mrcp"), SubResource("Resource_kxw1r"), SubResource("Resource_wsx5g")])
+failing_dialogue = ExtResource("2_gjnc8")
+metadata/_custom_type_script = "uid://ch3pmcg2j4tr3"

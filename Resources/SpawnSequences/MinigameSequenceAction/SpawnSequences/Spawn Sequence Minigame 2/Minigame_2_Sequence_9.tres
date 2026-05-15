@@ -1,0 +1,84 @@
+[gd_resource type="Resource" script_class="MinigameSequence" load_steps=15 format=3 uid="uid://dhjtiiulu1n1e"]
+
+[ext_resource type="Resource" uid="uid://dts3xlnv6pm8q" path="res://Resources/Dialogues/Minigame Dialogues/Second Minigame/Minigame_dialogue_2_8_pretendes que.tres" id="1_d4jo5"]
+[ext_resource type="Script" uid="uid://ch3pmcg2j4tr3" path="res://scripts/Minigame/Minigame Sequences/minigame_sequence.gd" id="2_0nxn4"]
+[ext_resource type="Resource" uid="uid://dr1mir85ipagq" path="res://Resources/Dialogues/Minigame Dialogues/Second Minigame/Second_Minigame_Fail.tres" id="2_it5ol"]
+[ext_resource type="Script" uid="uid://c5tpqd3aj2lu6" path="res://scripts/Minigame/Meteor/Data/meteor_spawn_sequence_data.gd" id="3_it5ol"]
+
+[sub_resource type="Resource" id="Resource_4xwf6"]
+script = ExtResource("3_it5ol")
+spawn_pos = 4
+time_stamp = 1.0
+meteor_speed = 350.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_qdre0"]
+script = ExtResource("3_it5ol")
+spawn_pos = 1
+time_stamp = 0.5
+meteor_speed = 350.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_e41st"]
+script = ExtResource("3_it5ol")
+spawn_pos = 2
+time_stamp = 0.5
+meteor_speed = 350.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_77anu"]
+script = ExtResource("3_it5ol")
+spawn_pos = 1
+time_stamp = 0.5
+meteor_speed = 350.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_vo81e"]
+script = ExtResource("3_it5ol")
+spawn_pos = 4
+time_stamp = 0.5
+meteor_speed = 350.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_xdoy7"]
+script = ExtResource("3_it5ol")
+spawn_pos = 1
+time_stamp = 0.5
+meteor_speed = 350.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_3mstn"]
+script = ExtResource("3_it5ol")
+spawn_pos = 6
+time_stamp = 0.5
+meteor_speed = 350.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_n2y4w"]
+script = ExtResource("3_it5ol")
+spawn_pos = 1
+time_stamp = 0.5
+meteor_speed = 350.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_d4jo5"]
+script = ExtResource("3_it5ol")
+spawn_pos = 0
+time_stamp = 0.5
+meteor_speed = 350.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_0nxn4"]
+script = ExtResource("3_it5ol")
+spawn_pos = 1
+time_stamp = 0.5
+meteor_speed = 350.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[resource]
+script = ExtResource("2_0nxn4")
+ending_wait_time = 3.0
+dialogue_at_begining = ExtResource("1_d4jo5")
+sequence = Array[ExtResource("3_it5ol")]([SubResource("Resource_4xwf6"), SubResource("Resource_qdre0"), SubResource("Resource_e41st"), SubResource("Resource_77anu"), SubResource("Resource_vo81e"), SubResource("Resource_xdoy7"), SubResource("Resource_3mstn"), SubResource("Resource_n2y4w"), SubResource("Resource_d4jo5"), SubResource("Resource_0nxn4")])
+failing_dialogue = ExtResource("2_it5ol")
+metadata/_custom_type_script = "uid://ch3pmcg2j4tr3"
