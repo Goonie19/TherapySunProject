@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MinigameSequence" load_steps=10 format=3 uid="uid://df0iqvn1of4ur"]
+
+[ext_resource type="Resource" uid="uid://c6305j88smuck" path="res://Resources/Dialogues/Minigame Dialogues/Third Minigame/Minigame_dialogue_3_0 Sueltalo.tres" id="1_b1dus"]
+[ext_resource type="Resource" uid="uid://chen2oq8a7xyu" path="res://Resources/Dialogues/Minigame Dialogues/Third Minigame/Last Minigame Fail.tres" id="2_q1rqa"]
+[ext_resource type="Script" uid="uid://ch3pmcg2j4tr3" path="res://scripts/Minigame/Minigame Sequences/minigame_sequence.gd" id="3_t0sqh"]
+[ext_resource type="Script" uid="uid://c5tpqd3aj2lu6" path="res://scripts/Minigame/Meteor/Data/meteor_spawn_sequence_data.gd" id="4_4ijof"]
+
+[sub_resource type="Resource" id="Resource_ft8g6"]
+script = ExtResource("4_4ijof")
+spawn_pos = 1
+time_stamp = 1.0
+meteor_speed = 50.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_ym1bv"]
+script = ExtResource("4_4ijof")
+spawn_pos = 5
+time_stamp = 1.5
+meteor_speed = 400.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_05nkn"]
+script = ExtResource("4_4ijof")
+spawn_pos = 3
+time_stamp = 0.6
+meteor_speed = 400.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_ko2qn"]
+script = ExtResource("4_4ijof")
+spawn_pos = 7
+time_stamp = 0.5
+meteor_speed = 400.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_tuit0"]
+script = ExtResource("4_4ijof")
+spawn_pos = 4
+time_stamp = 0.5
+meteor_speed = 400.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[resource]
+script = ExtResource("3_t0sqh")
+ending_wait_time = 3.0
+dialogue_at_begining = ExtResource("1_b1dus")
+sequence = Array[ExtResource("4_4ijof")]([SubResource("Resource_ft8g6"), SubResource("Resource_ym1bv"), SubResource("Resource_05nkn"), SubResource("Resource_ko2qn"), SubResource("Resource_tuit0")])
+failing_dialogue = ExtResource("2_q1rqa")
+metadata/_custom_type_script = "uid://ch3pmcg2j4tr3"

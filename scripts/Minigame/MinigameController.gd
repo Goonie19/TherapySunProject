@@ -24,9 +24,9 @@ signal on_minigame_finished
 
 
 
-func set_dependencies(character_controller: SunController, dialogue_manager: DialogueView):
+func set_dependencies(character_controller: SunController, dialogue_manager: DialogueView, camera_behaviour : CameraBehaviour):
 	character = character_controller
-	sun_space_rotator_node.set_dependencies(character_controller)
+	sun_space_rotator_node.set_dependencies(character_controller, camera_behaviour)
 	character.on_hit.connect(add_hits)
 	self.dialogue_manager = dialogue_manager
 

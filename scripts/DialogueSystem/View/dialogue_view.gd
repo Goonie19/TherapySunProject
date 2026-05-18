@@ -33,6 +33,9 @@ func _process(delta: float) -> void:
 
 func start_dialogue(dialogue: DialogueData):
 	presenter = dialogue_presenter.new(self, dialogue)
+	dialogue_panel.remove_theme_stylebox_override("panel")
+	dialogue_panel.add_theme_stylebox_override("panel", dialogue.sentences[0].character_speaking.character_dialogue_panel)
+	dialogue_text.text = ""
 	presenter.start_dialogue()
 
 func set_sentence(sentence: sentence_data):

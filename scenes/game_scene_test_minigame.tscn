@@ -1,13 +1,14 @@
-[gd_scene load_steps=14 format=3 uid="uid://ctt1ahnhd0rjd"]
+[gd_scene load_steps=15 format=3 uid="uid://ctt1ahnhd0rjd"]
 
 [ext_resource type="Script" uid="uid://bw0qouy70nse5" path="res://scripts/Dependency Injection/dependency_injector.gd" id="1_daggr"]
 [ext_resource type="PackedScene" uid="uid://bjwhml6qbv5xc" path="res://scenes/AudioSystem/AudioSystem.tscn" id="2_f2iih"]
 [ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="3_e86sv"]
+[ext_resource type="Script" uid="uid://b4svxrfkguwd5" path="res://scripts/Camera/camera_behaviour.gd" id="3_ri4ou"]
 [ext_resource type="PackedScene" uid="uid://ctwd6aklt5ujt" path="res://scenes/Minigame/minigame_scene.tscn" id="4_3s6ht"]
 [ext_resource type="PackedScene" uid="uid://exevk1xrow5p" path="res://scenes/UI/BlackScreen/BlackScreen.tscn" id="5_rs52x"]
 [ext_resource type="Script" uid="uid://20tta8lilgku" path="res://scripts/Lineal Action System/lineal_action_system.gd" id="6_i8v74"]
 [ext_resource type="Script" uid="uid://bgwp1y62wtlea" path="res://scripts/Lineal Action System/Actions/action.gd" id="7_17r02"]
-[ext_resource type="Resource" uid="uid://dtt7fx1kcwf21" path="res://Resources/Actions/1_x_Minigame_2_action.tres" id="9_u1rdy"]
+[ext_resource type="Resource" uid="uid://db1frgsbm3d1d" path="res://Resources/Actions/1_x_Minigame_3_action.tres" id="9_u1rdy"]
 [ext_resource type="Resource" uid="uid://0bn44tpjm5ic" path="res://Resources/Actions/fade_out_1.tres" id="11_p1txp"]
 [ext_resource type="PackedScene" uid="uid://cj4asau0sfw6f" path="res://scenes/Dialogue Scene/DialoguePanel.tscn" id="18_4gdji"]
 [ext_resource type="AudioStream" uid="uid://dqx4ttum6r4ee" path="res://assets/Sound/SFX/Dialogue_sound_character.wav" id="19_wi1s2"]
@@ -18,7 +19,7 @@
 
 [node name="WaitingTimer" type="Timer" parent="."]
 
-[node name="Dependency Injection" type="Node" parent="." node_paths=PackedStringArray("minigame_controller", "character_controller", "dialogue_controller", "black_screen", "lineal_action_controller", "audio_controller")]
+[node name="Dependency Injection" type="Node" parent="." node_paths=PackedStringArray("minigame_controller", "character_controller", "dialogue_controller", "black_screen", "lineal_action_controller", "audio_controller", "camera")]
 script = ExtResource("1_daggr")
 minigame_controller = NodePath("../MinigameScene")
 character_controller = NodePath("../SunCharacter")
@@ -26,14 +27,21 @@ dialogue_controller = NodePath("../DialoguePanel")
 black_screen = NodePath("../BlackScreen")
 lineal_action_controller = NodePath("../Lineal_action_controller")
 audio_controller = NodePath("../AudioSystem")
+camera = NodePath("../Camera2D")
 
 [node name="AudioSystem" parent="." instance=ExtResource("2_f2iih")]
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("timer")]
 position = Vector2(400, 300)
+script = ExtResource("3_ri4ou")
+timer = NodePath("Timer")
+
+[node name="Timer" type="Timer" parent="Camera2D"]
+ignore_time_scale = true
 
 [node name="BgScene" parent="." instance=ExtResource("3_e86sv")]
 position = Vector2(400, 300)
+scale = Vector2(1.05, 1.05)
 
 [node name="MinigameScene" parent="." node_paths=PackedStringArray("dialogue_manager") instance=ExtResource("4_3s6ht")]
 dialogue_manager = NodePath("../DialoguePanel")

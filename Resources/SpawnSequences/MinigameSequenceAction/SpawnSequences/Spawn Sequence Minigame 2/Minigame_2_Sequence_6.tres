@@ -9,56 +9,56 @@
 script = ExtResource("3_4og55")
 spawn_pos = 4
 time_stamp = 1.0
-meteor_speed = 350.0
+meteor_speed = 400.0
 metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 
 [sub_resource type="Resource" id="Resource_qdre0"]
 script = ExtResource("3_4og55")
 spawn_pos = 2
 time_stamp = 0.5
-meteor_speed = 350.0
+meteor_speed = 400.0
 metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 
 [sub_resource type="Resource" id="Resource_e41st"]
 script = ExtResource("3_4og55")
 spawn_pos = 0
 time_stamp = 0.5
-meteor_speed = 350.0
+meteor_speed = 400.0
 metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 
 [sub_resource type="Resource" id="Resource_77anu"]
 script = ExtResource("3_4og55")
 spawn_pos = 6
 time_stamp = 0.5
-meteor_speed = 350.0
+meteor_speed = 400.0
 metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 
 [sub_resource type="Resource" id="Resource_vo81e"]
 script = ExtResource("3_4og55")
 spawn_pos = 4
 time_stamp = 0.5
-meteor_speed = 350.0
+meteor_speed = 400.0
 metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 
 [sub_resource type="Resource" id="Resource_xdoy7"]
 script = ExtResource("3_4og55")
 spawn_pos = 6
 time_stamp = 0.5
-meteor_speed = 350.0
+meteor_speed = 400.0
 metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 
 [sub_resource type="Resource" id="Resource_3mstn"]
 script = ExtResource("3_4og55")
 spawn_pos = 0
 time_stamp = 0.5
-meteor_speed = 350.0
+meteor_speed = 400.0
 metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 
 [sub_resource type="Resource" id="Resource_n2y4w"]
 script = ExtResource("3_4og55")
 spawn_pos = 2
 time_stamp = 0.5
-meteor_speed = 350.0
+meteor_speed = 400.0
 metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 
 [sub_resource type="Resource" id="Resource_x884s"]

@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="MinigameSequence" load_steps=11 format=3 uid="uid://bcfbdnxyere3l"]
+[gd_resource type="Resource" script_class="MinigameSequence" load_steps=12 format=3 uid="uid://bcfbdnxyere3l"]
 
+[ext_resource type="Resource" uid="uid://dm474cusmjsnt" path="res://Resources/Dialogues/Minigame Dialogues/Second Minigame/Minigame_dialogue_2_1_A veces disfruto.tres" id="1_m56r4"]
 [ext_resource type="Script" uid="uid://ch3pmcg2j4tr3" path="res://scripts/Minigame/Minigame Sequences/minigame_sequence.gd" id="1_u3bd7"]
 [ext_resource type="Script" uid="uid://c5tpqd3aj2lu6" path="res://scripts/Minigame/Meteor/Data/meteor_spawn_sequence_data.gd" id="2_m56r4"]
 
@@ -62,5 +63,6 @@ metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 [resource]
 script = ExtResource("1_u3bd7")
 ending_wait_time = 3.0
+dialogue_at_begining = ExtResource("1_m56r4")
 sequence = Array[ExtResource("2_m56r4")]([SubResource("Resource_u3bd7"), SubResource("Resource_m56r4"), SubResource("Resource_2q1ta"), SubResource("Resource_xhiou"), SubResource("Resource_7mrcp"), SubResource("Resource_20n8g"), SubResource("Resource_kxw1r"), SubResource("Resource_wsx5g")])
 metadata/_custom_type_script = "uid://ch3pmcg2j4tr3"
