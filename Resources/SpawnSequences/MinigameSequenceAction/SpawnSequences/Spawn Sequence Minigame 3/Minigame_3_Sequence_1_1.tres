@@ -36,7 +36,7 @@ metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 [sub_resource type="Resource" id="Resource_tuit0"]
 script = ExtResource("4_4ijof")
 spawn_pos = 4
-time_stamp = 0.5
+time_stamp = 0.7
 meteor_speed = 400.0
 metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 

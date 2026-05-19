@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="MinigameSequence" load_steps=15 format=3 uid="uid://dm8q05l86hr42"]
+[gd_resource type="Resource" script_class="MinigameSequence" load_steps=20 format=3 uid="uid://dm8q05l86hr42"]
 
-[ext_resource type="Resource" uid="uid://c6305j88smuck" path="res://Resources/Dialogues/Minigame Dialogues/Third Minigame/Minigame_dialogue_3_0 Sueltalo.tres" id="1_8l5mc"]
+[ext_resource type="Resource" uid="uid://e1an04curd3h" path="res://Resources/Dialogues/Minigame Dialogues/Third Minigame/Minigame_dialogue_3_4 Y no pasa nada.tres" id="1_8l5mc"]
 [ext_resource type="Resource" uid="uid://chen2oq8a7xyu" path="res://Resources/Dialogues/Minigame Dialogues/Third Minigame/Last Minigame Fail.tres" id="2_rlohg"]
 [ext_resource type="Script" uid="uid://ch3pmcg2j4tr3" path="res://scripts/Minigame/Minigame Sequences/minigame_sequence.gd" id="3_c4cpw"]
 [ext_resource type="Script" uid="uid://c5tpqd3aj2lu6" path="res://scripts/Minigame/Meteor/Data/meteor_spawn_sequence_data.gd" id="4_floim"]
@@ -9,7 +9,7 @@
 script = ExtResource("4_floim")
 spawn_pos = 6
 time_stamp = 1.0
-meteor_speed = 25.0
+meteor_speed = 50.0
 metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 
 [sub_resource type="Resource" id="Resource_ym1bv"]
@@ -75,10 +75,45 @@ time_stamp = 0.5
 meteor_speed = 450.0
 metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
 
+[sub_resource type="Resource" id="Resource_8l5mc"]
+script = ExtResource("4_floim")
+spawn_pos = 7
+time_stamp = 0.25
+meteor_speed = 450.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_rlohg"]
+script = ExtResource("4_floim")
+spawn_pos = 4
+time_stamp = 0.7
+meteor_speed = 450.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_c4cpw"]
+script = ExtResource("4_floim")
+spawn_pos = 3
+time_stamp = 0.5
+meteor_speed = 450.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_floim"]
+script = ExtResource("4_floim")
+spawn_pos = 2
+time_stamp = 0.5
+meteor_speed = 450.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
+[sub_resource type="Resource" id="Resource_6cb81"]
+script = ExtResource("4_floim")
+spawn_pos = 6
+time_stamp = 0.5
+meteor_speed = 450.0
+metadata/_custom_type_script = "uid://c5tpqd3aj2lu6"
+
 [resource]
 script = ExtResource("3_c4cpw")
-ending_wait_time = 5.0
+ending_wait_time = 3.0
 dialogue_at_begining = ExtResource("1_8l5mc")
-sequence = Array[ExtResource("4_floim")]([SubResource("Resource_ft8g6"), SubResource("Resource_ym1bv"), SubResource("Resource_05nkn"), SubResource("Resource_ko2qn"), SubResource("Resource_tuit0"), SubResource("Resource_u6gyv"), SubResource("Resource_0ufcp"), SubResource("Resource_7kkfp"), SubResource("Resource_5eb2l"), SubResource("Resource_fhyb5")])
+sequence = Array[ExtResource("4_floim")]([SubResource("Resource_ft8g6"), SubResource("Resource_ym1bv"), SubResource("Resource_05nkn"), SubResource("Resource_ko2qn"), SubResource("Resource_tuit0"), SubResource("Resource_u6gyv"), SubResource("Resource_0ufcp"), SubResource("Resource_7kkfp"), SubResource("Resource_5eb2l"), SubResource("Resource_fhyb5"), SubResource("Resource_8l5mc"), SubResource("Resource_rlohg"), SubResource("Resource_c4cpw"), SubResource("Resource_floim"), SubResource("Resource_6cb81")])
 failing_dialogue = ExtResource("2_rlohg")
 metadata/_custom_type_script = "uid://ch3pmcg2j4tr3"
