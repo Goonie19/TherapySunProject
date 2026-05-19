@@ -22,6 +22,15 @@ window/size/viewport_height=600
 window/size/resizable=false
 window/size/borderless=true
 
+[importer_defaults]
+
+mp3={
+&"loop": true
+}
+wav={
+&"edit/loop_mode": 2
+}
+
 [input]
 
 AdvanceText={

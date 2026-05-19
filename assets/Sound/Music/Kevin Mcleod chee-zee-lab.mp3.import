@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Kevin Mcleod chee-zee-lab.mp3-627093923d2856e
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

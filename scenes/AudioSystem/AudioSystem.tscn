@@ -1,15 +1,164 @@
-[gd_scene load_steps=2 format=3 uid="uid://bjwhml6qbv5xc"]
+[gd_scene load_steps=6 format=3 uid="uid://bjwhml6qbv5xc"]
 
 [ext_resource type="Script" uid="uid://b7c3roun6p57o" path="res://scripts/AudioSystem/audio_controller.gd" id="1_dk1j8"]
 
-[node name="AudioSystem" type="Node" node_paths=PackedStringArray("music_player", "sfx_player")]
-script = ExtResource("1_dk1j8")
-music_player = NodePath("MusicPlayer")
-sfx_player = NodePath("SFXPlayer")
+[sub_resource type="Animation" id="Animation_dk1j8"]
+resource_name = "FadeToTrack1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MusicPlayer Track 1:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-80.0, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MusicPlayer Track 2:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -80.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MusicPlayer Track 2:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
-[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+[sub_resource type="Animation" id="Animation_bl30o"]
+resource_name = "FadeToTrack2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MusicPlayer Track 1:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MusicPlayer Track 1:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -80.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MusicPlayer Track 2:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-80.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_v7bvd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MusicPlayer Track 1:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-80.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MusicPlayer Track 2:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-80.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MusicPlayer Track 2:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("MusicPlayer Track 1:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kt35o"]
+_data = {
+&"FadeToTrack1": SubResource("Animation_dk1j8"),
+&"FadeToTrack2": SubResource("Animation_bl30o"),
+&"RESET": SubResource("Animation_v7bvd")
+}
+
+[node name="AudioSystem" type="Node" node_paths=PackedStringArray("music_player", "music_player_2", "sfx_player", "animator")]
+script = ExtResource("1_dk1j8")
+music_player = NodePath("MusicPlayer Track 1")
+music_player_2 = NodePath("MusicPlayer Track 2")
+sfx_player = NodePath("SFXPlayer")
+animator = NodePath("AnimationPlayer")
+
+[node name="MusicPlayer Track 1" type="AudioStreamPlayer2D" parent="."]
+volume_db = -80.0
+autoplay = true
+bus = &"Music"
+
+[node name="MusicPlayer Track 2" type="AudioStreamPlayer2D" parent="."]
+volume_db = -80.0
 autoplay = true
 bus = &"Music"
 
 [node name="SFXPlayer" type="AudioStreamPlayer2D" parent="."]
 bus = &"SFX"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_kt35o")
+}

@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/kevin-macleod-space-1990.mp3-d3e669b0498f4128
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0
