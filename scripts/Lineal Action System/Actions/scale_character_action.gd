@@ -13,4 +13,4 @@ func do_action() -> void:
 	on_action_finished.emit()
 
 func set_dependencies() -> void:
-	print('ola')
+	pass

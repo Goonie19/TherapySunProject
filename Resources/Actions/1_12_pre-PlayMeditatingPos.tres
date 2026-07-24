@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PlayCharacterAnimationAction" load_steps=3 format=3 uid="uid://c0c44x8pu465s"]
+
+[ext_resource type="Script" uid="uid://dbj0a1utg0r6k" path="res://scripts/Lineal Action System/Actions/play_character_animation_action.gd" id="1_cy7q5"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="1_mqgfn"]
+
+[resource]
+script = ExtResource("1_cy7q5")
+character = ExtResource("1_mqgfn")
+state = 3
+skip_wait = false
+metadata/_custom_type_script = "uid://dbj0a1utg0r6k"

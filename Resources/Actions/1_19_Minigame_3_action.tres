@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MinigameAction" load_steps=18 format=3 uid="uid://db1frgsbm3d1d"]
+
+[ext_resource type="Script" uid="uid://b3yd0nah18vsa" path="res://scripts/Lineal Action System/Actions/minigame_action.gd" id="1_5lu3f"]
+[ext_resource type="Script" uid="uid://ch3pmcg2j4tr3" path="res://scripts/Minigame/Minigame Sequences/minigame_sequence.gd" id="2_g0b8p"]
+[ext_resource type="Resource" uid="uid://df0iqvn1of4ur" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_1_1.tres" id="3_il5pb"]
+[ext_resource type="Resource" uid="uid://b7qjy65o4afgw" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_2_2.tres" id="4_lkmv2"]
+[ext_resource type="Resource" uid="uid://dfyc3x5h4sivb" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_3_3.tres" id="5_nbnio"]
+[ext_resource type="Resource" uid="uid://csl4pv3gn1fx5" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_4_4.tres" id="6_27hea"]
+[ext_resource type="Resource" uid="uid://dm8q05l86hr42" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_5_.tres" id="7_0w4e3"]
+[ext_resource type="Resource" uid="uid://cw5h83guytbsh" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_6_.tres" id="8_41wp0"]
+[ext_resource type="Resource" uid="uid://ce3nsfiptca6r" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_7_.tres" id="9_e2i22"]
+[ext_resource type="Resource" uid="uid://cmfo28tc4ssf" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_8_.tres" id="10_rimsb"]
+[ext_resource type="Resource" uid="uid://c3ogks37lfis6" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_9_.tres" id="11_imjn0"]
+[ext_resource type="Resource" uid="uid://meg6rnfbqgy5" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_10_.tres" id="12_xh2ig"]
+[ext_resource type="Resource" uid="uid://pp17nf5hv30b" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_11_.tres" id="13_kv2pv"]
+[ext_resource type="Resource" uid="uid://sx5xuk7endko" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_12_.tres" id="14_bl612"]
+[ext_resource type="Resource" uid="uid://dcvubd5s7m30q" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_13_.tres" id="15_3lufd"]
+[ext_resource type="Resource" uid="uid://ccq5f6tfsjno7" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_14_.tres" id="16_won6j"]
+[ext_resource type="Resource" uid="uid://bine0agmo2b17" path="res://Resources/SpawnSequences/MinigameSequenceAction/SpawnSequences/Spawn Sequence Minigame 3/Minigame_3_Sequence_15_.tres" id="17_jrfyy"]
+
+[resource]
+script = ExtResource("1_5lu3f")
+sequences = Array[ExtResource("2_g0b8p")]([ExtResource("3_il5pb"), ExtResource("4_lkmv2"), ExtResource("5_nbnio"), ExtResource("6_27hea"), ExtResource("7_0w4e3"), ExtResource("8_41wp0"), ExtResource("9_e2i22"), ExtResource("10_rimsb"), ExtResource("11_imjn0"), ExtResource("12_xh2ig"), ExtResource("13_kv2pv"), ExtResource("14_bl612"), ExtResource("15_3lufd"), ExtResource("16_won6j"), ExtResource("17_jrfyy")])
+skip_wait = false
+metadata/_custom_type_script = "uid://b3yd0nah18vsa"

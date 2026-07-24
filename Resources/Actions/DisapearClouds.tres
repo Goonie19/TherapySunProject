@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FadeOutCloudAction" load_steps=3 format=3 uid="uid://cbwam82v83qpp"]
+
+[ext_resource type="Script" uid="uid://dj3wq6w6y5k1k" path="res://scripts/Lineal Action System/Actions/fade_out_clouds_action.gd" id="1_jjsjl"]
+[ext_resource type="Resource" uid="uid://c4kl8kakl7bv2" path="res://Resources/Sol_Character.tres" id="1_k0csn"]
+
+[resource]
+script = ExtResource("1_jjsjl")
+character = ExtResource("1_k0csn")
+skip_wait = false
+metadata/_custom_type_script = "uid://dj3wq6w6y5k1k"

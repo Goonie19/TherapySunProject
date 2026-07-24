@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ScaleCharacterAction" load_steps=3 format=3 uid="uid://butsebxmfj15u"]
+
+[ext_resource type="Resource" uid="uid://bbk7vc5rdtia7" path="res://Resources/Estefanía.tres" id="1_vbjwf"]
+[ext_resource type="Script" uid="uid://dloouoabje54b" path="res://scripts/Lineal Action System/Actions/scale_character_action.gd" id="2_b3nxa"]
+
+[resource]
+script = ExtResource("2_b3nxa")
+character = ExtResource("1_vbjwf")
+target_scale = 0.001
+time_to_reach_scale = 0.1
+skip_wait = true
+metadata/_custom_type_script = "uid://dloouoabje54b"

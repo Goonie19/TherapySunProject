@@ -1,6 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://by3wluwievmon"]
+[gd_scene load_steps=11 format=3 uid="uid://by3wluwievmon"]
 
 [ext_resource type="Texture2D" uid="uid://bxgwur8eoqo8t" path="res://assets/Sun Sprites/Clouds-sheet.png" id="1_1lmq5"]
+[ext_resource type="Script" uid="uid://cpvqjp6sxe8fn" path="res://scripts/Character/cloud_controller.gd" id="1_r3qig"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1lmq5"]
+
+[sub_resource type="Animation" id="Animation_vmgkk"]
+resource_name = "FadeOut"
+step = 0.166667
 
 [sub_resource type="Animation" id="Animation_r3qig"]
 resource_name = "Iddle"
@@ -36,6 +43,7 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vmgkk"]
 _data = {
+&"FadeOut": SubResource("Animation_vmgkk"),
 &"Iddle": SubResource("Animation_r3qig"),
 &"RESET": SubResource("Animation_1lmq5")
 }
@@ -51,9 +59,12 @@ states/Iddle/node = SubResource("AnimationNodeAnimation_1lmq5")
 states/Iddle/position = Vector2(303, 116)
 transitions = ["Start", "Iddle", SubResource("AnimationNodeStateMachineTransition_r3qig")]
 
-[node name="SunClouds" type="Node2D"]
+[node name="SunClouds" type="Node2D" node_paths=PackedStringArray("cloud_canvas_item")]
+script = ExtResource("1_r3qig")
+cloud_canvas_item = NodePath("Sprite2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_1lmq5")
 texture = ExtResource("1_1lmq5")
 hframes = 3
 

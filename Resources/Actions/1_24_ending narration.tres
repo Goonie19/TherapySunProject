@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogueAction" load_steps=3 format=3 uid="uid://byb7nj3cae7ws"]
+
+[ext_resource type="Resource" uid="uid://by7jo2q3hcyo2" path="res://Resources/Dialogues/1_6_EndingDialogue Narration.tres" id="1_87cmw"]
+[ext_resource type="Script" uid="uid://br4crtpfmmcdx" path="res://scripts/Lineal Action System/Actions/dialogue_action.gd" id="1_p0qa8"]
+
+[resource]
+script = ExtResource("1_p0qa8")
+dialogue = ExtResource("1_87cmw")
+skip_wait = false
+metadata/_custom_type_script = "uid://br4crtpfmmcdx"

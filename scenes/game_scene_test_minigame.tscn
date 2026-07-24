@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://exevk1xrow5p" path="res://scenes/UI/BlackScreen/BlackScreen.tscn" id="5_rs52x"]
 [ext_resource type="Script" uid="uid://20tta8lilgku" path="res://scripts/Lineal Action System/lineal_action_system.gd" id="6_i8v74"]
 [ext_resource type="Script" uid="uid://bgwp1y62wtlea" path="res://scripts/Lineal Action System/Actions/action.gd" id="7_17r02"]
-[ext_resource type="Resource" uid="uid://db1frgsbm3d1d" path="res://Resources/Actions/1_x_Minigame_3_action.tres" id="9_u1rdy"]
+[ext_resource type="Resource" uid="uid://db1frgsbm3d1d" path="res://Resources/Actions/1_19_Minigame_3_action.tres" id="9_u1rdy"]
 [ext_resource type="Resource" uid="uid://0bn44tpjm5ic" path="res://Resources/Actions/fade_out_1.tres" id="11_p1txp"]
 [ext_resource type="PackedScene" uid="uid://cj4asau0sfw6f" path="res://scenes/Dialogue Scene/DialoguePanel.tscn" id="18_4gdji"]
 [ext_resource type="AudioStream" uid="uid://dqx4ttum6r4ee" path="res://assets/Sound/SFX/Dialogue_sound_character.wav" id="19_wi1s2"]

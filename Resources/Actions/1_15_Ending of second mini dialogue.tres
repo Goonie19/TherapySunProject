@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogueAction" load_steps=3 format=3 uid="uid://bue0f8a5hg6rm"]
+
+[ext_resource type="Resource" uid="uid://cmrl0osx4amii" path="res://Resources/Dialogues/1_4_After second minigame.tres" id="1_6ia7b"]
+[ext_resource type="Script" uid="uid://br4crtpfmmcdx" path="res://scripts/Lineal Action System/Actions/dialogue_action.gd" id="1_nnone"]
+
+[resource]
+script = ExtResource("1_nnone")
+dialogue = ExtResource("1_6ia7b")
+skip_wait = false
+metadata/_custom_type_script = "uid://br4crtpfmmcdx"

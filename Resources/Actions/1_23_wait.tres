@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="WaitingAction" load_steps=2 format=3 uid="uid://c6vc5ovh5ygku"]
+
+[ext_resource type="Script" path="res://scripts/Lineal Action System/Actions/waiting_action.gd" id="1_yddxe"]
+
+[resource]
+script = ExtResource("1_yddxe")
+time_to_wait = 1.0
+skip_wait = false
+metadata/_custom_type_script = "uid://c7478u0eyjy7w"

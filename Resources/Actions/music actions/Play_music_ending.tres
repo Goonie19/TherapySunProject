@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="PlayMusicAction" load_steps=3 format=3 uid="uid://cswi5i38rn6e6"]
+
+[ext_resource type="Script" path="res://scripts/Lineal Action System/Actions/play_music_action.gd" id="1_irn7c"]
+[ext_resource type="AudioStream" uid="uid://cnaxuludiy7ju" path="res://assets/Sound/Music/Shy-SaraLopezProd.mp3" id="1_lg2eg"]
+
+[resource]
+script = ExtResource("1_irn7c")
+music_to_play = ExtResource("1_lg2eg")
+skip_wait = false

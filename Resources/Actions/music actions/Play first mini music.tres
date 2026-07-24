@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="PlayMusicAction" load_steps=3 format=3 uid="uid://k8drwdq3s4db"]
+
+[ext_resource type="Script" path="res://scripts/Lineal Action System/Actions/play_music_action.gd" id="1_voyw8"]
+[ext_resource type="AudioStream" uid="uid://dppbjldufd2x0" path="res://assets/Sound/Music/Dark Walk Kevin Mcleod Possible ending music.mp3" id="1_x0phq"]
+
+[resource]
+script = ExtResource("1_voyw8")
+music_to_play = ExtResource("1_x0phq")
+skip_wait = true

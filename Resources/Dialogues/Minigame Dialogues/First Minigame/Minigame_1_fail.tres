@@ -9,7 +9,7 @@
 script = ExtResource("2_n1opq")
 character_speaking = ExtResource("4_8em2r")
 state = 5
-dialogue_string = "Me cago en dios así no hay quien medite.!"
+dialogue_string = "Me cago en dios así no hay quien medite!"
 answers = Array[ExtResource("3_w20vl")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

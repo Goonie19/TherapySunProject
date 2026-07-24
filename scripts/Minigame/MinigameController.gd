@@ -31,8 +31,9 @@ func set_dependencies(character_controller: SunController, dialogue_manager: Dia
 	self.dialogue_manager = dialogue_manager
 
 func start_minigame(minigameAction: MinigameAction):
+	current_sequence = 0
 	mini_sequence = minigameAction.sequences[current_sequence]
-	#Waits for the shield to appear to continue the execution of the logic
+	#Waits for the shield to appear tocurrent_sequence continue the execution of the logic
 	await sun_space_rotator_node.set_rotator(true)
 	
 	sun_space_rotator_node.process_mode = Node.PROCESS_MODE_INHERIT
@@ -40,7 +41,7 @@ func start_minigame(minigameAction: MinigameAction):
 		mini_sequence = minigameAction.sequences[current_sequence]
 		current_meteor_pos = 0
 		await run_current_sequence_async()
-		if current_hits <= 3:
+		if current_hits <= 3: 
 			current_sequence = current_sequence + 1
 		current_hits = 0
 	

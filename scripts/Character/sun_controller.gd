@@ -4,6 +4,7 @@ class_name SunController
 
 @export var hit_timer : Timer
 @export var hit_cooldown: float = 0.5
+@export var clouds : CloudController
 
 signal on_hit
 
@@ -32,6 +33,9 @@ func Hit() -> void:
 	hit_timer.start(hit_cooldown)
 	await hit_timer.timeout
 	set_character_state(current_state)
+
+func fade_out_clouds() -> void:
+	await clouds.fade_out()
 
 func play_animation(animation: String) -> void:
 	anim.play(animation)

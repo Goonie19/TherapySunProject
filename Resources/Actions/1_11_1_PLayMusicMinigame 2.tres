@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="PlayMusicAction" load_steps=3 format=3 uid="uid://68xbrmksrj25"]
+
+[ext_resource type="AudioStream" uid="uid://b3uhf6q68x5ta" path="res://assets/Sound/Music/Kevin Mcleod chee-zee-lab.mp3" id="1_t5dh3"]
+[ext_resource type="Script" path="res://scripts/Lineal Action System/Actions/play_music_action.gd" id="2_5m3a8"]
+
+[resource]
+script = ExtResource("2_5m3a8")
+music_to_play = ExtResource("1_t5dh3")
+skip_wait = true

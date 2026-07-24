@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FadeBlackAction" load_steps=2 format=3 uid="uid://dg4hd8wsrvtkf"]
+
+[ext_resource type="Script" path="res://scripts/Lineal Action System/Actions/black_fade_action.gd" id="1_swr6f"]
+
+[resource]
+script = ExtResource("1_swr6f")
+fade_value = 1.0
+time_to_fade = 1.0
+skip_wait = false

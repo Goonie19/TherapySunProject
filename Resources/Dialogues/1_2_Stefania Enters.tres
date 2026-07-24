@@ -10,7 +10,7 @@
 script = ExtResource("2_udkft")
 character_speaking = ExtResource("4_ap0bj")
 state = 2
-dialogue_string = "- ¿Qué es esto, me he fumado una de las nubes?"
+dialogue_string = "¿Qué es esto, me he fumado una de las nubes?"
 answers = Array[ExtResource("3_udkft")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

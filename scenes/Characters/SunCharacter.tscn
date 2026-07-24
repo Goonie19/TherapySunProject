@@ -403,9 +403,10 @@ _data = {
 &"Shocked": SubResource("Animation_hqrqv")
 }
 
-[node name="SunCharacter" type="Node2D" node_paths=PackedStringArray("hit_timer", "anim")]
+[node name="SunCharacter" type="Node2D" node_paths=PackedStringArray("hit_timer", "clouds", "anim")]
 script = ExtResource("1_prkou")
 hit_timer = NodePath("HitTimer")
+clouds = NodePath("SunClouds")
 data = ExtResource("2_i3r3b")
 anim = NodePath("AnimationPlayer")
 
