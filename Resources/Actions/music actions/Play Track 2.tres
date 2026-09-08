@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="PlayTrackAction" load_steps=2 format=3 uid="uid://bfnc4rkpd5o2n"]
+
+[ext_resource type="Script" uid="uid://b1eloryg873bh" path="res://scripts/Lineal Action System/Actions/play_track_action.gd" id="1_0oxda"]
+
+[resource]
+script = ExtResource("1_0oxda")
+track_to_play = "Track2"
+skip_wait = false
+metadata/_custom_type_script = "uid://b1eloryg873bh"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://bodj13bauus4b"]
+[gd_scene load_steps=46 format=3 uid="uid://bodj13bauus4b"]
 
 [ext_resource type="Script" uid="uid://bw0qouy70nse5" path="res://scripts/Dependency Injection/dependency_injector.gd" id="1_liy57"]
 [ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="1_w5aja"]
@@ -23,11 +23,11 @@
 [ext_resource type="Resource" uid="uid://do7hw3ul1uj8c" path="res://Resources/Actions/1_4_1 Shrink Estefania.tres" id="15_ro0ie"]
 [ext_resource type="PackedScene" uid="uid://c0b4lk8m4qa80" path="res://scenes/Characters/Estefania.tscn" id="16_liy57"]
 [ext_resource type="Resource" uid="uid://bia1rxfhtwp0e" path="res://Resources/Actions/1_6_Minigame_1_action.tres" id="17_ro0ie"]
+[ext_resource type="Script" uid="uid://7vs1l762fec5" path="res://scripts/Lineal Action System/Actions/play_music_action.gd" id="18_o4j5v"]
 [ext_resource type="Resource" uid="uid://c6ctpuasanctl" path="res://Resources/Actions/1_7_ScaleStefania Back.tres" id="18_twkf6"]
 [ext_resource type="Resource" uid="uid://c8b5lgkm5mgoh" path="res://Resources/Actions/1_8_MoveStefaniaBack.tres" id="19_4fjq2"]
 [ext_resource type="Resource" uid="uid://cmhmxt3mb0hs1" path="res://Resources/Actions/1_9_Ending of first mini dialogue.tres" id="20_o4j5v"]
 [ext_resource type="Resource" uid="uid://ci70lx7s312w0" path="res://Resources/Actions/1_10_Shrink Estefania again.tres" id="21_qlrfd"]
-[ext_resource type="Resource" uid="uid://k8drwdq3s4db" path="res://Resources/Actions/music actions/Play first mini music.tres" id="22_mjtaf"]
 [ext_resource type="Resource" uid="uid://dth87beyey770" path="res://Resources/Actions/1_11_Move Estefania To Sun again.tres" id="23_ww6lu"]
 [ext_resource type="Resource" uid="uid://c0c44x8pu465s" path="res://Resources/Actions/1_12_pre-PlayMeditatingPos.tres" id="24_584by"]
 [ext_resource type="Resource" uid="uid://dtt7fx1kcwf21" path="res://Resources/Actions/1_12_Minigame_2_action.tres" id="25_v7uyc"]
@@ -39,11 +39,20 @@
 [ext_resource type="Resource" uid="uid://db1frgsbm3d1d" path="res://Resources/Actions/1_19_Minigame_3_action.tres" id="31_4558e"]
 [ext_resource type="Resource" uid="uid://ch2j7s21xs6la" path="res://Resources/Actions/1_20_ScaleStefania Back.tres" id="32_1mrcw"]
 [ext_resource type="Resource" uid="uid://dauley21x8s2h" path="res://Resources/Actions/1_21_MoveStefaniaBack.tres" id="33_4har0"]
-[ext_resource type="Resource" uid="uid://cswi5i38rn6e6" path="res://Resources/Actions/music actions/Play_music_ending.tres" id="33_o4j5v"]
 [ext_resource type="Resource" uid="uid://xc08iisrthnr" path="res://Resources/Actions/1_22_ending dialogue.tres" id="34_n4qu0"]
 [ext_resource type="Resource" uid="uid://c6vc5ovh5ygku" path="res://Resources/Actions/1_23_wait.tres" id="35_thlb5"]
 [ext_resource type="Resource" uid="uid://dg4hd8wsrvtkf" path="res://Resources/Actions/fade_in_.tres" id="36_h0ynx"]
 [ext_resource type="Resource" uid="uid://byb7nj3cae7ws" path="res://Resources/Actions/1_24_ending narration.tres" id="37_y1k1x"]
+
+[sub_resource type="Resource" id="Resource_qlrfd"]
+script = ExtResource("18_o4j5v")
+music_to_play = Array[AudioStream]([null])
+skip_wait = true
+
+[sub_resource type="Resource" id="Resource_mjtaf"]
+script = ExtResource("18_o4j5v")
+music_to_play = Array[AudioStream]([])
+skip_wait = false
 
 [node name="GameScene" type="Node"]
 
@@ -80,7 +89,7 @@ z_index = 9
 [node name="Lineal_action_controller" type="Node2D" parent="." node_paths=PackedStringArray("waiting_timer")]
 script = ExtResource("5_y3j0m")
 waiting_timer = NodePath("../WaitingTimer")
-actions = Array[ExtResource("6_rurhu")]([ExtResource("7_tcjrq"), ExtResource("7_rvs2r"), ExtResource("9_ldkr4"), ExtResource("7_mw25s"), ExtResource("12_mwyo0"), ExtResource("14_qlrfd"), ExtResource("14_s76x2"), ExtResource("15_77hjl"), ExtResource("15_ro0ie"), ExtResource("22_mjtaf"), ExtResource("15_6aqbo"), ExtResource("24_584by"), ExtResource("17_ro0ie"), ExtResource("18_twkf6"), ExtResource("9_ldkr4"), ExtResource("19_4fjq2"), ExtResource("20_o4j5v"), ExtResource("21_qlrfd"), ExtResource("22_mjtaf"), ExtResource("23_ww6lu"), ExtResource("24_584by"), ExtResource("25_v7uyc"), ExtResource("26_cjr1f"), ExtResource("9_ldkr4"), ExtResource("27_nlhev"), ExtResource("28_4gycw"), ExtResource("29_fet82"), ExtResource("30_reh8g"), ExtResource("22_mjtaf"), ExtResource("24_584by"), ExtResource("31_4558e"), ExtResource("33_o4j5v"), ExtResource("32_1mrcw"), ExtResource("9_ldkr4"), ExtResource("33_4har0"), ExtResource("34_n4qu0"), ExtResource("35_thlb5"), ExtResource("36_h0ynx"), ExtResource("37_y1k1x")])
+actions = Array[ExtResource("6_rurhu")]([ExtResource("7_tcjrq"), ExtResource("7_rvs2r"), ExtResource("9_ldkr4"), ExtResource("7_mw25s"), ExtResource("12_mwyo0"), ExtResource("14_qlrfd"), ExtResource("14_s76x2"), ExtResource("15_77hjl"), ExtResource("15_ro0ie"), SubResource("Resource_qlrfd"), ExtResource("15_6aqbo"), ExtResource("24_584by"), ExtResource("17_ro0ie"), ExtResource("18_twkf6"), ExtResource("9_ldkr4"), ExtResource("19_4fjq2"), ExtResource("20_o4j5v"), ExtResource("21_qlrfd"), SubResource("Resource_qlrfd"), ExtResource("23_ww6lu"), ExtResource("24_584by"), ExtResource("25_v7uyc"), ExtResource("26_cjr1f"), ExtResource("9_ldkr4"), ExtResource("27_nlhev"), ExtResource("28_4gycw"), ExtResource("29_fet82"), ExtResource("30_reh8g"), SubResource("Resource_qlrfd"), ExtResource("24_584by"), ExtResource("31_4558e"), SubResource("Resource_mjtaf"), ExtResource("32_1mrcw"), ExtResource("9_ldkr4"), ExtResource("33_4har0"), ExtResource("34_n4qu0"), ExtResource("35_thlb5"), ExtResource("36_h0ynx"), ExtResource("37_y1k1x")])
 
 [node name="DialoguePanel" parent="." instance=ExtResource("4_y3j0m")]
 z_index = 10

@@ -30,7 +30,7 @@ func inject_to_action(action: Action) -> void:
 		action.set_dependencies(waiting_timer)
 	if action is FadeBlackAction:
 		action.set_dependencies(black_screen)
-	if action is PlayMusicAction:
+	if action is PlayMusicAction or action is PlayTrackAction:
 		action.set_dependencies(audio_controller)
 
 func set_dependencies(dialogue_manager: DialogueView, 

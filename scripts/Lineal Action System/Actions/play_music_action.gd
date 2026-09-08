@@ -2,7 +2,7 @@ extends Action
 
 class_name PlayMusicAction
 
-@export var music_to_play: AudioStream
+@export var music_to_play: Array[AudioStream]
 
 var audio_controller : AudioController
 
