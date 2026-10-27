@@ -9,15 +9,15 @@
 script = ExtResource("2_v00le")
 character_speaking = ExtResource("4_cht0u")
 state = 4
-dialogue_string = "A veces disfruto de arder un poco más fuerte. No demasiado, pero..."
+dialogue_string = "Bueno en realidad es algo sencillo, nos distanciamos..."
 answers = Array[ExtResource("3_sbd3s")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_lp4en"]
 script = ExtResource("2_v00le")
 character_speaking = ExtResource("4_cht0u")
-state = 4
-dialogue_string = "Si no mantengo la calma, puede afectaros mucho. "
+state = 5
+dialogue_string = "El universo se expande y simplemente la expansion nos ha alejado."
 answers = Array[ExtResource("3_sbd3s")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

@@ -9,7 +9,7 @@
 script = ExtResource("2_ektbc")
 character_speaking = ExtResource("4_mmvr3")
 state = 5
-dialogue_string = "¿Ah no? Pues lo parece, porque cada vez que ardo medio fuerte os poneis de mala hostia. "
+dialogue_string = "Es complicado. "
 answers = Array[ExtResource("3_rfx87")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -17,7 +17,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_ektbc")
 character_speaking = ExtResource("4_mmvr3")
 state = 4
-dialogue_string = "Mas últimamente... "
+dialogue_string = "En parte esta galaxia es parte de mi y yo de ella. Es una experiencia mas introspectiva."
 answers = Array[ExtResource("3_rfx87")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

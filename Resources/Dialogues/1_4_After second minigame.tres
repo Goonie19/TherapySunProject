@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueData" load_steps=39 format=3 uid="uid://cmrl0osx4amii"]
+[gd_resource type="Resource" script_class="DialogueData" load_steps=42 format=3 uid="uid://cmrl0osx4amii"]
 
 [ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_6vvdd"]
 [ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_hdbhp"]
@@ -225,7 +225,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_luixr"]
 script = ExtResource("2_hdbhp")
 character_speaking = ExtResource("5_t4ejr")
-state = 1
+state = 9
 dialogue_string = "En parte me alegra que estas nubes estén... "
 answers = Array[ExtResource("3_rugqs")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
@@ -233,16 +233,16 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_1ai1q"]
 script = ExtResource("2_hdbhp")
 character_speaking = ExtResource("5_t4ejr")
-state = 1
-dialogue_string = "No puedo mirar las atrocidades que hacéis... "
+state = 9
+dialogue_string = "Al menos hacen que no pueda mirar claramente lo que estais haciendo en La Tierra."
 answers = Array[ExtResource("3_rugqs")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_o16si"]
 script = ExtResource("2_hdbhp")
-character_speaking = ExtResource("4_t4ejr")
-state = 0
-dialogue_string = "Vamos a explorar eso, Sol. "
+character_speaking = ExtResource("5_t4ejr")
+state = 9
+dialogue_string = "Sois tan parte de mi como yo de vosotros pero odio con fervor todo lo que veo cuando miro allí."
 answers = Array[ExtResource("3_rugqs")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -250,15 +250,15 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_hdbhp")
 character_speaking = ExtResource("4_t4ejr")
 state = 0
-dialogue_string = "Dame la oportunidad de cambiar lo que piensas. "
+dialogue_string = "Sol, no todo es malo por aquí."
 answers = Array[ExtResource("3_rugqs")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_vsn45"]
 script = ExtResource("2_hdbhp")
 character_speaking = ExtResource("5_t4ejr")
-state = 2
-dialogue_string = "¿Estás segura? Posiblemente diga cosas muy feas... "
+state = 4
+dialogue_string = "Es malo todo lo importante..."
 answers = Array[ExtResource("3_rugqs")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -266,7 +266,31 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_hdbhp")
 character_speaking = ExtResource("4_t4ejr")
 state = 0
-dialogue_string = "Lo aguantaré. Confía en mí. "
+dialogue_string = "Muy bien Sol, se acabó el descanso, vamos a tratar eso."
+answers = Array[ExtResource("3_rugqs")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_ml454"]
+script = ExtResource("2_hdbhp")
+character_speaking = ExtResource("4_t4ejr")
+state = 0
+dialogue_string = "Sueltame todo lo que odies de la Tierra. Yo me encargare de ayudarte con esto."
+answers = Array[ExtResource("3_rugqs")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_u7vvw"]
+script = ExtResource("2_hdbhp")
+character_speaking = ExtResource("5_t4ejr")
+state = 1
+dialogue_string = "¿Estas segura? No quiero ser muy cruel contigo."
+answers = Array[ExtResource("3_rugqs")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_e7toc"]
+script = ExtResource("2_hdbhp")
+character_speaking = ExtResource("4_t4ejr")
+state = 0
+dialogue_string = " Estoy aquí para tratarte. Confía en mí."
 answers = Array[ExtResource("3_rugqs")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -274,5 +298,5 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("1_6vvdd")
 narration_dialogue = false
 dialogue_id = "After second minigame"
-sentences = Array[ExtResource("2_hdbhp")]([SubResource("Resource_r8dbu"), SubResource("Resource_0q8kf"), SubResource("Resource_pqlsa"), SubResource("Resource_yci56"), SubResource("Resource_achlj"), SubResource("Resource_alr7s"), SubResource("Resource_0hmgt"), SubResource("Resource_be7a8"), SubResource("Resource_5sil1"), SubResource("Resource_e8ocs"), SubResource("Resource_g1vc7"), SubResource("Resource_6infs"), SubResource("Resource_nioqi"), SubResource("Resource_t4ejr"), SubResource("Resource_md8h4"), SubResource("Resource_b0gfg"), SubResource("Resource_8w4g2"), SubResource("Resource_7xerr"), SubResource("Resource_fwxtb"), SubResource("Resource_ixkc4"), SubResource("Resource_n6sn0"), SubResource("Resource_l7yal"), SubResource("Resource_18cwh"), SubResource("Resource_7bqxt"), SubResource("Resource_fl4ld"), SubResource("Resource_jbe2q"), SubResource("Resource_paucc"), SubResource("Resource_luixr"), SubResource("Resource_1ai1q"), SubResource("Resource_o16si"), SubResource("Resource_7a3dx"), SubResource("Resource_vsn45"), SubResource("Resource_rga5e")])
+sentences = Array[ExtResource("2_hdbhp")]([SubResource("Resource_r8dbu"), SubResource("Resource_0q8kf"), SubResource("Resource_pqlsa"), SubResource("Resource_yci56"), SubResource("Resource_achlj"), SubResource("Resource_alr7s"), SubResource("Resource_0hmgt"), SubResource("Resource_be7a8"), SubResource("Resource_5sil1"), SubResource("Resource_e8ocs"), SubResource("Resource_g1vc7"), SubResource("Resource_6infs"), SubResource("Resource_nioqi"), SubResource("Resource_t4ejr"), SubResource("Resource_md8h4"), SubResource("Resource_b0gfg"), SubResource("Resource_8w4g2"), SubResource("Resource_7xerr"), SubResource("Resource_fwxtb"), SubResource("Resource_ixkc4"), SubResource("Resource_n6sn0"), SubResource("Resource_l7yal"), SubResource("Resource_18cwh"), SubResource("Resource_7bqxt"), SubResource("Resource_fl4ld"), SubResource("Resource_jbe2q"), SubResource("Resource_paucc"), SubResource("Resource_luixr"), SubResource("Resource_1ai1q"), SubResource("Resource_o16si"), SubResource("Resource_7a3dx"), SubResource("Resource_vsn45"), SubResource("Resource_rga5e"), SubResource("Resource_ml454"), SubResource("Resource_u7vvw"), SubResource("Resource_e7toc")])
 metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

@@ -17,7 +17,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_aoecl")
 character_speaking = ExtResource("4_2p1sv")
 state = 4
-dialogue_string = "Yo solía tener confianza en mí mismo. Algún día nublado he tenido, pero no tan seguido... "
+dialogue_string = "Yo solía tener confianza en mí mismo. Algún día nublado he tenido, pero no tan seguido..."
 answers = Array[ExtResource("3_xf1pm")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

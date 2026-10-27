@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://cuku2mldtda54"]
+[gd_resource type="Resource" script_class="DialogueData" load_steps=8 format=3 uid="uid://cuku2mldtda54"]
 
 [ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_v5cyb"]
 [ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_4p7fi"]
@@ -9,7 +9,7 @@
 script = ExtResource("2_4p7fi")
 character_speaking = ExtResource("4_3fcpy")
 state = 5
-dialogue_string = "¿Y qué debo hacer? ¿Dejar que se sequen vuestros ríos? "
+dialogue_string = "Miro a los planetas que me viajan conmigo y apenas han podido desarrollar vida sostenible."
 answers = Array[ExtResource("3_5ycls")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -17,7 +17,15 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_4p7fi")
 character_speaking = ExtResource("4_3fcpy")
 state = 5
-dialogue_string = "¿Dejar que se derritan vuestros polos? "
+dialogue_string = "Veo como rotan a mi alrededor esperando algo mas de mi."
+answers = Array[ExtResource("3_5ycls")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_5ycls"]
+script = ExtResource("2_4p7fi")
+character_speaking = ExtResource("4_3fcpy")
+state = 5
+dialogue_string = "Y es muy frustrante mirar a mi propia galaxia y ver que no soy suficiente."
 answers = Array[ExtResource("3_5ycls")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -25,5 +33,5 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("1_v5cyb")
 narration_dialogue = false
 dialogue_id = ""
-sentences = Array[ExtResource("2_4p7fi")]([SubResource("Resource_yy5sp"), SubResource("Resource_wlirt")])
+sentences = Array[ExtResource("2_4p7fi")]([SubResource("Resource_yy5sp"), SubResource("Resource_wlirt"), SubResource("Resource_5ycls")])
 metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

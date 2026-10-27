@@ -25,7 +25,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_ky2gi")
 character_speaking = ExtResource("4_em6qa")
 state = 9
-dialogue_string = "NI SI QUIERA PUEDO DISTRAERME MIRANDO A LOS HUMANOS PORQUE NO VEO NADA. "
+dialogue_string = "NI SI QUIERA PUEDO DISTRAERME MIRANDO NADA PORQUE NO VEO UN CARAJO."
 answers = Array[ExtResource("3_rgy0q")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

@@ -10,7 +10,7 @@
 
 -ES QUE ES UNA MIERDA, NO PUEDO VER NADA CON ESTAS NUBES ALREDEDOR. ENCIMA UNA SE ME HA METIDO EN EL OJO. 
 
--NI SI QUIERA PUEDO DISTRAERME MIRANDO A LOS HUMANOS PORQUE NO VEO NADA.  
+-NI SI QUIERA PUEDO DISTRAERME MIRANDO NADA PORQUE NO VEO UN CARAJO.  
 
 -Bah, qué más da, es mejor no mirar mucho... 
 
@@ -172,7 +172,7 @@ Secuencia 6
 
 Inicio segundo minijuego 
 
--Estefanía: Muy bien, Sol. Se que cuesta abrirse, pero si quieres deshacerte de esas nubes, tienes que ahcerlo.
+-Estefanía: Muy bien, Sol. Se que cuesta abrirse, pero si quieres deshacerte de esas nubes, tienes que hacerlo.
 
 -Cuentame, ¿qué es lo que ha cambiado, por qué ya no hablas con esos astros?
 
@@ -433,6 +433,8 @@ Estefanía: Porque cuando todo cambie, cuando lo consigamos y cambiemos las cosa
 
 Secuencia final 
 
+  -Sol: ...
+
 	ESTA BIEN, MIRARE. 
 
 	Quiero creer en vosotros... Puede que me siga costando, pero mirare de todas formas. 
@@ -479,7 +481,7 @@ Cuando lo consigáis estaré ahí.
 
 Os daré la bienvenida a un mañana mejor. 
 
-Confiaré en vosotros. 
+Confio en vosotros. 
 
 Créditos(?)* 
 

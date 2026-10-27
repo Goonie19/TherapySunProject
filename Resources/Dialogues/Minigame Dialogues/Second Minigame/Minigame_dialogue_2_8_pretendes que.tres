@@ -10,7 +10,7 @@
 script = ExtResource("2_gr3ie")
 character_speaking = ExtResource("4_gnd81")
 state = 5
-dialogue_string = "¿Pretendes que no haga nada?"
+dialogue_string = "Siento que nada de lo que hago es suficiente..."
 answers = Array[ExtResource("3_7rr6e")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

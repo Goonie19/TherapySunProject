@@ -9,15 +9,15 @@
 script = ExtResource("2_ck7fl")
 character_speaking = ExtResource("4_i6h3o")
 state = 4
-dialogue_string = "Nah, no puedo arder tan fuerte, la diferencia no es tan grande. "
+dialogue_string = "Es cierto, pero cada vez quedo mas solo y solo tengo esta galaxia."
 answers = Array[ExtResource("3_ithxj")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_wmepj"]
 script = ExtResource("2_ck7fl")
 character_speaking = ExtResource("4_i6h3o")
-state = 4
-dialogue_string = "Pero os llegaría una ola de calor, y a muchos de vosotros os haría daño."
+state = 5
+dialogue_string = "Estaba bien poder compartir la carga de mantener la responsabilidad con alguien que me entienda."
 answers = Array[ExtResource("3_ithxj")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueData" load_steps=9 format=3 uid="uid://b5cn8qwftafct"]
+[gd_resource type="Resource" script_class="DialogueData" load_steps=8 format=3 uid="uid://b5cn8qwftafct"]
 
 [ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_0cbm0"]
 [ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_lkbax"]
@@ -8,25 +8,17 @@
 
 [sub_resource type="Resource" id="Resource_kj4e5"]
 script = ExtResource("2_lkbax")
-character_speaking = ExtResource("4_blqg7")
-state = 0
-dialogue_string = "¿Y que son estas gilipolleces? "
+character_speaking = ExtResource("5_blqg7")
+state = 4
+dialogue_string = "Me contaban sobre las cosas que habian visto en el camino. "
 answers = Array[ExtResource("3_saoch")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_qd3ra"]
 script = ExtResource("2_lkbax")
-character_speaking = ExtResource("5_blqg7")
-state = 4
-dialogue_string = "¿Qué más da? No es importante. De todas formas, solo me hacen ponerme peor. "
-answers = Array[ExtResource("3_saoch")]([])
-metadata/_custom_type_script = "uid://btw443pl7fl7o"
-
-[sub_resource type="Resource" id="Resource_0lbbu"]
-script = ExtResource("2_lkbax")
-character_speaking = ExtResource("5_blqg7")
-state = 5
-dialogue_string = "Tengo que espabilar. El sistema depende de mí, no puedo andarme con tonterías. "
+character_speaking = ExtResource("4_blqg7")
+state = 0
+dialogue_string = "¿Ya no hablas con esos astros?"
 answers = Array[ExtResource("3_saoch")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -34,5 +26,5 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("1_0cbm0")
 narration_dialogue = false
 dialogue_id = "Y que son?"
-sentences = Array[ExtResource("2_lkbax")]([SubResource("Resource_kj4e5"), SubResource("Resource_qd3ra"), SubResource("Resource_0lbbu")])
+sentences = Array[ExtResource("2_lkbax")]([SubResource("Resource_kj4e5"), SubResource("Resource_qd3ra")])
 metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

@@ -25,7 +25,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_gpyng")
 character_speaking = ExtResource("4_k2eo6")
 state = 3
-dialogue_string = "Confiaré en vosotros. "
+dialogue_string = "Confio en vosotros. "
 answers = Array[ExtResource("3_3jb5p")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

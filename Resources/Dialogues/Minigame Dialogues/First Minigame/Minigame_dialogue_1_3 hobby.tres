@@ -8,25 +8,25 @@
 
 [sub_resource type="Resource" id="Resource_vhoxi"]
 script = ExtResource("2_mvqi4")
-character_speaking = ExtResource("4_rer0d")
-state = 0
-dialogue_string = "¿Has pensado en buscar algún hobby? "
+character_speaking = ExtResource("5_tul8o")
+state = 1
+dialogue_string = "Ahora cada paso que doy va acompañado de 1000 pensamientos negativos."
 answers = Array[ExtResource("3_mgv22")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_r8534"]
 script = ExtResource("2_mvqi4")
-character_speaking = ExtResource("5_tul8o")
-state = 5
-dialogue_string = "Si, si te parece me pongo a hacer crochet, ¿tú crees que la lana aguantaría mi temperatura? "
+character_speaking = ExtResource("4_rer0d")
+state = 0
+dialogue_string = "Entiendo como te sientes, pero no has respondido."
 answers = Array[ExtResource("3_mgv22")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
 [sub_resource type="Resource" id="Resource_4n7xa"]
 script = ExtResource("2_mvqi4")
-character_speaking = ExtResource("5_tul8o")
+character_speaking = ExtResource("4_rer0d")
 state = 5
-dialogue_string = "Solo soy una bola de luz incandescente, es todo lo que debo ser. "
+dialogue_string = "Sol, ¿qué echas de menos?"
 answers = Array[ExtResource("3_mgv22")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

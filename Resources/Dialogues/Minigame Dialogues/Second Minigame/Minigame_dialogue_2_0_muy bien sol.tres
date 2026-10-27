@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueData" load_steps=8 format=3 uid="uid://cx5m6d40tsveu"]
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://cx5m6d40tsveu"]
 
 [ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_5tkgj"]
 [ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_8ng1h"]
@@ -9,7 +9,7 @@
 script = ExtResource("2_8ng1h")
 character_speaking = ExtResource("4_lm8vl")
 state = 0
-dialogue_string = "Muy bien sol, sé qué crees que son gilipolleces, pero me da igual. "
+dialogue_string = "Muy bien, Sol. Se que cuesta abrirse, pero si quieres deshacerte de esas nubes, tienes que hacerlo."
 answers = Array[ExtResource("3_8siqi")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -17,15 +17,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_8ng1h")
 character_speaking = ExtResource("4_lm8vl")
 state = 0
-dialogue_string = "¿Qué es lo que estas dejando de lado? "
-answers = Array[ExtResource("3_8siqi")]([])
-metadata/_custom_type_script = "uid://btw443pl7fl7o"
-
-[sub_resource type="Resource" id="Resource_5tkgj"]
-script = ExtResource("2_8ng1h")
-character_speaking = ExtResource("4_lm8vl")
-state = 0
-dialogue_string = "Concéntrate en eso. "
+dialogue_string = "¿qué es lo que ha cambiado, por qué ya no hablas con esos astros?"
 answers = Array[ExtResource("3_8siqi")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -33,5 +25,5 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("1_5tkgj")
 narration_dialogue = false
 dialogue_id = "Muy bien"
-sentences = Array[ExtResource("2_8ng1h")]([SubResource("Resource_5oi8c"), SubResource("Resource_ch7iw"), SubResource("Resource_5tkgj")])
+sentences = Array[ExtResource("2_8ng1h")]([SubResource("Resource_5oi8c"), SubResource("Resource_ch7iw")])
 metadata/_custom_type_script = "uid://b4bbkbioa7dsg"

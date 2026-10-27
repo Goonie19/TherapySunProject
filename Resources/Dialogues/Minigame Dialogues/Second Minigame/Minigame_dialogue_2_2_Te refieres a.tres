@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://bi5dsqj73eu7x"]
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://bi5dsqj73eu7x"]
 
 [ext_resource type="Script" uid="uid://b4bbkbioa7dsg" path="res://scripts/DialogueSystem/Model/dialogue_data.gd" id="1_3othn"]
 [ext_resource type="Script" uid="uid://btw443pl7fl7o" path="res://scripts/DialogueSystem/Model/sentence_data.gd" id="2_dxkyg"]
@@ -9,7 +9,15 @@
 script = ExtResource("2_dxkyg")
 character_speaking = ExtResource("4_ny5r7")
 state = 0
-dialogue_string = "¿Te refieres a que moriríamos? "
+dialogue_string = "Distanciarnos de quienes queremos puede ser doloroso. Pero el recuerdo de quienes no estan sigue ahí."
+answers = Array[ExtResource("3_b7hvb")]([])
+metadata/_custom_type_script = "uid://btw443pl7fl7o"
+
+[sub_resource type="Resource" id="Resource_b7hvb"]
+script = ExtResource("2_dxkyg")
+character_speaking = ExtResource("4_ny5r7")
+state = 0
+dialogue_string = "Piensa que no importa a donde vayan, una parte de ellos siempre va a estar en ti."
 answers = Array[ExtResource("3_b7hvb")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 
@@ -17,5 +25,5 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("1_3othn")
 narration_dialogue = false
 dialogue_id = "Te refieres"
-sentences = Array[ExtResource("2_dxkyg")]([SubResource("Resource_w82en")])
+sentences = Array[ExtResource("2_dxkyg")]([SubResource("Resource_w82en"), SubResource("Resource_b7hvb")])
 metadata/_custom_type_script = "uid://b4bbkbioa7dsg"
