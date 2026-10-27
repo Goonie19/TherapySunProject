@@ -31,10 +31,10 @@ jobs:
     name: Export Web & Push to Itch.io
     runs-on: ubuntu-latest
     container:
-      image: barichello/godot-ci:4.7.1
+      image: barichello/godot-ci:4.4.1
 
     needs: ci
-    if: startsWith(github.ref, 'refs/tags/')
+    if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'workflow_dispatch'
     
     steps:
       - name: Checkout Code
