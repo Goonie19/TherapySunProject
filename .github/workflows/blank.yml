@@ -12,20 +12,20 @@ jobs:
     name: Lint & Unit Tests
     runs-on: ubuntu-latest
     container:
-      image: barichello/godot-ci:4.7.1
+      image: barichello/godot-ci:4.4.1
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-        with:
-          lfs: true   # Downloads binary LFS assets (images/audio)
-    
-# CRITICAL: Generates the .godot/ cache and registers plugin class_names  
+
       - name: Pre-Import Assets
         run: godot --headless --editor --quit || true
 
+      - name: Run GDScript Linter
+        run: |
+          godot --headless -s res://addons/gdscript-linter/analyzer/analyze-cli.gd
+      
       - name: Setup Export Templates
         run: |
           mkdir -v -p ~/.local/share/godot/export_templates
-          mv /root/.local/share/godot/export_templates/4.7.1.stable ~/.local/share/godot/export_templates/4.7.1.stable
-
+          mv /root/.local/share/godot/export_templates/4.4.1.stable ~/.local/share/godot/export_templates/4.4.1.stable
