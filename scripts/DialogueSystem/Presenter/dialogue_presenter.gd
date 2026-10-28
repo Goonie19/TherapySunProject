@@ -63,7 +63,7 @@ func update_text_async() -> void:
 		j = 0
 		while j < model.dialogue.sentences[current_sentence].dialogue_string.length() and not sentenceCompleted:
 			update(j)
-			view.timer.start(0.01)
+			view.timer.start(0.02)
 			await view.timer.timeout
 			j += 1
 		
@@ -76,7 +76,7 @@ func update_text_async() -> void:
 		
 		
 		while not nextSentence:
-			view.timer.start(0.01)
+			view.timer.start(0.02)
 			await view.timer.timeout
 		
 		current_sentence += 1
