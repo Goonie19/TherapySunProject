@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://bodj13bauus4b"]
+[gd_scene load_steps=49 format=3 uid="uid://bodj13bauus4b"]
 
 [ext_resource type="Script" uid="uid://bw0qouy70nse5" path="res://scripts/Dependency Injection/dependency_injector.gd" id="1_liy57"]
 [ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="1_w5aja"]
@@ -26,8 +26,10 @@
 [ext_resource type="Resource" uid="uid://bfnc4rkpd5o2n" path="res://Resources/Actions/music actions/Play Track 2.tres" id="18_qlrfd"]
 [ext_resource type="Resource" uid="uid://c6ctpuasanctl" path="res://Resources/Actions/1_7_ScaleStefania Back.tres" id="18_twkf6"]
 [ext_resource type="Resource" uid="uid://c8b5lgkm5mgoh" path="res://Resources/Actions/1_8_MoveStefaniaBack.tres" id="19_4fjq2"]
+[ext_resource type="Resource" uid="uid://bxfgcwjrj7h72" path="res://Resources/Actions/music actions/Add_underwater_effect.tres" id="20_584by"]
 [ext_resource type="Resource" uid="uid://cmhmxt3mb0hs1" path="res://Resources/Actions/1_9_Ending of first mini dialogue.tres" id="20_o4j5v"]
 [ext_resource type="Resource" uid="uid://ci70lx7s312w0" path="res://Resources/Actions/1_10_Shrink Estefania again.tres" id="21_qlrfd"]
+[ext_resource type="Resource" uid="uid://3ou4kkiet2s8" path="res://Resources/Actions/music actions/Remove_underwater_effect.tres" id="22_v7uyc"]
 [ext_resource type="Resource" uid="uid://dth87beyey770" path="res://Resources/Actions/1_11_Move Estefania To Sun again.tres" id="23_ww6lu"]
 [ext_resource type="Resource" uid="uid://c0c44x8pu465s" path="res://Resources/Actions/1_12_pre-PlayMeditatingPos.tres" id="24_584by"]
 [ext_resource type="Resource" uid="uid://dtt7fx1kcwf21" path="res://Resources/Actions/1_12_Minigame_2_action.tres" id="25_v7uyc"]
@@ -82,7 +84,7 @@ z_index = 9
 [node name="Lineal_action_controller" type="Node2D" parent="." node_paths=PackedStringArray("waiting_timer")]
 script = ExtResource("5_y3j0m")
 waiting_timer = NodePath("../WaitingTimer")
-actions = Array[ExtResource("6_rurhu")]([ExtResource("7_tcjrq"), ExtResource("7_rvs2r"), ExtResource("9_ldkr4"), ExtResource("7_mw25s"), ExtResource("12_mwyo0"), ExtResource("14_s76x2"), ExtResource("15_77hjl"), ExtResource("15_ro0ie"), ExtResource("18_qlrfd"), ExtResource("15_6aqbo"), ExtResource("24_584by"), ExtResource("17_ro0ie"), ExtResource("18_twkf6"), ExtResource("19_4fjq2"), ExtResource("20_o4j5v"), ExtResource("21_qlrfd"), ExtResource("23_ww6lu"), ExtResource("27_mjtaf"), ExtResource("24_584by"), ExtResource("25_v7uyc"), ExtResource("26_cjr1f"), ExtResource("27_nlhev"), ExtResource("28_4gycw"), ExtResource("29_fet82"), ExtResource("30_reh8g"), ExtResource("34_ww6lu"), ExtResource("24_584by"), ExtResource("31_4558e"), ExtResource("14_qlrfd"), ExtResource("36_ww6lu"), ExtResource("32_1mrcw"), ExtResource("33_4har0"), ExtResource("34_n4qu0"), ExtResource("35_thlb5"), ExtResource("36_h0ynx"), ExtResource("37_y1k1x")])
+actions = Array[ExtResource("6_rurhu")]([ExtResource("7_tcjrq"), ExtResource("7_rvs2r"), ExtResource("9_ldkr4"), ExtResource("7_mw25s"), ExtResource("12_mwyo0"), ExtResource("18_qlrfd"), ExtResource("14_s76x2"), ExtResource("15_77hjl"), ExtResource("15_ro0ie"), ExtResource("15_6aqbo"), ExtResource("24_584by"), ExtResource("20_584by"), ExtResource("17_ro0ie"), ExtResource("22_v7uyc"), ExtResource("18_twkf6"), ExtResource("19_4fjq2"), ExtResource("20_o4j5v"), ExtResource("21_qlrfd"), ExtResource("23_ww6lu"), ExtResource("27_mjtaf"), ExtResource("24_584by"), ExtResource("20_584by"), ExtResource("25_v7uyc"), ExtResource("22_v7uyc"), ExtResource("26_cjr1f"), ExtResource("27_nlhev"), ExtResource("28_4gycw"), ExtResource("29_fet82"), ExtResource("30_reh8g"), ExtResource("34_ww6lu"), ExtResource("24_584by"), ExtResource("20_584by"), ExtResource("31_4558e"), ExtResource("22_v7uyc"), ExtResource("14_qlrfd"), ExtResource("36_ww6lu"), ExtResource("32_1mrcw"), ExtResource("33_4har0"), ExtResource("34_n4qu0"), ExtResource("35_thlb5"), ExtResource("36_h0ynx"), ExtResource("37_y1k1x")])
 
 [node name="DialoguePanel" parent="." instance=ExtResource("4_y3j0m")]
 z_index = 10

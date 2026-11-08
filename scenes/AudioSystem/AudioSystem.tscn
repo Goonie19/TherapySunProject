@@ -101,7 +101,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [0.0]
+"values": [-80.0]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -113,7 +113,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [0.0]
+"values": [-80.0]
 }
 
 [sub_resource type="Animation" id="Animation_dk1j8"]
@@ -200,15 +200,23 @@ animator = NodePath("AnimationPlayer")
 volume_db = -80.0
 autoplay = true
 bus = &"Music"
+playback_type = 1
 
 [node name="MusicPlayer Track 2" type="AudioStreamPlayer2D" parent="."]
 volume_db = -80.0
 autoplay = true
 bus = &"Music"
+playback_type = 1
 
 [node name="Music Player Track 3" type="AudioStreamPlayer2D" parent="."]
+volume_db = -80.0
+bus = &"Music"
+playback_type = 1
 
 [node name="Music Player Track 4" type="AudioStreamPlayer2D" parent="."]
+volume_db = -80.0
+bus = &"Music"
+playback_type = 1
 
 [node name="SFXPlayer" type="AudioStreamPlayer2D" parent="."]
 bus = &"SFX"

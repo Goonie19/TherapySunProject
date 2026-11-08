@@ -3,8 +3,10 @@ extends Node
 class_name AudioController
 
 const AUDIO_BUS_NAME = "Master"
+const AUDIO_MUSIC_BUS_NAME = "Music"
 
 @onready var _bus := AudioServer.get_bus_index(AUDIO_BUS_NAME)
+@onready var _musicBus := AudioServer.get_bus_index(AUDIO_MUSIC_BUS_NAME)
 @export var music_players : Array[AudioStreamPlayer2D]
 
 @export var sfx_player : AudioStreamPlayer2D
@@ -41,3 +43,7 @@ func play_track(track_name : String) -> void:
 
 func set_volume(volume: float) -> void:
 	AudioServer.set_bus_volume_db(_bus, linear_to_db(volume))
+
+func set_underwater_effect(underwater : bool) -> void:
+	for i in range(AudioServer.get_bus_effect_count(1)):
+		AudioServer.set_bus_effect_enabled(1, i, underwater)
