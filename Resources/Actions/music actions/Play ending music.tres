@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PlayMusicAction" load_steps=3 format=3 uid="uid://bisnhd6pnqkkx"]
+
+[ext_resource type="AudioStream" uid="uid://1dw1614embj3" path="res://assets/Sound/Music/Solete - Final.wav" id="1_5umy7"]
+[ext_resource type="Script" uid="uid://7vs1l762fec5" path="res://scripts/Lineal Action System/Actions/play_music_action.gd" id="1_8jxpw"]
+
+[resource]
+script = ExtResource("1_8jxpw")
+music_to_play = Array[AudioStream]([ExtResource("1_5umy7")])
+skip_wait = false
+metadata/_custom_type_script = "uid://7vs1l762fec5"

@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_x4weo")
-track_to_play = "Track3"
+track_to_play = "Track4"
 skip_wait = false
 metadata/_custom_type_script = "uid://b1eloryg873bh"

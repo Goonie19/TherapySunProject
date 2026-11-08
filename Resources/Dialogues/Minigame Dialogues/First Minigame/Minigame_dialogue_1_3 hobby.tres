@@ -9,7 +9,7 @@
 [sub_resource type="Resource" id="Resource_vhoxi"]
 script = ExtResource("2_mvqi4")
 character_speaking = ExtResource("5_tul8o")
-state = 1
+state = 4
 dialogue_string = "Ahora cada paso que doy va acompañado de 1000 pensamientos negativos."
 answers = Array[ExtResource("3_mgv22")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"

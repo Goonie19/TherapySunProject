@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://1dw1614embj3"
+path="res://.godot/imported/Solete - Final.wav-828e8f38ea41f5cbd2b3d66900aee1cd.sample"
+
+[deps]
+
+source_file="res://assets/Sound/Music/Solete - Final.wav"
+dest_files=["res://.godot/imported/Solete - Final.wav-828e8f38ea41f5cbd2b3d66900aee1cd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -17,7 +17,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 script = ExtResource("2_8ng1h")
 character_speaking = ExtResource("4_lm8vl")
 state = 0
-dialogue_string = "¿qué es lo que ha cambiado, por qué ya no hablas con esos astros?"
+dialogue_string = "¿Qué es lo que ha cambiado, por qué ya no hablas con esos astros?"
 answers = Array[ExtResource("3_8siqi")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

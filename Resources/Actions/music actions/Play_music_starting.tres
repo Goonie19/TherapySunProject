@@ -1,9 +1,12 @@
-[gd_resource type="Resource" script_class="PlayMusicAction" load_steps=3 format=3 uid="uid://dgvqkaw4gwytg"]
+[gd_resource type="Resource" script_class="PlayMusicAction" load_steps=6 format=3 uid="uid://dgvqkaw4gwytg"]
 
-[ext_resource type="AudioStream" uid="uid://cbawa5314n51t" path="res://assets/Sound/Music/Solete LVL 1.wav" id="1_5aon1"]
 [ext_resource type="Script" uid="uid://7vs1l762fec5" path="res://scripts/Lineal Action System/Actions/play_music_action.gd" id="1_ipw5k"]
+[ext_resource type="AudioStream" uid="uid://cenl2o2j765ev" path="res://assets/Sound/Music/Solete - Nivel 0.wav" id="1_w087b"]
+[ext_resource type="AudioStream" uid="uid://chaxt2u478llf" path="res://assets/Sound/Music/Solete - Nivel 1.wav" id="2_rkbvs"]
+[ext_resource type="AudioStream" uid="uid://cq55cbgy7fjl1" path="res://assets/Sound/Music/Solete - Nivel 2.wav" id="3_gy4gh"]
+[ext_resource type="AudioStream" uid="uid://c50i5d2vbq20i" path="res://assets/Sound/Music/Solete - Nivel 3.wav" id="4_qaihr"]
 
 [resource]
 script = ExtResource("1_ipw5k")
-music_to_play = Array[AudioStream]([ExtResource("1_5aon1")])
+music_to_play = Array[AudioStream]([ExtResource("1_w087b"), ExtResource("2_rkbvs"), ExtResource("3_gy4gh"), ExtResource("4_qaihr")])
 skip_wait = false

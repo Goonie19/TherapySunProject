@@ -17,7 +17,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_uuhp0"]
 script = ExtResource("2_4khto")
 character_speaking = ExtResource("5_5vjhl")
-state = 4
+state = 5
 dialogue_string = "..."
 answers = Array[ExtResource("3_16d2o")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
