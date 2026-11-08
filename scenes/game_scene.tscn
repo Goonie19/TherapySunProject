@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://bodj13bauus4b"]
+[gd_scene load_steps=51 format=3 uid="uid://bodj13bauus4b"]
 
 [ext_resource type="Script" uid="uid://bw0qouy70nse5" path="res://scripts/Dependency Injection/dependency_injector.gd" id="1_liy57"]
 [ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="1_w5aja"]
@@ -49,6 +49,16 @@
 [ext_resource type="Resource" uid="uid://bisnhd6pnqkkx" path="res://Resources/Actions/music actions/Play ending music.tres" id="36_ww6lu"]
 [ext_resource type="Resource" uid="uid://byb7nj3cae7ws" path="res://Resources/Actions/1_24_ending narration.tres" id="37_y1k1x"]
 
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_v7uyc"]
+room_size = 0.0
+damping = 0.0
+spread = 0.0
+wet = 0.0
+
+[sub_resource type="AudioEffectLowPassFilter" id="AudioEffectLowPassFilter_cjr1f"]
+cutoff_hz = 20500.0
+resonance = 1.0
+
 [node name="GameScene" type="Node"]
 
 [node name="WaitingTimer" type="Timer" parent="."]
@@ -60,10 +70,12 @@ character_controller = NodePath("../SunCharacter")
 dialogue_controller = NodePath("../DialoguePanel")
 black_screen = NodePath("../BlackScreen")
 lineal_action_controller = NodePath("../Lineal_action_controller")
-audio_controller = NodePath("../AudioSystem")
+audio_controller = NodePath("../s")
 camera = NodePath("../Camera2D")
 
-[node name="AudioSystem" parent="." instance=ExtResource("13_tqxxy")]
+[node name="s" parent="." instance=ExtResource("13_tqxxy")]
+defaultReverb = SubResource("AudioEffectReverb_v7uyc")
+defaultLowPass = SubResource("AudioEffectLowPassFilter_cjr1f")
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("timer")]
 position = Vector2(400, 300)

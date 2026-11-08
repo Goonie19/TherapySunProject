@@ -13,10 +13,20 @@ const AUDIO_MUSIC_BUS_NAME = "Music"
 
 @export var animator : AnimationPlayer
 
+@export var defaultReverb : AudioEffectReverb
+@export var defaultLowPass : AudioEffectLowPassFilter
+
+
 var value : float
+
+var reverbEffect : AudioEffectReverb
+var lowPassEffect : AudioEffectLowPassFilter
 
 func _ready() -> void:
 	value = db_to_linear(AudioServer.get_bus_volume_db(_bus))
+	#Hardcodeado feisimo pero es lo que hay
+	reverbEffect = AudioServer.get_bus_effect(1, 1) as AudioEffectReverb
+	lowPassEffect = AudioServer.get_bus_effect(1, 2) as AudioEffectLowPassFilter
 
 func play_music(music_streams: Array[AudioStream]) -> void:
 	var i : int = 0;
@@ -45,5 +55,27 @@ func set_volume(volume: float) -> void:
 	AudioServer.set_bus_volume_db(_bus, linear_to_db(volume))
 
 func set_underwater_effect(underwater : bool) -> void:
-	for i in range(AudioServer.get_bus_effect_count(1)):
-		AudioServer.set_bus_effect_enabled(1, i, underwater)
+	AudioServer.set_bus_effect_enabled(1, 0, underwater)
+
+	set_reverb_effect(underwater)
+	set_lowpass_effect(underwater)
+
+func set_reverb_effect (underwater: bool) -> void:
+	var reverbTween = get_tree().create_tween()
+	if underwater :
+		reverbTween.tween_property(reverbEffect, "wet", 0.3, 1.0)
+		reverbTween.tween_property(reverbEffect, "room_size", 0.5, 1.0)
+	else:
+		reverbTween.tween_property(reverbEffect, "wet", defaultReverb.wet, 1.0)
+		reverbTween.tween_property(reverbEffect, "room_size", defaultReverb.room_size, 1.0)
+
+func set_lowpass_effect(underwater: bool) -> void:
+	var lowPassTween = get_tree().create_tween()
+	if underwater :
+		lowPassTween.tween_property(lowPassEffect, "cutoff_hz", 1400, 1.0)
+		lowPassTween.tween_property(lowPassEffect, "resonance", 0.37, 1.0)
+		lowPassEffect.db = AudioEffectFilter.FILTER_12DB
+	else: 
+		lowPassTween.tween_property(lowPassEffect, "cutoff_hz", defaultLowPass.cutoff_hz, 1.0)
+		lowPassTween.tween_property(lowPassEffect, "resonance", defaultLowPass.resonance, 1.0)
+		lowPassEffect.db = AudioEffectFilter.FILTER_6DB
