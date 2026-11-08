@@ -70,10 +70,10 @@ character_controller = NodePath("../SunCharacter")
 dialogue_controller = NodePath("../DialoguePanel")
 black_screen = NodePath("../BlackScreen")
 lineal_action_controller = NodePath("../Lineal_action_controller")
-audio_controller = NodePath("../s")
+audio_controller = NodePath("../AudioSystem")
 camera = NodePath("../Camera2D")
 
-[node name="s" parent="." instance=ExtResource("13_tqxxy")]
+[node name="AudioSystem" parent="." instance=ExtResource("13_tqxxy")]
 defaultReverb = SubResource("AudioEffectReverb_v7uyc")
 defaultLowPass = SubResource("AudioEffectLowPassFilter_cjr1f")
 

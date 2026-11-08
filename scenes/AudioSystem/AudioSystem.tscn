@@ -219,6 +219,7 @@ bus = &"Music"
 playback_type = 1
 
 [node name="SFXPlayer" type="AudioStreamPlayer2D" parent="."]
+max_polyphony = 3
 bus = &"SFX"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
