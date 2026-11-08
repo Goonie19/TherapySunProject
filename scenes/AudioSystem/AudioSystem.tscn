@@ -221,6 +221,7 @@ playback_type = 1
 [node name="SFXPlayer" type="AudioStreamPlayer2D" parent="."]
 max_polyphony = 3
 bus = &"SFX"
+playback_type = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
