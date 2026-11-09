@@ -6,7 +6,7 @@ class_name CreditsScreen
 
 signal on_fade_completed
 
-func fade(target_alpha: float, time: float) -> void:
+func fade() -> void:
 	animator.play("Fade_in")
 
 func emit_fade_completed() -> void:
