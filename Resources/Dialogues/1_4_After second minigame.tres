@@ -257,7 +257,7 @@ metadata/_custom_type_script = "uid://btw443pl7fl7o"
 [sub_resource type="Resource" id="Resource_vsn45"]
 script = ExtResource("2_hdbhp")
 character_speaking = ExtResource("5_t4ejr")
-state = 4
+state = 7
 dialogue_string = "Es malo todo lo importante..."
 answers = Array[ExtResource("3_rugqs")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"

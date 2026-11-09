@@ -9,7 +9,7 @@
 script = ExtResource("2_2wm7o")
 character_speaking = ExtResource("4_7nb87")
 state = 3
-dialogue_string = "Es necesario que me ponga a mirar a mi galaxia porque al final es mi responsabilidad."
+dialogue_string = "Es necesario que mire a mi galaxia porque al final es mi responsabilidad."
 answers = Array[ExtResource("3_xa5rj")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

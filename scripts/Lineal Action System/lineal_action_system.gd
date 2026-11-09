@@ -9,6 +9,7 @@ var black_screen: BlackScreen
 var audio_controller: AudioController
 var dialogue_to_inject : DialogueView
 var minigame_to_inject: MinigameController
+var credits_screen_to_inject : CreditsScreen
 
 func _ready() -> void:
 	for i in range(0, actions.size()):
@@ -32,13 +33,17 @@ func inject_to_action(action: Action) -> void:
 		action.set_dependencies(black_screen)
 	if action is PlayMusicAction or action is PlayTrackAction or action is AddUnderwaterEffectAction:
 		action.set_dependencies(audio_controller)
+	if action is FadeCreditsScreenAction:
+		action.set_dependencies(credits_screen_to_inject)
 
 func set_dependencies(dialogue_manager: DialogueView, 
 		minigame_controller: MinigameController,
 		black_screen: BlackScreen,
-		audio_controller: AudioController
+		audio_controller: AudioController,
+		credits_screen : CreditsScreen
 		) -> void:
 	dialogue_to_inject = dialogue_manager
 	minigame_to_inject = minigame_controller
 	self.black_screen = black_screen
 	self.audio_controller = audio_controller
+	credits_screen_to_inject = credits_screen

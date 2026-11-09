@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="FadeCreditsScreenAction" load_steps=2 format=3 uid="uid://bg0e267u4twpt"]
+
+[ext_resource type="Script" uid="uid://coaimg5ei66uk" path="res://scripts/Lineal Action System/Actions/fade_action.gd" id="1_er8ve"]
+
+[resource]
+script = ExtResource("1_er8ve")
+skip_wait = false
+metadata/_custom_type_script = "uid://coaimg5ei66uk"

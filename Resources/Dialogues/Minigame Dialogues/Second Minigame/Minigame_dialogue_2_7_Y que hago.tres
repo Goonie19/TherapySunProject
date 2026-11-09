@@ -9,7 +9,7 @@
 script = ExtResource("2_4p7fi")
 character_speaking = ExtResource("4_3fcpy")
 state = 5
-dialogue_string = "Miro a los planetas que me viajan conmigo y apenas han podido desarrollar vida sostenible."
+dialogue_string = "Miro a los planetas que viajan conmigo y apenas han podido desarrollar vida sostenible."
 answers = Array[ExtResource("3_5ycls")]([])
 metadata/_custom_type_script = "uid://btw443pl7fl7o"
 

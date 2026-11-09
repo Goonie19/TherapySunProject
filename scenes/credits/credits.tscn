@@ -1,0 +1,124 @@
+[gd_scene load_steps=7 format=3 uid="uid://de8dtc2gc4o7k"]
+
+[ext_resource type="Script" uid="uid://lxyjn5wrcrup" path="res://scripts/UI/credits_screen.gd" id="1_dr3ri"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_54so1"]
+font_size = 26
+
+[sub_resource type="LabelSettings" id="LabelSettings_dr3ri"]
+font_size = 21
+
+[sub_resource type="Animation" id="Animation_8n0nl"]
+resource_name = "Fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), 0.0]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"emit_fade_completed"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_c8xcy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8ggla"]
+_data = {
+&"Fade_in": SubResource("Animation_8n0nl"),
+&"RESET": SubResource("Animation_c8xcy")
+}
+
+[node name="Credits" type="Control" node_paths=PackedStringArray("animator")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dr3ri")
+animator = NodePath("AnimationPlayer")
+
+[node name="Developed by label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -50.0
+offset_right = -81.0
+offset_bottom = -14.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Música:"
+label_settings = SubResource("LabelSettings_54so1")
+horizontal_alignment = 1
+
+[node name="Name Label" type="Label" parent="Developed by label2"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 54.0
+offset_right = 223.0
+offset_bottom = 84.0
+text = "SaraLopezProductions"
+label_settings = SubResource("LabelSettings_dr3ri")
+
+[node name="Developed by label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 75.0
+offset_top = -50.0
+offset_right = 294.0
+offset_bottom = -14.0
+grow_vertical = 2
+text = "Desarrollado por:"
+label_settings = SubResource("LabelSettings_54so1")
+horizontal_alignment = 1
+
+[node name="Name Label" type="Label" parent="Developed by label"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 59.0
+offset_right = 163.0
+offset_bottom = 89.0
+text = "GoonieDev"
+label_settings = SubResource("LabelSettings_dr3ri")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_8ggla")
+}

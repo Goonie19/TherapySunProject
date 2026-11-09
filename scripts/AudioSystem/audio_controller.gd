@@ -63,7 +63,7 @@ func set_underwater_effect(underwater : bool) -> void:
 func set_reverb_effect (underwater: bool) -> void:
 	var reverbTween = get_tree().create_tween()
 	if underwater :
-		reverbTween.tween_property(reverbEffect, "wet", 0.3, 1.0)
+		reverbTween.tween_property(reverbEffect, "wet", 0.35, 1.0)
 		reverbTween.tween_property(reverbEffect, "room_size", 0.5, 1.0)
 	else:
 		reverbTween.tween_property(reverbEffect, "wet", defaultReverb.wet, 1.0)
@@ -72,8 +72,8 @@ func set_reverb_effect (underwater: bool) -> void:
 func set_lowpass_effect(underwater: bool) -> void:
 	var lowPassTween = get_tree().create_tween()
 	if underwater :
-		lowPassTween.tween_property(lowPassEffect, "cutoff_hz", 1400, 1.0)
-		lowPassTween.tween_property(lowPassEffect, "resonance", 0.37, 1.0)
+		lowPassTween.tween_property(lowPassEffect, "cutoff_hz", 1700, 1.0)
+		lowPassTween.tween_property(lowPassEffect, "resonance", 0.4, 1.0)
 		lowPassEffect.db = AudioEffectFilter.FILTER_12DB
 	else: 
 		lowPassTween.tween_property(lowPassEffect, "cutoff_hz", defaultLowPass.cutoff_hz, 1.0)

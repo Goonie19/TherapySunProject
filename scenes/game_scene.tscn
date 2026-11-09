@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://bodj13bauus4b"]
+[gd_scene load_steps=53 format=3 uid="uid://bodj13bauus4b"]
 
 [ext_resource type="Script" uid="uid://bw0qouy70nse5" path="res://scripts/Dependency Injection/dependency_injector.gd" id="1_liy57"]
 [ext_resource type="PackedScene" uid="uid://8hdfssgd8ppm" path="res://scenes/bg_scene.tscn" id="1_w5aja"]
@@ -48,6 +48,8 @@
 [ext_resource type="Resource" uid="uid://dg4hd8wsrvtkf" path="res://Resources/Actions/fade_in_.tres" id="36_h0ynx"]
 [ext_resource type="Resource" uid="uid://bisnhd6pnqkkx" path="res://Resources/Actions/music actions/Play ending music.tres" id="36_ww6lu"]
 [ext_resource type="Resource" uid="uid://byb7nj3cae7ws" path="res://Resources/Actions/1_24_ending narration.tres" id="37_y1k1x"]
+[ext_resource type="Resource" uid="uid://bg0e267u4twpt" path="res://Resources/Actions/Last_fade_credits.tres" id="45_nlhev"]
+[ext_resource type="PackedScene" uid="uid://de8dtc2gc4o7k" path="res://scenes/credits/credits.tscn" id="49_cjr1f"]
 
 [sub_resource type="AudioEffectReverb" id="AudioEffectReverb_v7uyc"]
 room_size = 0.0
@@ -63,7 +65,7 @@ resonance = 1.0
 
 [node name="WaitingTimer" type="Timer" parent="."]
 
-[node name="Dependency Injection" type="Node" parent="." node_paths=PackedStringArray("minigame_controller", "character_controller", "dialogue_controller", "black_screen", "lineal_action_controller", "audio_controller", "camera")]
+[node name="Dependency Injection" type="Node" parent="." node_paths=PackedStringArray("minigame_controller", "character_controller", "dialogue_controller", "black_screen", "lineal_action_controller", "audio_controller", "camera", "credits_screen")]
 script = ExtResource("1_liy57")
 minigame_controller = NodePath("../MinigameScene")
 character_controller = NodePath("../SunCharacter")
@@ -72,6 +74,7 @@ black_screen = NodePath("../BlackScreen")
 lineal_action_controller = NodePath("../Lineal_action_controller")
 audio_controller = NodePath("../AudioSystem")
 camera = NodePath("../Camera2D")
+credits_screen = NodePath("../Credits")
 
 [node name="AudioSystem" parent="." instance=ExtResource("13_tqxxy")]
 defaultReverb = SubResource("AudioEffectReverb_v7uyc")
@@ -96,7 +99,7 @@ z_index = 9
 [node name="Lineal_action_controller" type="Node2D" parent="." node_paths=PackedStringArray("waiting_timer")]
 script = ExtResource("5_y3j0m")
 waiting_timer = NodePath("../WaitingTimer")
-actions = Array[ExtResource("6_rurhu")]([ExtResource("7_tcjrq"), ExtResource("7_rvs2r"), ExtResource("9_ldkr4"), ExtResource("7_mw25s"), ExtResource("12_mwyo0"), ExtResource("18_qlrfd"), ExtResource("14_s76x2"), ExtResource("15_77hjl"), ExtResource("15_ro0ie"), ExtResource("15_6aqbo"), ExtResource("24_584by"), ExtResource("20_584by"), ExtResource("17_ro0ie"), ExtResource("22_v7uyc"), ExtResource("18_twkf6"), ExtResource("19_4fjq2"), ExtResource("20_o4j5v"), ExtResource("21_qlrfd"), ExtResource("23_ww6lu"), ExtResource("27_mjtaf"), ExtResource("24_584by"), ExtResource("20_584by"), ExtResource("25_v7uyc"), ExtResource("22_v7uyc"), ExtResource("26_cjr1f"), ExtResource("27_nlhev"), ExtResource("28_4gycw"), ExtResource("29_fet82"), ExtResource("30_reh8g"), ExtResource("34_ww6lu"), ExtResource("24_584by"), ExtResource("20_584by"), ExtResource("31_4558e"), ExtResource("22_v7uyc"), ExtResource("14_qlrfd"), ExtResource("36_ww6lu"), ExtResource("32_1mrcw"), ExtResource("33_4har0"), ExtResource("34_n4qu0"), ExtResource("35_thlb5"), ExtResource("36_h0ynx"), ExtResource("37_y1k1x")])
+actions = Array[ExtResource("6_rurhu")]([ExtResource("7_tcjrq"), ExtResource("7_rvs2r"), ExtResource("9_ldkr4"), ExtResource("7_mw25s"), ExtResource("12_mwyo0"), ExtResource("18_qlrfd"), ExtResource("14_s76x2"), ExtResource("15_77hjl"), ExtResource("15_ro0ie"), ExtResource("15_6aqbo"), ExtResource("24_584by"), ExtResource("20_584by"), ExtResource("17_ro0ie"), ExtResource("22_v7uyc"), ExtResource("18_twkf6"), ExtResource("19_4fjq2"), ExtResource("20_o4j5v"), ExtResource("21_qlrfd"), ExtResource("23_ww6lu"), ExtResource("27_mjtaf"), ExtResource("24_584by"), ExtResource("20_584by"), ExtResource("25_v7uyc"), ExtResource("22_v7uyc"), ExtResource("26_cjr1f"), ExtResource("27_nlhev"), ExtResource("28_4gycw"), ExtResource("29_fet82"), ExtResource("30_reh8g"), ExtResource("34_ww6lu"), ExtResource("24_584by"), ExtResource("20_584by"), ExtResource("31_4558e"), ExtResource("22_v7uyc"), ExtResource("14_qlrfd"), ExtResource("36_ww6lu"), ExtResource("32_1mrcw"), ExtResource("33_4har0"), ExtResource("34_n4qu0"), ExtResource("35_thlb5"), ExtResource("36_h0ynx"), ExtResource("37_y1k1x"), ExtResource("45_nlhev"), ExtResource("24_584by"), ExtResource("7_mw25s")])
 
 [node name="DialoguePanel" parent="." instance=ExtResource("4_y3j0m")]
 z_index = 10
@@ -109,3 +112,5 @@ rotation_speed = 0.5
 [node name="SunCharacter" parent="." instance=ExtResource("2_onqr8")]
 position = Vector2(400, 300)
 scale = Vector2(0.15, 0.15)
+
+[node name="Credits" parent="." instance=ExtResource("49_cjr1f")]
