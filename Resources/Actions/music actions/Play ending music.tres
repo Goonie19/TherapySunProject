@@ -6,5 +6,5 @@
 [resource]
 script = ExtResource("1_8jxpw")
 music_to_play = Array[AudioStream]([ExtResource("1_5umy7")])
-skip_wait = false
+skip_wait = true
 metadata/_custom_type_script = "uid://7vs1l762fec5"

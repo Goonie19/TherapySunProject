@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://cj4asau0sfw6f"]
+[gd_scene load_steps=11 format=3 uid="uid://cj4asau0sfw6f"]
 
 [ext_resource type="Script" uid="uid://n075vu8enijl" path="res://scripts/DialogueSystem/View/dialogue_view.gd" id="1_gdf5x"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t84l4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_t6upd"]
 
 [sub_resource type="Animation" id="Animation_ejk6b"]
 resource_name = "Appear"
@@ -528,6 +530,7 @@ offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Estefanía"
+label_settings = SubResource("LabelSettings_t6upd")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -542,6 +545,7 @@ offset_right = -25.0
 offset_bottom = -23.0
 grow_horizontal = 2
 grow_vertical = 2
+bbcode_enabled = true
 text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 
 [node name="Answers" type="Control" parent="Dialogue Image"]
