@@ -77,7 +77,6 @@ func run_current_sequence_async() -> void:
 		repeating_sequence = true
 		await dialogue_manager.on_dialogue_finished	
 
-
 func play_metor_sequence() -> void:
 	spawn_timer.start(mini_sequence.sequence[current_meteor_pos].time_stamp)
 
