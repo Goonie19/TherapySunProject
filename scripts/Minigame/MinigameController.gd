@@ -67,7 +67,7 @@ func run_current_sequence_async() -> void:
 	play_metor_sequence()
 	await on_meteor_sequence_finished
 	
-	if current_hits <= 3 :
+	if current_hits <= 2 :
 		repeating_sequence = false
 		if(mini_sequence.dialogue_at_end != null):
 			dialogue_manager.start_dialogue(mini_sequence.dialogue_at_end)
